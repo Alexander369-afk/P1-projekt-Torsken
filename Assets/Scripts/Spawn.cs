@@ -2,15 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class Spawn : MonoBehaviour
 {
     public int numberToSpawn;
     public List<GameObject> spawnPool;
     public GameObject quad;
 
-   void Start()
+    public float frequency;
+
+    public float initialSpeed;
+
+    float lastSpawnedTime;
+
+    void Update()
     {
-        spawnObjects();
+        if (Time.time > lastSpawnedTime + frequency)
+        {
+            spawnObjects();
+            lastSpawnedTime = Time.time;
+        }
     }
 
     public void spawnObjects()
@@ -22,7 +32,7 @@ public class Spawner : MonoBehaviour
         float screenX, screenY;
         Vector2 pos;
 
-        for (int i=0; i <numberToSpawn; i++)
+        for (int i = 0; i < numberToSpawn; i++)
         {
             randomTile = Random.Range(0, spawnPool.Count);
             toSpawn = spawnPool[randomTile];
@@ -34,11 +44,5 @@ public class Spawner : MonoBehaviour
             Instantiate(toSpawn, pos, toSpawn.transform.rotation);
         }
     }
-    private void destroyObject()
-    {
-        foreach(GameObject o in GameObject.FindGameObjectsWithTag("Spawnable"))
-        {
-            Destroy(o);
-        }
-    }
+    
 }
