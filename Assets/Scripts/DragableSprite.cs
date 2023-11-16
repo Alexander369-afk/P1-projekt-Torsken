@@ -16,12 +16,27 @@ public class DraggableSprite : MonoBehaviour
 
     private void OnMouseDown()
     {
-        isDragging = true;
-        clickOffset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (!isDragging)
+        {
+            // Handle explosion or destruction logic here
+            Explode();
+        }
+        else
+        {
+            isDragging = true;
+            clickOffset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
     }
 
     private void OnMouseUp()
     {
         isDragging = false;
+    }
+
+    private void Explode()
+    {
+        // Handle explosion logic here
+        Debug.Log("Bubble Exploded!");
+        Destroy(gameObject);
     }
 }
