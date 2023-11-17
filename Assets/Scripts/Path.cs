@@ -9,6 +9,14 @@ public class Path : MonoBehaviour
    [SerializeField] private float movespeed;
 
     private int waypointsIndex;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Spil1"))
+            { 
+                Debug.Log("Canvas touched");
+        }
+
+    }
     // Start is called before the first frame update
     void Start()
     {
