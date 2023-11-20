@@ -14,6 +14,10 @@ public class Path : MonoBehaviour
         if (collision.CompareTag("Spil1"))
             { 
                 Debug.Log("Canvas touched");
+            if (collision.CompareTag("eyo"))
+                Debug.Log("Canvas EYO");
+            if (collision.CompareTag("YOYO"))
+                Debug.Log("EYEHO");
         }
 
     }
