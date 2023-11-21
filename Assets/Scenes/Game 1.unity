@@ -618,8 +618,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberToSpawn: 1
   spawnPool:
-  - {fileID: 8362547777605935100, guid: c121411899eaf4790971b7420ff04c91, type: 3}
-  - {fileID: 8362547777605935100, guid: c528c8aa99d62466c8441c0e9665adb6, type: 3}
+  - {fileID: 5149980204843527668, guid: 65ec0acc5164044d9a04038b618250ae, type: 3}
+  - {fileID: 5149980204843527668, guid: 65ec0acc5164044d9a04038b618250ae, type: 3}
+  - {fileID: 5149980204843527668, guid: 65ec0acc5164044d9a04038b618250ae, type: 3}
+  - {fileID: 1644392830185893964, guid: 7ca4e608902314a30814a87efd1ea019, type: 3}
+  - {fileID: 1644392830185893964, guid: 7ca4e608902314a30814a87efd1ea019, type: 3}
+  - {fileID: 1644392830185893964, guid: 7ca4e608902314a30814a87efd1ea019, type: 3}
+  - {fileID: 7908542079108776205, guid: a25787cde597344af8a018ae4b44cdcd, type: 3}
+  - {fileID: 7908542079108776205, guid: a25787cde597344af8a018ae4b44cdcd, type: 3}
+  - {fileID: 7908542079108776205, guid: a25787cde597344af8a018ae4b44cdcd, type: 3}
+  - {fileID: 8048829014501037345, guid: 0e4b25533291c43818bf04c0ed4707b2, type: 3}
+  - {fileID: 1877737393330821745, guid: ae95846437f8c44aebb13e4ebef53e2c, type: 3}
+  - {fileID: 1129276444033775692, guid: 07fa8756491cc49e5bd260ba3e9d20ef, type: 3}
   quad: {fileID: 940082647}
   frequency: 2
   initialSpeed: 2
