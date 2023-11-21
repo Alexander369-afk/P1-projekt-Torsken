@@ -46,12 +46,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
-    uniqueID: 3436913165
-    locked: 0
-  - name: Particles
-    uniqueID: 717140995
-    locked: 0
-  - name: Camera
-    uniqueID: 712549769
-    locked: 0
