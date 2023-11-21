@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2587765547505925131}
   - component: {fileID: 672223623826434368}
-  - component: {fileID: 7814413651676713905}
   - component: {fileID: 7234222776990002284}
+  - component: {fileID: 7814413651676713905}
   - component: {fileID: 9112241594315657687}
   - component: {fileID: 4965932030483589155}
   - component: {fileID: 2948958432366495026}
@@ -89,6 +89,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7234222776990002284
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149980204843527668}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce495bf68188e418cb189a7e3063f0a4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &7814413651676713905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,27 +122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65597863081d4110ba09ee2b30bff51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &7234222776990002284
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5149980204843527668}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e024e7d8914a4f32a96f5d7eb351cbe, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &9112241594315657687
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,6 +5,13 @@ public class DraggableSprite : MonoBehaviour
     private bool isDragging = false;
     private Vector2 clickOffset;
 
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Update()
     {
         if (isDragging)
@@ -35,8 +42,11 @@ public class DraggableSprite : MonoBehaviour
 
     private void Explode()
     {
-        // Handle explosion logic here
-        Debug.Log("Bubble Exploded!");
-        Destroy(gameObject);
+        animator.SetTrigger("PopTrigger");
+
+        float delay = 1.0f;
+
+        Destroy(gameObject, delay);
+
     }
 }
