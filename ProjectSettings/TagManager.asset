@@ -8,6 +8,7 @@ TagManager:
   - Destory
   - Destroy
   - Square
+  - Minigame 1
   layers:
   - Default
   - TransparentFX
