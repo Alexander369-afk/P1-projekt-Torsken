@@ -149,8 +149,8 @@ Transform:
   m_GameObject: {fileID: 38536564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3}
-  m_LocalScale: {x: 118.83, y: 49.74368, z: 18.12424}
+  m_LocalPosition: {x: 0.0027, y: 0.0032, z: 3}
+  m_LocalScale: {x: 118.51778, y: 50.002697, z: 18.12424}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1137930283}
@@ -336,7 +336,7 @@ Camera:
   far clip plane: 100
   field of view: 173.4
   orthographic: 1
-  orthographic size: 530.3623
+  orthographic size: 542.7949
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -361,7 +361,7 @@ Transform:
   m_GameObject: {fileID: 766896129}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 953, y: 538, z: -10.1}
+  m_LocalPosition: {x: 937, y: 528, z: -10.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5541,9 +5541,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1381927230}
   - component: {fileID: 1381927229}
+  - component: {fileID: 1381927231}
+  - component: {fileID: 1381927232}
   m_Layer: 0
   m_Name: Vector fisk png
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5609,12 +5611,60 @@ Transform:
   m_GameObject: {fileID: 1381927228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 276, y: 573, z: 0}
+  m_LocalPosition: {x: 1148, y: 573, z: 0}
   m_LocalScale: {x: 19.57835, y: 19.57835, z: 19.57835}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1381927231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381927228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e67561824ee439d9e526635e14a6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+--- !u!70 &1381927232
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381927228}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12, y: 0.5}
+  m_Size: {x: 14.3, y: 4.7}
+  m_Direction: 1
 --- !u!1 &1594088364
 GameObject:
   m_ObjectHideFlags: 0
@@ -5818,5 +5868,5 @@ SceneRoots:
   - {fileID: 1353773359}
   - {fileID: 1594088368}
   - {fileID: 294793245}
-  - {fileID: 1381927230}
   - {fileID: 1734250986}
+  - {fileID: 1381927230}

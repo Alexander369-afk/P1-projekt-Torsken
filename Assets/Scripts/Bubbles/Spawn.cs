@@ -44,5 +44,4 @@ public class Spawn : MonoBehaviour
             Instantiate(toSpawn, pos, toSpawn.transform.rotation);
         }
     }
-    
 }
