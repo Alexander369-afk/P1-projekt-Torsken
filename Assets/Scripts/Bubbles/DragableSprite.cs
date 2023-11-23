@@ -7,6 +7,15 @@ public class DraggableSprite : MonoBehaviour
 
     private Animator animator;
 
+    [SerializeField] bool isPlayer;
+    [SerializeField] int score = 1;
+    ScoreKeeper scoreKeeper;
+
+    private void Awake()
+    {
+        scoreKeeper = FindAnyObjectByType<ScoreKeeper>();
+    }
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -40,13 +49,12 @@ public class DraggableSprite : MonoBehaviour
         isDragging = false;
     }
 
-    private void Explode()
-    {
+    void Explode()
+    { 
+        scoreKeeper.ModifyScore(score);
         animator.SetTrigger("PopTrigger");
-
-        float delay = 1.0f;
-
-        Destroy(gameObject, delay);
+        float delay = 0.2f;
+        Destroy(gameObject,delay);
 
     }
 }

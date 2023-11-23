@@ -22,11 +22,14 @@ public class DamagingObject : MonoBehaviour
                 // Inflict damage on the player
                 playerHealth.TakeDamage(damageAmount);
 
+                // Destroy the damaging object after it collides with the player
+                Destroy(gameObject);
             }
+
+
+
+
         }
     }
-    
-
-
 }
 

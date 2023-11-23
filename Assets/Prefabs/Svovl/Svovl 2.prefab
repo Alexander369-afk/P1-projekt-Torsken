@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3505381758874111060}
   - component: {fileID: 776262482140151269}
   - component: {fileID: 4622352165730890097}
+  - component: {fileID: 4095424650908165502}
   m_Layer: 0
   m_Name: Svovl 2
   m_TagString: Bubble
@@ -139,7 +140,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: -4
+  m_GravityScale: -6
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -180,7 +181,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.05, y: 0.28}
@@ -198,6 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65597863081d4110ba09ee2b30bff51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 0
+  score: 1
 --- !u!114 &4622352165730890097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,3 +213,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9db2d0a681c04e418fcd790e519a75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4095424650908165502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877737393330821745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2c2f046e16f45ccb7082f10fb5910e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5

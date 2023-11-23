@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 2587765547505925131}
   - component: {fileID: 672223623826434368}
   - component: {fileID: 7234222776990002284}
-  - component: {fileID: -7669125471214036556}
+  - component: {fileID: -2826403460138259742}
   - component: {fileID: 7814413651676713905}
   - component: {fileID: 9112241594315657687}
   - component: {fileID: 4965932030483589155}
   - component: {fileID: 2948958432366495026}
+  - component: {fileID: -3296168479167152783}
   m_Layer: 0
   m_Name: Methan 1
   m_TagString: Bubble
@@ -111,7 +112,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-7669125471214036556
+--- !u!114 &-2826403460138259742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,10 +121,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5149980204843527668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cfae87e56edc4a1d8a1f73a436d5887, type: 3}
+  m_Script: {fileID: 11500000, guid: ee2c2f046e16f45ccb7082f10fb5910e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 1
+  damage: 1
 --- !u!114 &7814413651676713905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65597863081d4110ba09ee2b30bff51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 0
+  score: 1
 --- !u!114 &9112241594315657687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,12 +180,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.066221684, y: 0.34796643}
+  m_Offset: {x: -0.066221684, y: 0.33706838}
   serializedVersion: 2
-  m_Radius: 2.804067
+  m_Radius: 2.2918408
 --- !u!50 &2948958432366495026
 Rigidbody2D:
   serializedVersion: 4
@@ -210,3 +213,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-3296168479167152783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149980204843527668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cfae87e56edc4a1d8a1f73a436d5887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1

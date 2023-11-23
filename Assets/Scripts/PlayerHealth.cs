@@ -9,48 +9,37 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 3;
     private int currentHealth;
+    private Flash flash;
 
     void Start()
     {
         currentHealth = maxHealth;
+        flash = GetComponent<Flash>();
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public int GetMaxHealth()
     {
-        // Check if the colliding object is the damaging object
-        if (collision.gameObject.CompareTag("Bubble"))
-        {
-            // Get the DamagingObject component from the colliding object
-            DamagingObject Bubble = collision.gameObject.GetComponent<DamagingObject>();
-
-            // Check if the DamagingObject component is found
-            if (Bubble != null)
-            {
-                // Handle damage logic
-                TakeDamage(Bubble.damageAmount);
-
-                // Optionally, destroy the damaging object after collision
-                Destroy(collision.gameObject);
-            }
-        }
+        return maxHealth;
     }
-  
+
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
 
     public void TakeDamage(int damageAmount)
     {
-        // Reduce player's health
         currentHealth -= damageAmount;
+        StartCoroutine(flash.FlashRoutine());
+        DetectDeath();
+    }
 
-        // Add any additional logic, such as checking for death
+    private void DetectDeath()
+    {
         if (currentHealth <= 0)
         {
-            Kill();
+            Destroy(gameObject);
         }
     }
-
-    void Kill()
-    {
-        // Handle player death, e.g., play death animation, reset level, etc.
-        Destroy(gameObject);
-    }
 }
+
