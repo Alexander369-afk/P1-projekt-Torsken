@@ -3,28 +3,40 @@ using UnityEngine.UI;
 
 public class FunctionalityFunctions3 : MonoBehaviour
 {
-    public Button myButton;
-    private Animator animations;
-    private Vector2 moveDistance = new Vector2(-760f, -524f);
+    public Button button;               // Reference to the button that triggers the animation
+    public Animator targetAnimator;     // Reference to the Animator component of the UI element with the animation
 
-    void Start()
+    private void Start()
     {
-        animations = GetComponent<Animator>();
-        myButton.onClick.AddListener(ButtonClick);
+        // Attach the button click listener
+        if (button != null)
+        {
+            button.onClick.AddListener(PlayAnimation);
+            Debug.Log("sut");
+        }
+        else
+        {
+            Debug.LogError("Button reference not set in the inspector.");
+        }
+
+        // Ensure the targetAnimator is assigned
+        if (targetAnimator == null)
+        {
+            Debug.LogError("Target Animator reference not set in the inspector.");
+        }
     }
 
-    // Method to be called when the button is clicked
-    void ButtonClick()
+    private void PlayAnimation()
     {
-        Debug.Log("Button Clicked!");
-
-        // Move the object when the button is clicked
-        transform.Translate(moveDistance, Space.World);
-
-        // Trigger animation if available
-       /* if (animations != null)
+        Debug.Log("Hello");
+        // Play the animation on the target UI element
+        if (targetAnimator != null)
         {
-            animations.SetTrigger("stenos");
-        } */
+            targetAnimator.SetTrigger("PlayAnimation"); // "PlayAnimation" is a trigger parameter in the Animator
+        }
+        else
+        {
+            Debug.LogError("Target Animator component not found.");
+        }
     }
 }
