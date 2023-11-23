@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class DamagingObject : MonoBehaviour
 {
-    public int damageAmount = 1;
+    [SerializeField] int damageAmount = 1;
 
     void OnTriggerEnter2D(Collider2D other)
     {

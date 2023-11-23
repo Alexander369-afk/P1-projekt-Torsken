@@ -14,7 +14,14 @@ public class UIDisplay : MonoBehaviour
     [Header("Score")]
     [SerializeField] TextMeshProUGUI scoreText;
 
+    [SerializeField] GameObject deathPanel; 
+
     ScoreKeeper scoreKeeper;
+
+    public void ToggleDeathPanel()
+    {
+        deathPanel.SetActive(!deathPanel.activeSelf);
+    }
 
     void Awake()
     {
