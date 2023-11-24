@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    
     public int maxHealth = 3;
     private int currentHealth;
     private Flash flash;
@@ -38,7 +39,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            
             LevelManager.instance.GameOver();
+            
             gameObject.SetActive(false);
         }
     }

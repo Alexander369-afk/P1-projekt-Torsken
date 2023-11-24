@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 2507418037690583979}
   - component: {fileID: 138277780899083072}
   - component: {fileID: 6665045000446611106}
-  - component: {fileID: -6346054426435317804}
   m_Layer: 0
   m_Name: Methan 3
   m_TagString: Bubble
@@ -35,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1026.1381, y: 405.04852, z: 0}
-  m_LocalScale: {x: 40.3, y: 40.3, z: 40.3}
+  m_LocalScale: {x: 50.000004, y: 50.000004, z: 50.000004}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -215,19 +214,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
 --- !u!114 &6665045000446611106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7908542079108776205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cfae87e56edc4a1d8a1f73a436d5887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 1
---- !u!114 &-6346054426435317804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

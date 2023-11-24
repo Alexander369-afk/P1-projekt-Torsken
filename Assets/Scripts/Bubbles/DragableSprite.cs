@@ -4,7 +4,7 @@ public class DraggableSprite : MonoBehaviour
 {
     private bool isDragging = false;
     private Vector2 clickOffset;
-
+    
     private Animator animator;
 
     [SerializeField] bool isPlayer;
@@ -19,6 +19,7 @@ public class DraggableSprite : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        
     }
 
     void Update()
@@ -57,4 +58,6 @@ public class DraggableSprite : MonoBehaviour
         Destroy(gameObject,delay);
 
     }
+
+    
 }

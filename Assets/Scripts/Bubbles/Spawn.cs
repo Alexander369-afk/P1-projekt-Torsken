@@ -14,6 +14,8 @@ public class Spawn : MonoBehaviour
 
     float lastSpawnedTime;
 
+    private bool isGameActive = true;
+
     void Update()
     {
         if (Time.time > lastSpawnedTime + frequency)
@@ -44,4 +46,9 @@ public class Spawn : MonoBehaviour
             Instantiate(toSpawn, pos, toSpawn.transform.rotation);
         }
     }
+    public void SetGameActive(bool isActive)
+    {
+        isGameActive = isActive;
+    }
 }
+
