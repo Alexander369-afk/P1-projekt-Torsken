@@ -10,11 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 5666873543460255145}
   - component: {fileID: 2855776526739417782}
-  - component: {fileID: 3622118894556565165}
   - component: {fileID: 3837842632841870222}
-  - component: {fileID: 7131713767312062006}
   - component: {fileID: 8000698208233216261}
   - component: {fileID: 2736553615871027148}
+  - component: {fileID: 3622118894556565165}
+  - component: {fileID: 7131713767312062006}
+  - component: {fileID: -1644639946360197288}
+  - component: {fileID: -9026648311573109636}
   m_Layer: 0
   m_Name: Methan 2
   m_TagString: Bubble
@@ -32,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1026.1381, y: 405.04852, z: 0}
-  m_LocalScale: {x: 61.4, y: 61.4, z: 61.4}
+  m_LocalScale: {x: 55, y: 55, z: 55}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -89,18 +91,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3622118894556565165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644392830185893964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b65597863081d4110ba09ee2b30bff51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &3837842632841870222
 Animator:
   serializedVersion: 5
@@ -111,7 +101,7 @@ Animator:
   m_GameObject: {fileID: 1644392830185893964}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e024e7d8914a4f32a96f5d7eb351cbe, type: 2}
+  m_Controller: {fileID: 9100000, guid: 696afcabf6e77472291469e640c99acd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -122,18 +112,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7131713767312062006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644392830185893964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9db2d0a681c04e418fcd790e519a75c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &8000698208233216261
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -163,7 +141,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.066221684, y: 0.34796643}
@@ -196,3 +174,55 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3622118894556565165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644392830185893964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65597863081d4110ba09ee2b30bff51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  score: 1
+--- !u!114 &7131713767312062006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644392830185893964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9db2d0a681c04e418fcd790e519a75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1644639946360197288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644392830185893964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2c2f046e16f45ccb7082f10fb5910e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+--- !u!114 &-9026648311573109636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644392830185893964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cfae87e56edc4a1d8a1f73a436d5887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
