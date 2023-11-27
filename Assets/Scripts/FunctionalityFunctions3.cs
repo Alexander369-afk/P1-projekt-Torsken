@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FunctionalityFunctions3 : MonoBehaviour
+/*public class FunctionalityFunctions3 : MonoBehaviour
 {
     public Button button;               // Reference to the button that triggers the animation
     public Animator targetAnimator;     // Reference to the Animator component of the UI element with the animation
@@ -40,3 +40,4 @@ public class FunctionalityFunctions3 : MonoBehaviour
         }
     }
 }
+*/
