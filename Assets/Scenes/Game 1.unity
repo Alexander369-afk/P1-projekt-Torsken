@@ -123,6 +123,34 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &370804982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7758255969168280205, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
+  m_PrefabInstance: {fileID: 7802822295886930688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &370804983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1415354193799115480, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
+  m_PrefabInstance: {fileID: 7802822295886930688}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370804982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff327da20eee643589833b5be1da6fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &370804987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370804982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8700a5c61201244938f8e6681a1c8eeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7802822295886930688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -183,6 +211,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7525735706942523023, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7794668111695190590, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 826.0867
@@ -191,10 +223,27 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 566.435
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8621878040985090927, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 370804983}
+    - target: {fileID: 8621878040985090927, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621878040985090927, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadCurrentScene
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5565777824962704510, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
+    - {fileID: 8230050528034013104, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7758255969168280205, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 370804987}
   m_SourcePrefab: {fileID: 100100000, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

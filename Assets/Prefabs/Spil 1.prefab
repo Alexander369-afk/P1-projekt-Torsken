@@ -1546,7 +1546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7092328476313826881
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2604,7 +2604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8606460402115259146
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4352,7 +4352,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7758255969168280205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 811fa1ec2b04f41e1bd1e815f31dc18f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8700a5c61201244938f8e6681a1c8eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4479900628549870729
@@ -4395,7 +4395,6 @@ GameObject:
   - component: {fileID: 6644212941513148215}
   - component: {fileID: 7219832456538062566}
   - component: {fileID: 1649989185787741688}
-  - component: {fileID: 5565777824962704510}
   - component: {fileID: 5979109007175234260}
   - component: {fileID: 4608135081128720372}
   - component: {fileID: 8770288359447715131}
@@ -4508,19 +4507,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.12, y: 0.5}
   m_Size: {x: 14.3, y: 4.7}
   m_Direction: 1
---- !u!114 &5565777824962704510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7779473031509308609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40ce346a8d4d045acb31688e5c5a926c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 7
 --- !u!114 &5979109007175234260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6368,6 +6354,10 @@ PrefabInstance:
     - target: {fileID: 677617047457056092, guid: bcd478e1c73344d48af6aa5f16775428, type: 3}
       propertyPath: m_Name
       value: UI Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 677617047457056092, guid: bcd478e1c73344d48af6aa5f16775428, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1372481546222666142, guid: bcd478e1c73344d48af6aa5f16775428, type: 3}
       propertyPath: m_LocalPosition.z
