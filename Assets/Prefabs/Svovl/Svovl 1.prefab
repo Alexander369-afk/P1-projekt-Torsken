@@ -14,7 +14,9 @@ GameObject:
   - component: {fileID: 2700700981321222298}
   - component: {fileID: 1323565687120048624}
   - component: {fileID: 3039737299514337968}
+  - component: {fileID: -7012368794389074205}
   - component: {fileID: 2291482443456772380}
+  - component: {fileID: -6044681037028475056}
   m_Layer: 0
   m_Name: Svovl 1
   m_TagString: Bubble
@@ -32,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 980.0585, y: 536.5266, z: 0}
-  m_LocalScale: {x: 38.68, y: 38.68, z: 38.68}
+  m_LocalScale: {x: 45, y: 45, z: 45}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,7 +101,7 @@ Animator:
   m_GameObject: {fileID: 8048829014501037345}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 62be7c2cb13654a55806efc6b56ed295, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7424240a0a9434bdba87e7c2ac21192c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -125,7 +127,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: -3
+  m_GravityScale: -10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -166,7 +168,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.05, y: 0.28}
@@ -184,6 +186,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65597863081d4110ba09ee2b30bff51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 0
+  score: 2
+--- !u!114 &-7012368794389074205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8048829014501037345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cfae87e56edc4a1d8a1f73a436d5887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 5
 --- !u!114 &2291482443456772380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,3 +213,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9db2d0a681c04e418fcd790e519a75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6044681037028475056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8048829014501037345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2c2f046e16f45ccb7082f10fb5910e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
