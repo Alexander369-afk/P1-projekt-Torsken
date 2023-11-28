@@ -30,7 +30,7 @@ public class Torsken : MonoBehaviour
 
         sceneCount = sceneCount + 1;
         Debug.Log("har snakket med bakterie");
-        Debug.Log(sceneCount);
+        //Debug.Log(sceneCount);
     }
     //indtil her
     bool IsColliding()
@@ -56,8 +56,8 @@ public class Torsken : MonoBehaviour
 
         if (sceneCount == 5)
         {
-            transform.Translate(new Vector2(spd * Time.deltaTime, 0.001f));
-            spd = 6f;
+            transform.Translate(new Vector2(spd * Time.deltaTime, 0.005f));
+            spd = 1f;
         }
 
         if (sceneCount == 2)
@@ -78,9 +78,12 @@ public class Torsken : MonoBehaviour
 
         if (IsColliding() && sceneCount == 4)
         {
-
             sceneCount = sceneCount + 1;
-
         }
+
+        /**for (int i = 0; i < sceneCount; i++)
+        {
+            Debug.Log("Scene count is " + sceneCount);
+        }**/
     }
 }
