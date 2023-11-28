@@ -10,6 +10,7 @@ public class Torsken : MonoBehaviour
     private bool sceneFourExecuted = false;
     [SerializeField] private int sceneCountCheck = 1;
     public GameObject Spil1;
+    private int erSpil1Done = 0;
 
     private void Awake()
     {
@@ -101,6 +102,9 @@ public class Torsken : MonoBehaviour
             Debug.Log("Ankommet til sten + forklar spillet");
             StartCoroutine(CountDownTimer(4f));
             sceneCount = sceneCount + 1;
+
+            GameObject spil1starter = Instantiate(Spil1);
+            spil1starter.SetActive(true);                                   //Starter spil 1
         }
 
         /*if (sceneCount == 6)
@@ -114,19 +118,23 @@ public class Torsken : MonoBehaviour
             Debug.Log("Spillet er i gang");
             transform.Translate(Vector2.right * spd * Time.deltaTime);
 
-            GameObject spil1starter = Instantiate(Spil1);
-            spil1starter.SetActive(true);                                   //Starter spil 1
-
             sceneCount = sceneCount + 1;
         }
 
         if(sceneCount == 8)
         {
+            erSpil1Done = Path.spil1done;
             spd = 3;
             transform.Translate(Vector2.right * spd * Time.deltaTime);      //Spiller spil 1
+            
+            if(erSpil1Done == 1)
+            {
+                sceneCount++;
+            }
         }
 
-        if (sceneCount == 10)
+
+        if (sceneCount == 9)
         {
             spd = 1.5f;
             transform.Translate(Vector2.right * spd * Time.deltaTime);      //Svømmer op til vandmænd
@@ -144,18 +152,18 @@ public class Torsken : MonoBehaviour
     {
         if (IsColliding() && sceneCount == 1)
         {
-            sceneCount = sceneCount + 1;
+            sceneCount++;
         }
 
         if (IsColliding() && sceneCount == 4)
         {
-            sceneCount = sceneCount + 1;
+            sceneCount++;
         }
 
-        if (IsColliding() && sceneCount == 9)
+        /*if (IsColliding() && sceneCount == 9)
         {
-            sceneCount = sceneCount + 1;
-        }
+            sceneCount++;
+        }*/
         /**for (int i = 0; i < sceneCount; i++)
 
         {

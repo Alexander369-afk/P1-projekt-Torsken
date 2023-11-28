@@ -4,10 +4,24 @@ using UnityEngine;
 
 public class VandmændStop : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    int nextScene;
+    public BoxCollider2D myBoxCollider;
+    // Start is called before the first frame update
+    void Start()
     {
-        Debug.Log("Wow! Something entered the Box Collider.");
 
-        // Your additional code here if needed
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        nextScene = Torsken.sceneCount;
+
+        if (nextScene == 9)
+        {
+            myBoxCollider.enabled = false;
+        }
+
     }
 }

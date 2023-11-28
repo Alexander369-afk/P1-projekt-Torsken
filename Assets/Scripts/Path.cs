@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Path : MonoBehaviour
 {
-   [SerializeField] Transform[] Waypoints;
+   [SerializeField] Transform[] Waypoints= new Transform[10];
 
    [SerializeField] private float movespeed;
 
-    private int waypointsIndex;
+    int nextScene;
+    public static int spil1done = 0; //bør være en true/false
+
+    public int waypointsIndex;
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
         //if (collision.CompareTag("Spil1"))
@@ -23,20 +26,32 @@ public class Path : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = Waypoints[waypointsIndex].transform.position;
+
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(waypointsIndex <= Waypoints.Length - 1)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, Waypoints[waypointsIndex].transform.position, movespeed * Time.deltaTime);
+        nextScene = Torsken.sceneCount;
+       
+        if (nextScene == 8) {
+            Debug.Log("Hamna");
 
-            if(transform.position == Waypoints[waypointsIndex].transform.position)
+            transform.position = Waypoints[waypointsIndex].transform.position;
+
+            if (waypointsIndex <= Waypoints.Length - 1 && nextScene == 8)
             {
-                waypointsIndex += 1;
+
+                transform.position = Vector2.MoveTowards(transform.position, Waypoints[waypointsIndex].transform.position, movespeed * Time.deltaTime);
+
+                if (transform.position == Waypoints[waypointsIndex].transform.position)
+                {
+                    waypointsIndex += 1;
+                }
+            } else {
+                spil1done++;
+                nextScene++;
             }
         }
     }
