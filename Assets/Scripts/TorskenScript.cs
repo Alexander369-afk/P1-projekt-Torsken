@@ -8,16 +8,23 @@ public class Torsken : MonoBehaviour
     private Rigidbody2D rb;
     public static int sceneCount = 1;
     private bool sceneFourExecuted = false;
+    [SerializeField] private int sceneCountCheck = 1;
+    public GameObject Spil1;
 
+    private void Awake()
+    {
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
     //fra CHATGPT --> 
-    IEnumerator CountDownTimer()
+
+    IEnumerator CountDownTimer(float timer)
     {
-        float timer = 5f; // Set the initial timer value to 5 seconds
+        //float timer = 5f; // Set the initial timer value to 5 seconds
+        Debug.Log("Timer kører");
 
         while (timer > 0f)
         {
@@ -29,7 +36,6 @@ public class Torsken : MonoBehaviour
         }
 
         sceneCount = sceneCount + 1;
-        Debug.Log("har snakket med bakterie");
         //Debug.Log(sceneCount);
     }
     //indtil her
@@ -42,29 +48,96 @@ public class Torsken : MonoBehaviour
 
     void Update()
     {
+        if(sceneCountCheck == sceneCount)
+        {
+            Debug.Log("scene count is " + sceneCount);
+            sceneCountCheck++;
+        }
+
+        /**
+        sceneCount 1: Torsken svømmer hen til bakterie
+        sceneCount 2: Torsken stopper ved bakterie og timer starter
+        sceneCount 3: Timer er igang + snakker med bakterie
+        sceneCount 4: Timer stopper og torsken svømmer hurtigt mod sten (CUT SCENE)
+        sceneCount 5: Torsken stopper ved stenen og spil 1 starter
+        sceneCount 6: Spillet bliver forklaret
+        sceneCount 7: SPIL 1 STARTER!!!!
+        sceneCount 8: SPIL 1 DONE
+        sceneCount 9: Svømmer op til vandmænd
+        sceneCount 10:
+        sceneCount 11:
+        sceneCount 12:
+        sceneCount 13:
+        sceneCount 14:
+        sceneCount 15:
+        **/
+
+
         if (sceneCount == 1)
         {
             transform.Translate(Vector2.right * spd * Time.deltaTime);
         }
 
+        if (sceneCount == 2)
+        {
+            StartCoroutine(CountDownTimer(5f));
+            sceneCount = sceneCount + 1;
+        }
+
+        /**if (sceneCount == 3)
+        { 
+            
+        }**/
+
         if (sceneCount == 4)
         {
             spd = 15f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, 0.0001f));
+            transform.Translate(new Vector2(spd * Time.deltaTime, 0.005f));
 
         }
 
         if (sceneCount == 5)
         {
-
-        }
-
-        if (sceneCount == 2)
-        {
-            StartCoroutine(CountDownTimer());
-            Debug.Log("timer er startet");
+            Debug.Log("Ankommet til sten + forklar spillet");
+            StartCoroutine(CountDownTimer(4f));
             sceneCount = sceneCount + 1;
         }
+
+        /*if (sceneCount == 6)
+        {
+
+        }*/
+
+        if (sceneCount == 7)
+        {
+            spd = 2;
+            Debug.Log("Spillet er i gang");
+            transform.Translate(Vector2.right * spd * Time.deltaTime);
+
+            GameObject spil1starter = Instantiate(Spil1);
+            spil1starter.SetActive(true);                                   //Starter spil 1
+
+            sceneCount = sceneCount + 1;
+        }
+
+        if(sceneCount == 8)
+        {
+            spd = 3;
+            transform.Translate(Vector2.right * spd * Time.deltaTime);      //Spiller spil 1
+        }
+
+        if (sceneCount == 10)
+        {
+            spd = 1.5f;
+            transform.Translate(Vector2.right * spd * Time.deltaTime);      //Svømmer op til vandmænd
+            StartCoroutine(CountDownTimer(2f));
+
+            GameObject spil1starter = Instantiate(Spil1);
+            spil1starter.SetActive(false);                                   //Slutter spil 1
+        }
+
+        //Debug.Log(sceneCount);
+
     }
 
     private void FixedUpdate()
@@ -72,7 +145,6 @@ public class Torsken : MonoBehaviour
         if (IsColliding() && sceneCount == 1)
         {
             sceneCount = sceneCount + 1;
-            // Debug.Log(sceneCount);
         }
 
         if (IsColliding() && sceneCount == 4)
@@ -80,7 +152,12 @@ public class Torsken : MonoBehaviour
             sceneCount = sceneCount + 1;
         }
 
+        if (IsColliding() && sceneCount == 9)
+        {
+            sceneCount = sceneCount + 1;
+        }
         /**for (int i = 0; i < sceneCount; i++)
+
         {
             Debug.Log("Scene count is " + sceneCount);
         }**/
