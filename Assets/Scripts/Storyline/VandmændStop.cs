@@ -13,7 +13,7 @@ public class VandmændStop : MonoBehaviour
         nxtScnVnmd = true;
 
         myBoxCollider.enabled = false;
-        Debug.Log("nxtScnBak is " + nxtScnVnmd);
+        Debug.Log("nxtScnVnmd is " + nxtScnVnmd);
 
     }
 }

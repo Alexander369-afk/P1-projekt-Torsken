@@ -8,7 +8,7 @@ public class Torsken : MonoBehaviour
     private Rigidbody2D rb;
     public static int sceneCount = 1;
     private bool sceneFourExecuted = false;
-    [SerializeField] private int sceneCountCheck = 1;
+    [SerializeField] private int sceneCountCheck = 6;
     public GameObject Spil1;
     private int erSpil1Done = 0;
 
@@ -109,34 +109,25 @@ public class Torsken : MonoBehaviour
                 Debug.Log("Box Collider 2");
                 sceneCount++;
             }
-
         }
 
-        if (sceneCount == 5)
-        {
-            
+        if (sceneCount == 5){
             Debug.Log("Ankommet til sten + forklar spillet");
             StartCoroutine(CountDownTimer(4f));
-            sceneCount = sceneCount + 1;
 
             GameObject spil1starter = Instantiate(Spil1);
             spil1starter.SetActive(true);                                   //Starter spil 1
+            sceneCount = sceneCount + 1;
+
         }
-
-        /*if (sceneCount == 6)
-        {
-
-        }*/
-
-        if (sceneCount == 7)
-        {
+        
+        if (sceneCount == 7){
             //spd = 2;
             Debug.Log("Spillet er i gang");
             //transform.Translate(Vector2.right * spd * Time.deltaTime);
 
             sceneCount++;
         }
-        
         
         if(sceneCount == 8)
         {
@@ -148,29 +139,34 @@ public class Torsken : MonoBehaviour
             if (i == true)
             {
                 Debug.Log("Box Collider 3");
+                
+                GameObject spil1slutter = Instantiate(Spil1);
+                spil1slutter.SetActive(true);                                       //Slutter spil 1
+
                 sceneCount++;
             }
         }
 
         if (sceneCount == 9)
         {
-            GameObject spil1starter = Instantiate(Spil1);
-            spil1starter.SetActive(false);                                   //Slutter spil 1
+
 
             spd = 1.5f;
             transform.Translate(new Vector2(spd * Time.deltaTime, -0.001f));
             StartCoroutine(CountDownTimer(1f));
-        }
 
-        if (sceneCount == 10)
-        {
-            StartCoroutine(CountDownTimer(4f));
+            sceneCount++;
         }
 
         if (sceneCount == 11)
         {
+            //StartCoroutine(CountDownTimer(4f));
+        }
+
+        if (sceneCount == 12)
+        {
             spd = 1.5f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, 1f));  //Svømmer op til vandmænd
+            transform.Translate(new Vector2(spd * Time.deltaTime, 1f));     //Svømmer op til vandmænd
 
             StartCoroutine(CountDownTimer(2f));
         }
