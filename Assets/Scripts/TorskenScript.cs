@@ -154,8 +154,11 @@ public class Torsken : MonoBehaviour
 
         if (sceneCount == 9)
         {
+            GameObject spil1starter = Instantiate(Spil1);
+            spil1starter.SetActive(false);                                   //Slutter spil 1
+
             spd = 1.5f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, -0.1f));
+            transform.Translate(new Vector2(spd * Time.deltaTime, -0.001f));
             StartCoroutine(CountDownTimer(1f));
         }
 
@@ -170,9 +173,6 @@ public class Torsken : MonoBehaviour
             transform.Translate(new Vector2(spd * Time.deltaTime, 1f));  //Svømmer op til vandmænd
 
             StartCoroutine(CountDownTimer(2f));
-
-            GameObject spil1starter = Instantiate(Spil1);
-            spil1starter.SetActive(false);                                   //Slutter spil 1
         }
 
 
