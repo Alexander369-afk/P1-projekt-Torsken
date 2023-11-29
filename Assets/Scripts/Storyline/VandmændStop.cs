@@ -1,27 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class VandmændStop : MonoBehaviour
 {
-    int nextScene;
+    public static bool nxtScnVnmd = false;
     public BoxCollider2D myBoxCollider;
-    // Start is called before the first frame update
-    void Start()
+
+    void OnTriggerEnter2D(Collider2D other)
     {
+        nxtScnVnmd = true;
 
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        nextScene = Torsken.sceneCount;
-
-        if (nextScene == 9)
-        {
-            myBoxCollider.enabled = false;
-        }
+        myBoxCollider.enabled = false;
+        Debug.Log("nxtScnBak is " + nxtScnVnmd);
 
     }
 }

@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class BaktiereSpil : MonoBehaviour
 {
-    private int nextScene;
+    public static bool nxtScnSpl1 = false;
     public BoxCollider2D myBoxCollider;
-   
- 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        nextScene = Torsken.sceneCount;
+        nxtScnSpl1 = true;
 
-        if (nextScene == 5)
-        {
-            myBoxCollider.enabled = false;
-        }
-
+        myBoxCollider.enabled = false;
+        Debug.Log("nxtScnBak is " + nxtScnSpl1);
     }
 }
