@@ -47,3 +47,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: VIRK
+    uniqueID: 2466345347
+    locked: 0
