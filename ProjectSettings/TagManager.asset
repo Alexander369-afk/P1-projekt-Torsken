@@ -11,6 +11,7 @@ TagManager:
   - Minigame 1
   - SlutSpil1
   - Minigame2E
+  - IntroTag
   layers:
   - Default
   - TransparentFX
