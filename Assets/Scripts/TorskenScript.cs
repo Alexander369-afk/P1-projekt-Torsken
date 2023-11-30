@@ -7,10 +7,11 @@ public class Torsken : MonoBehaviour
     public float spd = 8f;
     private Rigidbody2D rb;
     public static int sceneCount = 1;
-    private bool sceneFourExecuted = false;
+    //private bool sceneFourExecuted = false;
     [SerializeField] private int sceneCountCheck = 6;
     public GameObject Spil1;
     private int erSpil1Done = 0;
+    public GameObject spil1starter;
 
     private void Awake()
     {
@@ -49,7 +50,7 @@ public class Torsken : MonoBehaviour
 
     void Update()
     {
-        if(sceneCountCheck == sceneCount)
+        if (sceneCountCheck == sceneCount)
         {
             Debug.Log("scene count is " + sceneCount);
             sceneCountCheck++;
@@ -64,7 +65,11 @@ public class Torsken : MonoBehaviour
         sceneCount 6: Spillet bliver forklaret
         sceneCount 7: SPIL 1 STARTER!!!!
         sceneCount 8: SPIL 1 I GANG
+<<<<<<< HEAD
+        sceneCount 9: Svømmer op til vandmaend
+=======
         sceneCount 9: Svï¿½mmer op til vandmï¿½nd
+>>>>>>> 3cd1351591d0df2f94a89137182dbf6e5ab1a02c
         sceneCount 10:
         sceneCount 11:
         sceneCount 12:
@@ -111,37 +116,41 @@ public class Torsken : MonoBehaviour
             }
         }
 
-        if (sceneCount == 5){
+        if (sceneCount == 5) {
             Debug.Log("Ankommet til sten + forklar spillet");
             StartCoroutine(CountDownTimer(4f));
 
-            GameObject spil1starter = Instantiate(Spil1);
-            spil1starter.SetActive(true);                                   //Starter spil 1
-            sceneCount = sceneCount + 1;
+            //spil1starter = Instantiate(Spil1);                                //Starter spil 1
+            spil1starter.SetActive(true);
+
+            sceneCount++;
 
         }
-        
-        if (sceneCount == 7){
+
+        if (sceneCount == 7) {
             //spd = 2;
             Debug.Log("Spillet er i gang");
             //transform.Translate(Vector2.right * spd * Time.deltaTime);
 
             sceneCount++;
         }
-        
-        if(sceneCount == 8)
+
+        if (sceneCount == 8)
         {
             //erSpil1Done = Path.spil1done;
             spd = 3;
             transform.Translate(Vector2.right * spd * Time.deltaTime);      //Spiller spil 1
 
+<<<<<<< HEAD
+            bool i = VandmaendStop.nxtScnVnmd;
+=======
             bool i = VandmÃ¦ndStop.nxtScnVnmd;
+>>>>>>> 3cd1351591d0df2f94a89137182dbf6e5ab1a02c
             if (i == true)
             {
                 Debug.Log("Box Collider 3");
-                
-                GameObject spil1slutter = Instantiate(Spil1);
-                spil1slutter.SetActive(true);                                       //Slutter spil 1
+
+                Destroy(spil1starter);                                       //Slutter spil 1
 
                 sceneCount++;
             }
@@ -149,29 +158,33 @@ public class Torsken : MonoBehaviour
 
         if (sceneCount == 9)
         {
-
-
             spd = 1.5f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, -0.001f));
-            StartCoroutine(CountDownTimer(1f));
+            StartCoroutine(CountDownTimer(2f));
 
             sceneCount++;
         }
 
+        if (sceneCount == 10) {
+            spd = 2.5f;
+            transform.Translate(new Vector2(spd * Time.deltaTime, -0.001f));
+        }
+
         if (sceneCount == 11)
         {
-            //StartCoroutine(CountDownTimer(4f));
+            StartCoroutine(CountDownTimer(4f));
         }
 
         if (sceneCount == 12)
         {
             spd = 1.5f;
+<<<<<<< HEAD
+            transform.Translate(new Vector2(spd * Time.deltaTime, 1f));     //Svømmer op til vandmaend
+=======
             transform.Translate(new Vector2(spd * Time.deltaTime, 1f));     //Svï¿½mmer op til vandmï¿½nd
+>>>>>>> 3cd1351591d0df2f94a89137182dbf6e5ab1a02c
 
             StartCoroutine(CountDownTimer(2f));
         }
-
-
 
     }
 
