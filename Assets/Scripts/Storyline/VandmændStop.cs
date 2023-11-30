@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class VandmændStop : MonoBehaviour
+public class VandmaendStop : MonoBehaviour
 {
     public static bool nxtScnVnmd = false;
     public BoxCollider2D myBoxCollider;
