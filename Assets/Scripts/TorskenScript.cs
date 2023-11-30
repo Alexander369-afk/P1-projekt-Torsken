@@ -143,35 +143,34 @@ public class Torsken : MonoBehaviour
                 Debug.Log("Box Collider 3");
 
                 Destroy(spil1starter);                                       //Slutter spil 1
-
+                StartCoroutine(CountDownTimer(3f));
                 sceneCount++;
             }
         }
 
-        if (sceneCount == 9)
+        if (sceneCount == 10)
         {
-            spd = 1.5f;
-            StartCoroutine(CountDownTimer(2f));
+            StartCoroutine(CountDownTimer(3f));
 
             sceneCount++;
         }
 
-        if (sceneCount == 10) {
-            spd = 2.5f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, -0.001f));
-        }
-
-        if (sceneCount == 11)
-        {
-            StartCoroutine(CountDownTimer(4f));
+        if (sceneCount == 11) {
+            spd = 3f;
+            transform.Translate(new Vector2(spd * Time.deltaTime, -0.01f));
         }
 
         if (sceneCount == 12)
         {
-            spd = 1.5f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, 1f));     //Svoemmer op til vandmaend
+            StartCoroutine(CountDownTimer(3f));
+            sceneCount++;
 
-            StartCoroutine(CountDownTimer(2f));
+        }
+
+        if (sceneCount == 14)
+        {
+            spd = 1.5f;
+            transform.Translate(new Vector2(spd * Time.deltaTime, 0.03f));     //Svoemmer op til vandmaend
         }
 
     }
