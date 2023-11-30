@@ -10,6 +10,7 @@ TagManager:
   - Square
   - Minigame 1
   - SlutSpil1
+  - Minigame2E
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Stinky Particle
-  - 
+  - Raycast
   - 
   - 
   - 

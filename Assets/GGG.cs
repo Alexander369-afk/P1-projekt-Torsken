@@ -1,9 +1,18 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainCharacter : MonoBehaviour
 {
+    // Assign these in the Unity Editor
+    public Canvas canvas; // Reference to the Canvas
+    public GameObject buttonPrefab; // Reference to the UI Button Prefab
+
+    // Your existing variables
     public float moveSpeed = 5f;
     public LayerMask obstacleLayer;
+    public GameObject jellyfish;
+    public GameObject gople;
+    public GameObject Circle;
 
     private bool isScriptActive = false;
 
@@ -11,7 +20,6 @@ public class MainCharacter : MonoBehaviour
     {
         if (isScriptActive && IsPathClear())
         {
-            // Move your character based on waypoints or any other movement logic
             MoveCharacter();
         }
 
@@ -21,55 +29,76 @@ public class MainCharacter : MonoBehaviour
 
     void MoveCharacter()
     {
-        // Implement your character's movement logic here
-        // For example, you can use a system of waypoints, input, or other methods
+        if (IsPathClear())
+        {
+            Vector2 nextPosition = Vector2.MoveTowards(transform.position, Circle.transform.position, moveSpeed * Time.deltaTime);
+            transform.position = nextPosition;
+        }
     }
 
     bool IsPathClear()
     {
-        // Input your own variables for the ray
-        Vector2 rayDirection = Vector2.right; // Replace with your desired direction
-        Vector2 rayOrigin = transform.position; // Replace with your desired origin
-        float rayDistance = 5f; // Replace with your desired distance
+        Vector2 rayDirection = new Vector2(0f, 1f);
+        Vector2 rayOrigin = transform.position;
+        float rayDistance = 160f;
 
-        // Check if the path is clear using Physics2D.Raycast for 2D games
         RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance, obstacleLayer);
-        if (hit.collider != null)
-        {
-            // Path is obstructed
-            return false;
-        }
-
-        // Path is clear
-        return true;
+        return hit.collider == null;
     }
 
     void DrawDebugRay()
     {
-        // Input your own variables for the debug ray
-        Vector2 debugRayDirection = Vector2.right; // Replace with your desired direction
-        Vector2 debugRayOrigin = transform.position; // Replace with your desired origin
-        float debugRayDistance = 5f; // Replace with your desired distance
-
-        // Draw the debug ray for visualization
+        Vector2 debugRayDirection = Vector2.right;
+        Vector2 debugRayOrigin = transform.position;
+        float debugRayDistance = 5f;
         Debug.DrawRay(debugRayOrigin, debugRayDirection * debugRayDistance, isScriptActive ? Color.green : Color.red);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Renamed from HandleTriggerEnter to ScriptMaster
         ScriptMaster(other);
     }
 
     void ScriptMaster(Collider2D other)
     {
-        if (other.CompareTag("Obstacle"))
+        if (other.CompareTag("Minispil2E"))
         {
             isScriptActive = true;
         }
-        else if (other.CompareTag("Minispil3"))
+        else if (other.CompareTag("Minispil3E"))
         {
             isScriptActive = false;
         }
+    }
+
+    void OnMouseDown()
+    {
+        if (gameObject == gople || gameObject == jellyfish)
+        {
+            ShowDirectionButtons();
+        }
+    }
+
+    void ShowDirectionButtons()
+    {
+        // Example: Instantiate UI buttons dynamically
+        SpawnDirectionButton(Vector2.right);
+        SpawnDirectionButton(Vector2.up);
+        SpawnDirectionButton(Vector2.left);
+        SpawnDirectionButton(Vector2.down);
+    }
+
+    void SpawnDirectionButton(Vector2 direction)
+    {
+        // Example: Instantiate UI button prefab and set its properties
+        GameObject buttonGO = Instantiate(buttonPrefab, canvas.transform);
+        Button button = buttonGO.GetComponent<Button>();
+        // Add a listener to the button to handle the direction
+        button.onClick.AddListener(() => MoveObject(gameObject, direction));
+    }
+
+    void MoveObject(GameObject obj, Vector2 direction)
+    {
+        obj.transform.position = direction;
     }
 }
