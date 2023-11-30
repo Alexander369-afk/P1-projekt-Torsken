@@ -25,7 +25,7 @@ public class Torsken : MonoBehaviour
     IEnumerator CountDownTimer(float timer)
     {
         //float timer = 5f; // Set the initial timer value to 5 seconds
-        Debug.Log("Timer kører");
+        Debug.Log("Timer kï¿½rer");
 
         while (timer > 0f)
         {
@@ -56,15 +56,15 @@ public class Torsken : MonoBehaviour
         }
 
         /**
-        sceneCount 1: Torsken svømmer hen til bakterie
+        sceneCount 1: Torsken svï¿½mmer hen til bakterie
         sceneCount 2: Torsken stopper ved bakterie og timer starter
         sceneCount 3: Timer er igang + snakker med bakterie
-        sceneCount 4: Timer stopper og torsken svømmer hurtigt mod sten (CUT SCENE)
+        sceneCount 4: Timer stopper og torsken svï¿½mmer hurtigt mod sten (CUT SCENE)
         sceneCount 5: Torsken stopper ved stenen og spil 1 starter
         sceneCount 6: Spillet bliver forklaret
         sceneCount 7: SPIL 1 STARTER!!!!
         sceneCount 8: SPIL 1 I GANG
-        sceneCount 9: Svømmer op til vandmænd
+        sceneCount 9: Svï¿½mmer op til vandmï¿½nd
         sceneCount 10:
         sceneCount 11:
         sceneCount 12:
@@ -135,7 +135,7 @@ public class Torsken : MonoBehaviour
             spd = 3;
             transform.Translate(Vector2.right * spd * Time.deltaTime);      //Spiller spil 1
 
-            bool i = VandmændStop.nxtScnVnmd;
+            bool i = VandmÃ¦ndStop.nxtScnVnmd;
             if (i == true)
             {
                 Debug.Log("Box Collider 3");
@@ -166,7 +166,7 @@ public class Torsken : MonoBehaviour
         if (sceneCount == 12)
         {
             spd = 1.5f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, 1f));     //Svømmer op til vandmænd
+            transform.Translate(new Vector2(spd * Time.deltaTime, 1f));     //Svï¿½mmer op til vandmï¿½nd
 
             StartCoroutine(CountDownTimer(2f));
         }
