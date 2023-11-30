@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 776262482140151269}
   - component: {fileID: 4622352165730890097}
   - component: {fileID: 4095424650908165502}
+  - component: {fileID: 2906554636928055964}
   m_Layer: 0
   m_Name: Svovl 2
   m_TagString: Bubble
@@ -226,3 +227,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+--- !u!114 &2906554636928055964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877737393330821745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65597863081d4110ba09ee2b30bff51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  score: 1
