@@ -5,7 +5,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class DeclineCall : MonoBehaviour
+
 {
+
+    [SerializeField] private float _callBackTime = 3f;
     public GameObject[] declineButton;
       void Start()
     {
@@ -17,7 +20,7 @@ public class DeclineCall : MonoBehaviour
             button.SetActive(false);
             
         }
-        Invoke("ReactivateGameObjects",3f);
+        Invoke("ReactivateGameObjects",_callBackTime);
     }
     void ReactivateGameObjects() {
 
