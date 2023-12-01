@@ -1,182 +1,286 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class Torsken : MonoBehaviour
 {
     public float spd = 8f;
     private Rigidbody2D rb;
     public static int sceneCount = 1;
-    private bool sceneFourExecuted = false;
     [SerializeField] private int sceneCountCheck = 6;
     public GameObject Spil1;
-    private int erSpil1Done = 0;
+    //private int erSpil1Done = 0;
+    public GameObject spil1starter;
+    public GameObject timelineCutscene1;
+    public GameObject cutScene1Camera;
+    public Camera mainCamera;
+    public CinemachineVirtualCamera virtualCamera;
+    public Transform initialGameObject;
+    public Transform targetGameObject;
 
-    private void Awake()
-    {
-    }
     void Start()
     {
+        // Get the Rigidbody2D component
         rb = GetComponent<Rigidbody2D>();
+
+        // Activate main camera and virtual camera at the beginning
+        ActivateMainCameraAndVirtualCamera();
     }
 
-    //fra CHATGPT --> 
-
+    // Coroutine for a countdown timer
     IEnumerator CountDownTimer(float timer)
     {
-        //float timer = 5f; // Set the initial timer value to 5 seconds
-        Debug.Log("Timer kï¿½rer");
+        Debug.Log("Timer is running");
 
         while (timer > 0f)
         {
-            // Decrease the timer by the time elapsed since the last frame
             timer -= Time.deltaTime;
-
-            // Wait for the next frame
             yield return null;
         }
 
-        sceneCount = sceneCount + 1;
-        //Debug.Log(sceneCount);
+        sceneCount++;
     }
-    //indtil her
-    bool IsColliding()
+
+    // Check if colliding with any Collider
+    
+    /*bool IsColliding()
     {
-        // Check if colliding with any Collider
         Collider2D collider = Physics2D.OverlapBox(transform.position, transform.localScale, 0);
         return collider != null;
+    }*/
+    void MoveTowardsTarget(float targetSpd)        //Man burde kalde hastighed og targetGameObject når man kalder funktionen
+    {
+        initialGameObject.position = Vector3.MoveTowards(initialGameObject.position, targetGameObject.position, targetSpd);
+
+        // Target position is the cutScene1Camera's position
+        Vector3 targetPosition = cutScene1Camera.transform.position;
+        // Move the main camera
+        mainCamera.transform.position = Vector3.MoveTowards(mainCamera.transform.position, targetPosition, targetSpd * Time.deltaTime);
+        // Move the virtual camera
+        virtualCamera.transform.position = Vector3.MoveTowards(virtualCamera.transform.position, targetPosition, targetSpd * Time.deltaTime);
+    }
+
+    // Method to activate MainCamera and VirtualCamera
+    void ActivateMainCameraAndVirtualCamera()
+    {
+        if (mainCamera != null)
+        {
+            mainCamera.enabled = true;
+        }
+        else
+        {
+            Debug.LogError("Main Camera not assigned!");
+        }
+
+        if (virtualCamera != null)
+        {
+            virtualCamera.enabled = true;
+        }
+        else
+        {
+            Debug.LogError("Virtual Camera not assigned!");
+        }
+    }
+
+    // Method to deactivate MainCamera and VirtualCamera and activate CutScene1Camera
+    void SwitchToCutSceneCamera()
+    {
+        if (cutScene1Camera != null)
+        {
+            // Disable the main camera
+            mainCamera.enabled = false;
+
+            // Disable CinemachineBrain to stop virtual camera control
+            CinemachineBrain cinemachineBrain = FindObjectOfType<CinemachineBrain>();
+            if (cinemachineBrain != null)
+            {
+                cinemachineBrain.enabled = false;
+            }
+
+            // Enable the cutScene1Camera
+            cutScene1Camera.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("CutScene1 Camera not assigned!");
+        }
     }
 
     void Update()
     {
-        if(sceneCountCheck == sceneCount)
+
+        // Check for sceneCount changes
+        if (sceneCountCheck == sceneCount)
         {
-            Debug.Log("scene count is " + sceneCount);
+            Debug.Log("Scene count is " + sceneCount);
             sceneCountCheck++;
         }
 
-        /**
-        sceneCount 1: Torsken svï¿½mmer hen til bakterie
-        sceneCount 2: Torsken stopper ved bakterie og timer starter
-        sceneCount 3: Timer er igang + snakker med bakterie
-        sceneCount 4: Timer stopper og torsken svï¿½mmer hurtigt mod sten (CUT SCENE)
-        sceneCount 5: Torsken stopper ved stenen og spil 1 starter
-        sceneCount 6: Spillet bliver forklaret
-        sceneCount 7: SPIL 1 STARTER!!!!
-        sceneCount 8: SPIL 1 I GANG
-        sceneCount 9: Svï¿½mmer op til vandmï¿½nd
-        sceneCount 10:
-        sceneCount 11:
-        sceneCount 12:
-        sceneCount 13:
-        sceneCount 14:
-        sceneCount 15:
-        **/
-
-
-        if (sceneCount == 1)
+        // Scene progression switch
+        switch (sceneCount)
         {
-            transform.Translate(Vector2.right * spd * Time.deltaTime);
-            bool i = BakterieStop.nxtScnBak;
-            if (i == true)
-            {
-                Debug.Log("Box Collider 1");
-                sceneCount++;
-            }
+            case 1:
+                // Move towards the bacteria and check for condition to change scene
+                transform.Translate(Vector2.right * spd * Time.deltaTime);
 
-        }
+                // Check if condition for scene change is met
+                if (BakterieStop.nxtScnBak)
+                {
+                    Debug.Log("Box Collider 1");
+                    StartCoroutine(CountDownTimer(5f));
+                    sceneCount++;
+                }
+                break;
 
-        if (sceneCount == 2)
-        {
-            StartCoroutine(CountDownTimer(5f));
-            sceneCount++;
-        }
+            /*case 2:
+                // Start countdown timer and increment sceneCount
+                StartCoroutine(CountDownTimer(5f));
 
-        /*if (sceneCount == 3)
-        {
-
-        }*/
-
-        if (sceneCount == 4)
-        {
-            spd = 15f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, 0.01f));
-
-            transform.Translate(Vector2.right * spd * Time.deltaTime);
-            bool i = BaktiereSpil.nxtScnSpl1;
-            if (i == true)
-            {
-                Debug.Log("Box Collider 2");
-                sceneCount++;
-            }
-        }
-
-        if (sceneCount == 5){
-            Debug.Log("Ankommet til sten + forklar spillet");
-            StartCoroutine(CountDownTimer(4f));
-
-            GameObject spil1starter = Instantiate(Spil1);
-            spil1starter.SetActive(true);                                   //Starter spil 1
-            sceneCount = sceneCount + 1;
-
-        }
-        
-        if (sceneCount == 7){
-            //spd = 2;
-            Debug.Log("Spillet er i gang");
-            //transform.Translate(Vector2.right * spd * Time.deltaTime);
-
-            sceneCount++;
-        }
-        
-        if(sceneCount == 8)
-        {
-            //erSpil1Done = Path.spil1done;
-            spd = 3;
-            transform.Translate(Vector2.right * spd * Time.deltaTime);      //Spiller spil 1
-
-            bool i = VandmÃ¦ndStop.nxtScnVnmd;
-            if (i == true)
-            {
-                Debug.Log("Box Collider 3");
-                
-                GameObject spil1slutter = Instantiate(Spil1);
-                spil1slutter.SetActive(true);                                       //Slutter spil 1
+                // Activate the TimelineCutscene1 GameObject
 
                 sceneCount++;
-            }
+                break;*/
+
+            case 3:
+                // Switch to CutScene1Camera
+                StartCoroutine(CountDownTimer(6f));
+                Debug.Log("snakker med bakterie");
+                sceneCount++;
+                break;
+
+            case 4:
+                break;
+
+            case 5:
+                StartCoroutine(CountDownTimer(10f));
+                Debug.Log("Moving camera and torsken to target");
+                sceneCount++;
+                break;
+
+            case 6:
+                MoveTowardsTarget(0.2f);
+
+                break;
+
+            case 7:
+                // Start countdown timer for 25 seconds
+                StartCoroutine(CountDownTimer(25f));
+                if (timelineCutscene1 != null)
+                {
+                    timelineCutscene1.SetActive(true);
+                    Debug.Log("Starter cutscene");
+                }
+                SwitchToCutSceneCamera();
+                sceneCount++;
+                break;
+
+            case 8:
+                MoveTowardsTarget(6f);
+                Debug.Log("Moving towards target");
+                break;
+
+            case 9:
+                // Increase speed, move towards the stone, and check for condition to change scene
+                spd = 15f;
+                transform.Translate(Vector2.right * spd * Time.deltaTime);
+
+                // Check if condition for scene change is met
+                if (BaktiereSpil.nxtScnSpl1)
+                {
+                    Debug.Log("Box Collider 2");
+                    sceneCount++;
+                }
+                break;
+
+            case 10:
+                // Arrived at the stone + explain the game
+                Debug.Log("Arrived at the stone + explain the game");
+
+                // Start countdown timer for 4 seconds
+                StartCoroutine(CountDownTimer(4f));
+
+                // Activate the Spil1 starter
+                spil1starter.SetActive(true);
+
+                // Increment sceneCount
+                sceneCount++;
+
+                // Reactivate MainCamera and VirtualCamera after CutScene
+                ActivateMainCameraAndVirtualCamera();
+                mainCamera.transform.position = new Vector3(rb.transform.position.x, rb.transform.position.y, mainCamera.transform.position.z);
+                virtualCamera.Follow = rb.transform;
+                break;
+
+            case 11:
+                break;
+
+            case 12:
+                // The game is in progress
+                Debug.Log("The game is in progress");
+                sceneCount++;
+                break;
+
+            case 13:
+                // Set speed, move towards VandmaendStop, and check for condition to change scene
+                spd = 3;
+                transform.Translate(Vector2.right * spd * Time.deltaTime);
+
+                // Check if condition for scene change is met
+                if (VandmaendStop.nxtScnVnmd)
+                {
+                    Debug.Log("Box Collider 3");
+                    Destroy(spil1starter);
+
+                    // Start countdown timer for 3 seconds
+                    StartCoroutine(CountDownTimer(3f));
+
+                    // Increment sceneCount
+                    sceneCount++;
+                }
+                break;
+
+            case 14:
+                break;
+
+            case 15:
+                // Start countdown timer for 3 seconds
+                StartCoroutine(CountDownTimer(3f));
+
+                // Increment sceneCount
+                sceneCount++;
+                break;
+
+            case 16:
+                // Move downward with a specific speed
+                spd = 3f;
+                transform.Translate(new Vector2(spd * Time.deltaTime, -0.01f));
+                break;
+
+            case 17:
+                // Start countdown timer for 3 seconds
+                StartCoroutine(CountDownTimer(3f));
+
+                // Increment sceneCount
+                sceneCount++;
+                break;
+
+            case 18:
+                break;
+
+            case 19:
+                // Move with a specific speed
+                spd = 1.5f;
+                transform.Translate(new Vector2(spd * Time.deltaTime, 0.03f));
+                break;
+
+            default:
+                // Handle other cases or leave it empty
+                break;
         }
-
-        if (sceneCount == 9)
-        {
-
-
-            spd = 1.5f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, -0.001f));
-            StartCoroutine(CountDownTimer(1f));
-
-            sceneCount++;
-        }
-
-        if (sceneCount == 11)
-        {
-            //StartCoroutine(CountDownTimer(4f));
-        }
-
-        if (sceneCount == 12)
-        {
-            spd = 1.5f;
-            transform.Translate(new Vector2(spd * Time.deltaTime, 1f));     //Svï¿½mmer op til vandmï¿½nd
-
-            StartCoroutine(CountDownTimer(2f));
-        }
-
-
-
     }
 
     private void FixedUpdate()
     {
-
+        // Additional logic for FixedUpdate if needed
     }
 }

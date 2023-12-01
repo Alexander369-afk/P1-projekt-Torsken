@@ -13,7 +13,7 @@ public class MainCharacter : MonoBehaviour
     public GameObject jellyfish;
     public GameObject gople;
     public GameObject Circle;
-
+ 
     private bool isScriptActive = false;
 
     void Update()
@@ -73,9 +73,12 @@ public class MainCharacter : MonoBehaviour
 
     void OnMouseDown()
     {
+        Debug.Log("Mouse Down on: " + gameObject.name);
+
         if (gameObject == gople || gameObject == jellyfish)
         {
             ShowDirectionButtons();
+            Debug.Log ("saut");
         }
     }
 

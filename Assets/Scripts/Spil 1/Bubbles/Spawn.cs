@@ -32,7 +32,8 @@ public class Spawn : MonoBehaviour
         MeshCollider c = quad.GetComponent<MeshCollider>();
 
         float screenX, screenY;
-        Vector2 pos;
+        float screenZ = 50f;
+        Vector3 pos;
 
         for (int i = 0; i < numberToSpawn; i++)
         {
@@ -41,7 +42,7 @@ public class Spawn : MonoBehaviour
 
             screenX = Random.Range(c.bounds.min.x, c.bounds.max.x);
             screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-            pos = new Vector2(screenX, screenY);
+            pos = new Vector3(screenX, screenY, screenZ);
 
             Instantiate(toSpawn, pos, toSpawn.transform.rotation);
         }
