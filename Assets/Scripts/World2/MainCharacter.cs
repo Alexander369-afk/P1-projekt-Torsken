@@ -10,8 +10,6 @@ public class MainCharacter : MonoBehaviour
     // Your existing variables
     public float moveSpeed = 5f;
     public LayerMask obstacleLayer;
-    public GameObject jellyfish;
-    public GameObject gople;
     public GameObject Circle;
  
     private bool isScriptActive = false;
@@ -70,38 +68,7 @@ public class MainCharacter : MonoBehaviour
             isScriptActive = false;
         }
     }
-
-    void OnMouseDown()
-    {
-        Debug.Log("Mouse Down on: " + gameObject.name);
-
-        if (gameObject == gople || gameObject == jellyfish)
-        {
-            ShowDirectionButtons();
-            Debug.Log ("saut");
-        }
-    }
-
-    void ShowDirectionButtons()
-    {
-        // Example: Instantiate UI buttons dynamically
-        SpawnDirectionButton(Vector2.right);
-        SpawnDirectionButton(Vector2.up);
-        SpawnDirectionButton(Vector2.left);
-        SpawnDirectionButton(Vector2.down);
-    }
-
-    void SpawnDirectionButton(Vector2 direction)
-    {
-        // Example: Instantiate UI button prefab and set its properties
-        GameObject buttonGO = Instantiate(buttonPrefab, canvas.transform);
-        Button button = buttonGO.GetComponent<Button>();
-        // Add a listener to the button to handle the direction
-        button.onClick.AddListener(() => MoveObject(gameObject, direction));
-    }
-
-    void MoveObject(GameObject obj, Vector2 direction)
-    {
-        obj.transform.position = direction;
-    }
+   
 }
+
+
