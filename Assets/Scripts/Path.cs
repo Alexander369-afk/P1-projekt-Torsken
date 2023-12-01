@@ -6,9 +6,12 @@ public class Path : MonoBehaviour
 {
    [SerializeField] Transform[] Waypoints;
 
-   [SerializeField] private float movespeed;
+   [SerializeField] private float moveSpeed = 2;
 
-    private int waypointsIndex;
+    int nextScene;
+    public static int spil1done = 0; //bør være en true/false
+
+    public int waypointsIndex;
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
         //if (collision.CompareTag("Spil1"))
@@ -23,20 +26,36 @@ public class Path : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = Waypoints[waypointsIndex].transform.position;
+
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(waypointsIndex <= Waypoints.Length - 1)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, Waypoints[waypointsIndex].transform.position, movespeed * Time.deltaTime);
+        nextScene = Torsken.sceneCount;
+       
+        if (nextScene == 8) {
+            Debug.Log("Hamna");
 
-            if(transform.position == Waypoints[waypointsIndex].transform.position)
+            transform.position = Waypoints[waypointsIndex].transform.position;
+
+            
+
+            if (waypointsIndex <= Waypoints.Length - 1)
             {
-                waypointsIndex += 1;
+
+                transform.position = Vector2.MoveTowards(transform.position, Waypoints[waypointsIndex].transform.position, moveSpeed * Time.deltaTime);
+
+                Debug.Log("Waypoint " + waypointsIndex);
+
+                if (transform.position == Waypoints[waypointsIndex].transform.position)
+                {
+                    waypointsIndex += 1;
+                }
+            } else {
+                spil1done++;
+                nextScene++;
             }
         }
     }

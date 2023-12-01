@@ -32,7 +32,8 @@ public class Spawn : MonoBehaviour
         MeshCollider c = quad.GetComponent<MeshCollider>();
 
         float screenX, screenY;
-        Vector2 pos;
+        //float screenZ = 50f;
+        Vector3 pos;
 
         for (int i = 0; i < numberToSpawn; i++)
         {

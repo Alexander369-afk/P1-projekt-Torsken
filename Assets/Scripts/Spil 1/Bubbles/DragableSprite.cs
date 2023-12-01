@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DraggableSprite : MonoBehaviour
+public class DragableSprite : MonoBehaviour
 {
     private bool isDragging = false;
     private Vector2 clickOffset;

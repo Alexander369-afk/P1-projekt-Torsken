@@ -9,6 +9,9 @@ TagManager:
   - Destroy
   - Square
   - Minigame 1
+  - SlutSpil1
+  - Minigame2E
+  - IntroTag
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Stinky Particle
-  - 
+  - Raycast
   - 
   - 
   - 
@@ -45,4 +48,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: VIRK
+    uniqueID: 2466345347
     locked: 0
