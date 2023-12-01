@@ -26,12 +26,12 @@ public class RotateTarget: MonoBehaviour
         // If the item is selected
         {
             Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //Vector2 is an array that contains y/x cordinates of the mouse position
+            //Vector2 is an array that contains y/x cordinates of the mouse position (called direction)
 
-            transform.position = new Vector2(cursorPos.x, cursorPos.y);
-            // move the position to these new cordinates in another array
+            transform.position = new Vector2(transform.position.x, cursorPos.y);
+            // move the position to these new cordinates in another array 
 
-            rb.velocity = new Vector2(moveSpeed, rb.velocity.x);
+            //rb.velocity = new Vector2(moveSpeed, rb.velocity.x);
             //dont know if this works :/
         }
 
