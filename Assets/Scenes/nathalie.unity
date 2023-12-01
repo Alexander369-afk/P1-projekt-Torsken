@@ -2837,6 +2837,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 51.69
       objectReference: {fileID: 0}
+    - target: {fileID: 7521630465150398239, guid: f8835f74fbc77b049b3662b1101ee03d, type: 3}
+      propertyPath: m_DirectorUpdateMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521630465150398239, guid: f8835f74fbc77b049b3662b1101ee03d, type: 3}
+      propertyPath: m_SceneBindings.Array.data[4].value
+      value: 
+      objectReference: {fileID: 1409830921}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4938,6 +4946,7 @@ GameObject:
   - component: {fileID: 1409830918}
   - component: {fileID: 1409830917}
   - component: {fileID: 1409830920}
+  - component: {fileID: 1409830921}
   m_Layer: 0
   m_Name: Torsken
   m_TagString: Player
@@ -5149,6 +5158,27 @@ MonoBehaviour:
   - {fileID: 1561403878}
   moveSpeed: 1
   waypointsIndex: 0
+--- !u!95 &1409830921
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409830912}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1410410429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6367,11 +6397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2966807745246521070, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2966807745246521070, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3089906408442077632, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
       propertyPath: m_LocalPosition.x
