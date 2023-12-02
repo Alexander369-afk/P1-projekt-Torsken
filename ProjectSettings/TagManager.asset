@@ -21,9 +21,9 @@ TagManager:
   - UI
   - Stinky Particle
   - Raycast
-  - 
-  - 
-  - 
+  - BackgroundParty
+  - MidgroundParty
+  - ForegroundParty
   - 
   - 
   - 
@@ -51,4 +51,16 @@ TagManager:
     locked: 0
   - name: VIRK
     uniqueID: 2466345347
+    locked: 0
+  - name: BackgroundParty
+    uniqueID: 262019287
+    locked: 0
+  - name: MidgroundParty
+    uniqueID: 1561996895
+    locked: 0
+  - name: ForegroundParty
+    uniqueID: 497813567
+    locked: 0
+  - name: Disco
+    uniqueID: 228643849
     locked: 0
