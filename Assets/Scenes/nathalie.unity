@@ -1728,7 +1728,7 @@ Transform:
   m_GameObject: {fileID: 489588855}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 126.3, y: 6.4, z: -0.2982781}
+  m_LocalPosition: {x: 48.35305, y: -54.37812, z: 10.57373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1743,7 +1743,7 @@ Transform:
   - {fileID: 141529463}
   - {fileID: 172410563}
   - {fileID: 1012583945}
-  m_Father: {fileID: 1584023075}
+  m_Father: {fileID: 1674942609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &603007871
 GameObject:
@@ -5140,6 +5140,7 @@ MonoBehaviour:
   sceneCountCheck: 1
   Spil1: {fileID: 975349169}
   spil1starter: {fileID: 975349169}
+  spil2: {fileID: 0}
   timelineCutscene1: {fileID: 1451204173}
   CutScene2: {fileID: 2007444817}
   cutScene1Camera: {fileID: 1802033149}
@@ -5879,9 +5880,7 @@ Transform:
   m_LocalPosition: {x: -101.08251, y: -5.7139187, z: -1.4932401}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 489588856}
-  - {fileID: 1983587372}
+  m_Children: []
   m_Father: {fileID: 236834714}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1597287442
@@ -6231,6 +6230,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 277807554}
+  - {fileID: 489588856}
+  - {fileID: 1983587372}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677609893
@@ -7195,7 +7196,7 @@ Transform:
   m_GameObject: {fileID: 1983587371}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 126.299995, y: 6.400001, z: -0.2982781}
+  m_LocalPosition: {x: 48.35305, y: -54.37812, z: 10.57373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7229,7 +7230,7 @@ Transform:
   - {fileID: 1677609894}
   - {fileID: 217895796}
   - {fileID: 603007872}
-  m_Father: {fileID: 1584023075}
+  m_Father: {fileID: 1674942609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1995588688
 GameObject:

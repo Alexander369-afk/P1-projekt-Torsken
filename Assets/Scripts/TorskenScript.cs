@@ -10,8 +10,9 @@ public class Torsken : MonoBehaviour
     [SerializeField] private int sceneCountCheck = 6;
     public GameObject Spil1;
     //private int erSpil1Done = 0;
-    public GameObject spil1starter;
-    public GameObject timelineCutscene1; //skift navn
+    public GameObject spil1starter;         //skiftnavn
+    public GameObject spil2;
+    public GameObject timelineCutscene1;    //skift navn
     public GameObject CutScene2;
     public GameObject cutScene1Camera;
     public GameObject cutScene2Camera;
@@ -23,7 +24,7 @@ public class Torsken : MonoBehaviour
 
     //SPRITESHEET!!!!
     public Sprite[] spriteSheetFrames; // Array of sprites representing the frames
-    public float frameDuration = 0.1f; // Duration for each frame
+    public float frameDuration; // Duration for each frame
     private SpriteRenderer spriteRenderer;
     private int currentFrameIndex = 0;
     private float timer = 0f;
@@ -132,13 +133,15 @@ public class Torsken : MonoBehaviour
             // Update the timer
             timer += Time.deltaTime;
 
+            frameDuration = spd / 100;
+
             // Check if it's time to switch to the next frame
             if (timer >= frameDuration)
             {
                 // Reset the timer
                 timer = 0f;
 
-                // Switch to the next frame
+                // Switch to the next frame and loops
                 currentFrameIndex = (currentFrameIndex + 1) % spriteSheetFrames.Length;
 
                 // Update the sprite renderer with the new frame
@@ -167,6 +170,7 @@ public class Torsken : MonoBehaviour
                     Debug.Log("Box Collider 1");
                     StartCoroutine(CountDownTimer(5f));
                     sceneCount++;
+                    spd = 0.1f;
                 }
                 break;
 
@@ -183,6 +187,7 @@ public class Torsken : MonoBehaviour
                 // Switch to CutScene1Camera
                 StartCoroutine(CountDownTimer(6f));
                 Debug.Log("snakker med bakterie");
+                spd = 0.1f;
                 sceneCount++;
                 break;
 
@@ -207,6 +212,7 @@ public class Torsken : MonoBehaviour
                 {
                     timelineCutscene1.SetActive(true);
                     Debug.Log("Starter cutscene");
+                    spd = 0.1f;
                 }
                 SwitchToCamera(cutScene1Camera);
                 sceneCount++;
@@ -282,11 +288,12 @@ public class Torsken : MonoBehaviour
 
             case 15:
                 // Start countdown timer for 3 seconds
-                StartCoroutine(CountDownTimer(3f));
+                StartCoroutine(CountDownTimer(20f));                //venter på at cutscene 2 spiller
                 if (CutScene2 != null)
                 {
                     CutScene2.SetActive(true);
-                    Debug.Log("Starter cutscene");
+                    Debug.Log("Starter cutscene 2");
+                    CmrFlwTorsken = false;
                 }
                 SwitchToCamera(cutScene2Camera);
 
@@ -296,15 +303,15 @@ public class Torsken : MonoBehaviour
 
             case 16:
                 // Move downward with a specific speed
-                spd = 3f;
-                transform.Translate(new Vector2(spd * Time.deltaTime, -0.01f));
+                //spd = 3f;
+                //transform.Translate(new Vector2(spd * Time.deltaTime, -0.01f));
                 break;
 
             case 17:
-                // Start countdown timer for 3 seconds
-                StartCoroutine(CountDownTimer(3f));
-
-                // Increment sceneCount
+                //Start spil 2
+                spil1starter.SetActive(true);
+                ActivateMainCameraAndVirtualCamera();
+                CmrFlwTorsken = true;
                 sceneCount++;
                 break;
 
