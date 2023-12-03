@@ -11,17 +11,28 @@ public class Torsken : MonoBehaviour
     public GameObject Spil1;
     //private int erSpil1Done = 0;
     public GameObject spil1starter;
-    public GameObject timelineCutscene1;
+    public GameObject timelineCutscene1; //skift navn
+    public GameObject CutScene2;
     public GameObject cutScene1Camera;
+    public GameObject cutScene2Camera;
     public Camera mainCamera;
     public CinemachineVirtualCamera virtualCamera;
     public Transform initialGameObject;
     public Transform targetGameObject;
+    public bool CmrFlwTorsken;
 
+    //SPRITESHEET!!!!
+    public Sprite[] spriteSheetFrames; // Array of sprites representing the frames
+    public float frameDuration = 0.1f; // Duration for each frame
+    private SpriteRenderer spriteRenderer;
+    private int currentFrameIndex = 0;
+    private float timer = 0f;
     void Start()
     {
         // Get the Rigidbody2D component
         rb = GetComponent<Rigidbody2D>();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Activate main camera and virtual camera at the beginning
         ActivateMainCameraAndVirtualCamera();
@@ -83,31 +94,58 @@ public class Torsken : MonoBehaviour
     }
 
     // Method to deactivate MainCamera and VirtualCamera and activate CutScene1Camera
-    void SwitchToCutSceneCamera()
+    void SwitchToCamera(GameObject targetCamera)
     {
-        if (cutScene1Camera != null)
+        if (targetCamera != null)
         {
             // Disable the main camera
             mainCamera.enabled = false;
 
             // Disable CinemachineBrain to stop virtual camera control
-            CinemachineBrain cinemachineBrain = FindObjectOfType<CinemachineBrain>();
-            if (cinemachineBrain != null)
+            if (FindObjectOfType<CinemachineBrain>() != null)
             {
-                cinemachineBrain.enabled = false;
+                FindObjectOfType<CinemachineBrain>().enabled = false;
             }
 
-            // Enable the cutScene1Camera
-            cutScene1Camera.SetActive(true);
+            // Enable the target camera
+            targetCamera.SetActive(true);
         }
         else
         {
-            Debug.LogError("CutScene1 Camera not assigned!");
+            // Log an error if the target camera is not assigned
+            Debug.LogError("Target Camera not assigned!");
         }
     }
 
     void Update()
     {
+        //Følg torsken
+        if (CmrFlwTorsken)
+        {
+            mainCamera.transform.position = new Vector3(rb.transform.position.x, rb.transform.position.y, mainCamera.transform.position.z);
+            virtualCamera.Follow = rb.transform;
+        }
+
+        //SPRITESHEET!!!
+        if (spriteSheetFrames.Length > 0)
+        {
+            // Update the timer
+            timer += Time.deltaTime;
+
+            // Check if it's time to switch to the next frame
+            if (timer >= frameDuration)
+            {
+                // Reset the timer
+                timer = 0f;
+
+                // Switch to the next frame
+                currentFrameIndex = (currentFrameIndex + 1) % spriteSheetFrames.Length;
+
+                // Update the sprite renderer with the new frame
+                spriteRenderer.sprite = spriteSheetFrames[currentFrameIndex];
+            }
+        }
+
 
         // Check for sceneCount changes
         if (sceneCountCheck == sceneCount)
@@ -152,14 +190,14 @@ public class Torsken : MonoBehaviour
                 break;
 
             case 5:
-                StartCoroutine(CountDownTimer(10f));
+                StartCoroutine(CountDownTimer(6f));
                 Debug.Log("Moving camera and torsken to target");
+                CmrFlwTorsken = false;
                 sceneCount++;
                 break;
 
             case 6:
-                MoveTowardsTarget(0.2f);
-
+                MoveTowardsTarget(1f);
                 break;
 
             case 7:
@@ -170,7 +208,7 @@ public class Torsken : MonoBehaviour
                     timelineCutscene1.SetActive(true);
                     Debug.Log("Starter cutscene");
                 }
-                SwitchToCutSceneCamera();
+                SwitchToCamera(cutScene1Camera);
                 sceneCount++;
                 break;
 
@@ -207,8 +245,7 @@ public class Torsken : MonoBehaviour
 
                 // Reactivate MainCamera and VirtualCamera after CutScene
                 ActivateMainCameraAndVirtualCamera();
-                mainCamera.transform.position = new Vector3(rb.transform.position.x, rb.transform.position.y, mainCamera.transform.position.z);
-                virtualCamera.Follow = rb.transform;
+                CmrFlwTorsken = true;
                 break;
 
             case 11:
@@ -240,11 +277,18 @@ public class Torsken : MonoBehaviour
                 break;
 
             case 14:
+                CmrFlwTorsken = false;
                 break;
 
             case 15:
                 // Start countdown timer for 3 seconds
                 StartCoroutine(CountDownTimer(3f));
+                if (CutScene2 != null)
+                {
+                    CutScene2.SetActive(true);
+                    Debug.Log("Starter cutscene");
+                }
+                SwitchToCamera(cutScene2Camera);
 
                 // Increment sceneCount
                 sceneCount++;
