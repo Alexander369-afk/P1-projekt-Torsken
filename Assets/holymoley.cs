@@ -1,11 +1,13 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Holymoley : MonoBehaviour
 {
     public GameObject gople;
     public GameObject jellyfish;
-    public GameObject buttonPrefab;
+    public GameObject rightTrigger;
+    public GameObject upTrigger;
+    public GameObject leftTrigger;
+    public GameObject downTrigger;
 
     void OnMouseDown()
     {
@@ -13,31 +15,49 @@ public class Holymoley : MonoBehaviour
 
         if (gameObject == gople || gameObject == jellyfish)
         {
-            ShowDirectionButtons();
+            ShowDirectionTriggers();
             Debug.Log("saut");
         }
     }
 
-    void ShowDirectionButtons()
+    void ShowDirectionTriggers()
     {
-        // Example: Instantiate UI buttons dynamically at the transform of the current game object
-        SpawnDirectionButton(Vector2.right, transform.position);
-        SpawnDirectionButton(Vector2.up, transform.position);
-        SpawnDirectionButton(Vector2.left, transform.position);
-        SpawnDirectionButton(Vector2.down, transform.position);
+        // Example: Set the triggers active at the transform of the current game object
+        SetTriggerActive(rightTrigger, new Vector2(transform.position.x, transform.position.y) + Vector2.right);
+        SetTriggerActive(upTrigger, new Vector2(transform.position.x, transform.position.y) + Vector2.up);
+        SetTriggerActive(leftTrigger, new Vector2(transform.position.x, transform.position.y) + Vector2.left);
+        SetTriggerActive(downTrigger, new Vector2(transform.position.x, transform.position.y) + Vector2.down);
     }
 
-    void SpawnDirectionButton(Vector2 direction, Vector2 position)
+    void SetTriggerActive(GameObject trigger, Vector2 position)
     {
-        // Example: Instantiate UI button prefab at the specific position
-        GameObject buttonGO = Instantiate(buttonPrefab, position, Quaternion.identity);
-        Button button = buttonGO.GetComponent<Button>();
-        // Add a listener to the button to handle the direction
-        button.onClick.AddListener(() => MoveObject(gameObject, direction));
+        // Example: Set the position and activate the trigger
+        trigger.transform.position = position;
+        trigger.SetActive(true);
     }
 
-    void MoveObject(GameObject obj, Vector2 direction)
+    void MoveObject(Vector2 direction)
     {
-        obj.transform.position = new Vector2(obj.transform.position.x + direction.x, obj.transform.position.y + direction.y);
+        transform.Translate(direction);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject == rightTrigger)
+        {
+            MoveObject(Vector2.right);
+        }
+        else if (other.gameObject == upTrigger)
+        {
+            MoveObject(Vector2.up);
+        }
+        else if (other.gameObject == leftTrigger)
+        {
+            MoveObject(Vector2.left);
+        }
+        else if (other.gameObject == downTrigger)
+        {
+            MoveObject(Vector2.down);
+        }
     }
 }
