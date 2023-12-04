@@ -7,20 +7,16 @@ using UnityEngine;
 public class DeclineCall : MonoBehaviour
 
 {
-
     [SerializeField] private float _callBackTime = 3f;
     public GameObject[] declineButton;
-      void Start()
-    {
-        // declineButton = GameObject.FindGameObjectsWithTag("IntroTag");
-    }
+
     public void Call() {
         foreach (GameObject button in declineButton)
         {
             button.SetActive(false);
             
         }
-        Invoke("ReactivateGameObjects",_callBackTime);
+        Invoke("ReactivateGameObjects", _callBackTime);
     }
     void ReactivateGameObjects() {
 
