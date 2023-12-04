@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Holymoley : MonoBehaviour
+public class KOPIHOLY : MonoBehaviour
 {
     public GameObject gople;
     public GameObject jellyfish;
@@ -13,11 +13,8 @@ public class Holymoley : MonoBehaviour
     {
         Debug.Log("Mouse Down on: " + gameObject.name);
 
-        if (gameObject == gople || gameObject == jellyfish)
-        {
-            ShowDirectionTriggers();
-            Debug.Log("saut");
-        }
+        ShowDirectionTriggers();
+        Debug.Log("saut");
     }
 
     void ShowDirectionTriggers()
@@ -34,6 +31,7 @@ public class Holymoley : MonoBehaviour
         // Example: Set the position and activate the trigger
         trigger.transform.position = position;
         trigger.SetActive(true);
+        Debug.Log("saut");
     }
 
     void MoveObject(Vector2 direction)
@@ -43,21 +41,28 @@ public class Holymoley : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject == rightTrigger)
+        // Check which trigger was collided with based on tags and move the GameObject accordingly
+        Debug.Log("Trigger activated: " + other.gameObject.name);
+
+        if (other.CompareTag("rightTrigger"))
         {
             MoveObject(Vector2.right);
+            Debug.Log("saujht");
         }
-        else if (other.gameObject == upTrigger)
+        else if (other.CompareTag("upTrigger"))
         {
             MoveObject(Vector2.up);
+            Debug.Log("saujht");
         }
-        else if (other.gameObject == leftTrigger)
+        else if (other.CompareTag("leftTrigger"))
         {
             MoveObject(Vector2.left);
+            Debug.Log("saujht");
         }
-        else if (other.gameObject == downTrigger)
+        else if (other.CompareTag("downTrigger"))
         {
             MoveObject(Vector2.down);
+            Debug.Log("sautjh");
         }
     }
 }
