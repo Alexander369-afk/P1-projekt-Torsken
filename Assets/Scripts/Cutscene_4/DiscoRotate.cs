@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class DiscoRotate : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 5f;
+
+    public Vector3 rotateAmount;        //To control how fast the light should rotate
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            DiscoRotateAroundZAxis();
-        }
+        transform.Rotate(rotateAmount * Time.deltaTime);
+        
     }
 
-    private void DiscoRotateAroundZAxis()
-    {
-        transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
-    }
+   
 
 
 }

@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,10 +113,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_0"
       rect:
         serializedVersion: 2
-        x: 337
-        y: 7996
-        width: 468
-        height: 212
+        x: 0
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_1"
       rect:
         serializedVersion: 2
-        x: 1486
-        y: 7996
-        width: 476
-        height: 212
+        x: 1153
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_2"
       rect:
         serializedVersion: 2
-        x: 2643
-        y: 7996
-        width: 469
-        height: 212
+        x: 2306
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_3"
       rect:
         serializedVersion: 2
-        x: 3793
-        y: 8003
-        width: 476
-        height: 205
+        x: 3459
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_4"
       rect:
         serializedVersion: 2
-        x: 4943
-        y: 7996
-        width: 483
-        height: 212
+        x: 4612
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_5"
       rect:
         serializedVersion: 2
-        x: 6099
-        y: 7996
-        width: 476
-        height: 212
+        x: 5765
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_6"
       rect:
         serializedVersion: 2
-        x: 7256
-        y: 7996
-        width: 469
-        height: 212
+        x: 6918
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_7"
       rect:
         serializedVersion: 2
-        x: 8406
-        y: 7996
-        width: 476
-        height: 212
+        x: 8071
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_8"
       rect:
         serializedVersion: 2
-        x: 9563
-        y: 7996
-        width: 476
-        height: 212
+        x: 9224
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_9"
       rect:
         serializedVersion: 2
-        x: 10712
-        y: 7996
-        width: 476
-        height: 212
+        x: 10377
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_10"
       rect:
         serializedVersion: 2
-        x: 11869
-        y: 7996
-        width: 476
-        height: 212
+        x: 11530
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_11"
       rect:
         serializedVersion: 2
-        x: 13026
-        y: 8003
-        width: 469
-        height: 205
+        x: 12683
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_12"
       rect:
         serializedVersion: 2
-        x: 14183
-        y: 7996
-        width: 469
-        height: 212
+        x: 13836
+        y: 7786.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_13"
       rect:
         serializedVersion: 2
-        x: 337
-        y: 7344
-        width: 468
-        height: 220
+        x: 0
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_14"
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 7344
-        width: 468
-        height: 220
+        x: 1153
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_15"
       rect:
         serializedVersion: 2
-        x: 2651
-        y: 7344
-        width: 461
-        height: 220
+        x: 2306
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_16"
       rect:
         serializedVersion: 2
-        x: 3800
-        y: 7351
-        width: 469
-        height: 213
+        x: 3459
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_17"
       rect:
         serializedVersion: 2
-        x: 4957
-        y: 7351
-        width: 469
-        height: 213
+        x: 4612
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +491,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_18"
       rect:
         serializedVersion: 2
-        x: 6114
-        y: 7351
-        width: 461
-        height: 213
+        x: 5765
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +512,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_19"
       rect:
         serializedVersion: 2
-        x: 7264
-        y: 7351
-        width: 461
-        height: 213
+        x: 6918
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +533,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_20"
       rect:
         serializedVersion: 2
-        x: 8421
-        y: 7351
-        width: 461
-        height: 213
+        x: 8071
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +554,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_21"
       rect:
         serializedVersion: 2
-        x: 9578
-        y: 7351
-        width: 461
-        height: 213
+        x: 9224
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +575,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_22"
       rect:
         serializedVersion: 2
-        x: 10727
-        y: 7351
-        width: 461
-        height: 213
+        x: 10377
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +596,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_23"
       rect:
         serializedVersion: 2
-        x: 11884
-        y: 7351
-        width: 461
-        height: 213
+        x: 11530
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +617,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_24"
       rect:
         serializedVersion: 2
-        x: 13041
-        y: 7351
-        width: 454
-        height: 213
+        x: 12683
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +638,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_25"
       rect:
         serializedVersion: 2
-        x: 14191
-        y: 7344
-        width: 461
-        height: 220
+        x: 13836
+        y: 7138.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +659,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_26"
       rect:
         serializedVersion: 2
-        x: 351
-        y: 6700
-        width: 454
-        height: 212
+        x: 0
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +680,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_27"
       rect:
         serializedVersion: 2
-        x: 1508
-        y: 6700
-        width: 454
-        height: 212
+        x: 1153
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,10 +701,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_28"
       rect:
         serializedVersion: 2
-        x: 2658
-        y: 6700
-        width: 454
-        height: 212
+        x: 2306
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,10 +722,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_29"
       rect:
         serializedVersion: 2
-        x: 3815
-        y: 6700
-        width: 454
-        height: 212
+        x: 3459
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,10 +743,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_30"
       rect:
         serializedVersion: 2
-        x: 4972
-        y: 6700
-        width: 454
-        height: 212
+        x: 4612
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +764,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_31"
       rect:
         serializedVersion: 2
-        x: 6129
-        y: 6700
-        width: 446
-        height: 212
+        x: 5765
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,10 +785,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_32"
       rect:
         serializedVersion: 2
-        x: 7278
-        y: 6700
-        width: 447
-        height: 212
+        x: 6918
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -806,10 +806,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_33"
       rect:
         serializedVersion: 2
-        x: 8428
-        y: 6700
-        width: 454
-        height: 212
+        x: 8071
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -827,10 +827,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_34"
       rect:
         serializedVersion: 2
-        x: 9585
-        y: 6700
-        width: 447
-        height: 212
+        x: 9224
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,10 +848,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_35"
       rect:
         serializedVersion: 2
-        x: 10742
-        y: 6700
-        width: 446
-        height: 212
+        x: 10377
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -869,10 +869,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_36"
       rect:
         serializedVersion: 2
-        x: 11899
-        y: 6700
-        width: 446
-        height: 212
+        x: 11530
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,10 +890,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_37"
       rect:
         serializedVersion: 2
-        x: 13048
-        y: 6700
-        width: 447
-        height: 212
+        x: 12683
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -911,10 +911,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_38"
       rect:
         serializedVersion: 2
-        x: 14198
-        y: 6700
-        width: 454
-        height: 212
+        x: 13836
+        y: 6490.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,10 +932,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_39"
       rect:
         serializedVersion: 2
-        x: 359
-        y: 6048
-        width: 446
-        height: 212
+        x: 0
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -953,10 +953,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_40"
       rect:
         serializedVersion: 2
-        x: 1516
-        y: 6048
-        width: 446
-        height: 212
+        x: 1153
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -974,10 +974,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_41"
       rect:
         serializedVersion: 2
-        x: 2673
-        y: 6048
-        width: 439
-        height: 212
+        x: 2306
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,10 +995,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_42"
       rect:
         serializedVersion: 2
-        x: 3822
-        y: 6048
-        width: 447
-        height: 212
+        x: 3459
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1016,10 +1016,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_43"
       rect:
         serializedVersion: 2
-        x: 4972
-        y: 6048
-        width: 454
-        height: 212
+        x: 4612
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1037,10 +1037,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_44"
       rect:
         serializedVersion: 2
-        x: 6129
-        y: 6048
-        width: 446
-        height: 212
+        x: 5765
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,10 +1058,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_45"
       rect:
         serializedVersion: 2
-        x: 7286
-        y: 6048
-        width: 439
-        height: 212
+        x: 6918
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1079,10 +1079,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_46"
       rect:
         serializedVersion: 2
-        x: 8443
-        y: 6048
-        width: 439
-        height: 212
+        x: 8071
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,10 +1100,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_47"
       rect:
         serializedVersion: 2
-        x: 9592
-        y: 6048
-        width: 447
-        height: 212
+        x: 9224
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1121,10 +1121,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_48"
       rect:
         serializedVersion: 2
-        x: 10742
-        y: 6048
-        width: 446
-        height: 212
+        x: 10377
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1142,10 +1142,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_49"
       rect:
         serializedVersion: 2
-        x: 11906
-        y: 6048
-        width: 439
-        height: 212
+        x: 11530
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1163,10 +1163,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_50"
       rect:
         serializedVersion: 2
-        x: 13056
-        y: 6048
-        width: 439
-        height: 212
+        x: 12683
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1184,10 +1184,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_51"
       rect:
         serializedVersion: 2
-        x: 14213
-        y: 6048
-        width: 439
-        height: 212
+        x: 13836
+        y: 5842.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1205,10 +1205,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_52"
       rect:
         serializedVersion: 2
-        x: 366
-        y: 5404
-        width: 439
-        height: 212
+        x: 0
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1226,10 +1226,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_53"
       rect:
         serializedVersion: 2
-        x: 1516
-        y: 5404
-        width: 446
-        height: 212
+        x: 1153
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1247,10 +1247,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_54"
       rect:
         serializedVersion: 2
-        x: 2680
-        y: 5404
-        width: 432
-        height: 212
+        x: 2306
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1268,10 +1268,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_55"
       rect:
         serializedVersion: 2
-        x: 3830
-        y: 5404
-        width: 439
-        height: 212
+        x: 3459
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1289,10 +1289,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_56"
       rect:
         serializedVersion: 2
-        x: 4986
-        y: 5404
-        width: 440
-        height: 212
+        x: 4612
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1310,10 +1310,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_57"
       rect:
         serializedVersion: 2
-        x: 6136
-        y: 5404
-        width: 439
-        height: 212
+        x: 5765
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1331,10 +1331,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_58"
       rect:
         serializedVersion: 2
-        x: 7293
-        y: 5404
-        width: 439
-        height: 212
+        x: 6918
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1352,10 +1352,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_59"
       rect:
         serializedVersion: 2
-        x: 8450
-        y: 5404
-        width: 432
-        height: 212
+        x: 8071
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1373,10 +1373,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_60"
       rect:
         serializedVersion: 2
-        x: 9599
-        y: 5404
-        width: 433
-        height: 212
+        x: 9224
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1394,10 +1394,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_61"
       rect:
         serializedVersion: 2
-        x: 10756
-        y: 5404
-        width: 432
-        height: 212
+        x: 10377
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1415,10 +1415,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_62"
       rect:
         serializedVersion: 2
-        x: 11906
-        y: 5404
-        width: 439
-        height: 212
+        x: 11530
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1436,10 +1436,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_63"
       rect:
         serializedVersion: 2
-        x: 13056
-        y: 5404
-        width: 439
-        height: 212
+        x: 12683
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1457,10 +1457,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_64"
       rect:
         serializedVersion: 2
-        x: 14213
-        y: 5404
-        width: 439
-        height: 212
+        x: 13836
+        y: 5194.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1478,10 +1478,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_65"
       rect:
         serializedVersion: 2
-        x: 373
-        y: 4752
-        width: 432
-        height: 212
+        x: 0
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1499,10 +1499,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_66"
       rect:
         serializedVersion: 2
-        x: 1523
-        y: 4752
-        width: 439
-        height: 212
+        x: 1153
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1520,10 +1520,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_67"
       rect:
         serializedVersion: 2
-        x: 2673
-        y: 4752
-        width: 439
-        height: 212
+        x: 2306
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1541,10 +1541,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_68"
       rect:
         serializedVersion: 2
-        x: 3830
-        y: 4752
-        width: 439
-        height: 212
+        x: 3459
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1562,10 +1562,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_69"
       rect:
         serializedVersion: 2
-        x: 4979
-        y: 4752
-        width: 447
-        height: 212
+        x: 4612
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1583,10 +1583,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_70"
       rect:
         serializedVersion: 2
-        x: 6136
-        y: 4752
-        width: 439
-        height: 212
+        x: 5765
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1604,10 +1604,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_71"
       rect:
         serializedVersion: 2
-        x: 7286
-        y: 4752
-        width: 439
-        height: 212
+        x: 6918
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1625,10 +1625,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_72"
       rect:
         serializedVersion: 2
-        x: 8443
-        y: 4752
-        width: 439
-        height: 212
+        x: 8071
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1646,10 +1646,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_73"
       rect:
         serializedVersion: 2
-        x: 9592
-        y: 4752
-        width: 440
-        height: 212
+        x: 9224
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1667,10 +1667,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_74"
       rect:
         serializedVersion: 2
-        x: 10742
-        y: 4752
-        width: 446
-        height: 212
+        x: 10377
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1688,10 +1688,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_75"
       rect:
         serializedVersion: 2
-        x: 11899
-        y: 4752
-        width: 446
-        height: 212
+        x: 11530
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1709,10 +1709,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_76"
       rect:
         serializedVersion: 2
-        x: 13048
-        y: 4752
-        width: 447
-        height: 212
+        x: 12683
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1730,10 +1730,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_77"
       rect:
         serializedVersion: 2
-        x: 14198
-        y: 4752
-        width: 454
-        height: 212
+        x: 13836
+        y: 4546.154
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1751,10 +1751,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_78"
       rect:
         serializedVersion: 2
-        x: 359
-        y: 4100
-        width: 446
-        height: 213
+        x: 0
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1772,10 +1772,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_79"
       rect:
         serializedVersion: 2
-        x: 1508
-        y: 4100
-        width: 454
-        height: 213
+        x: 1153
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1793,10 +1793,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_80"
       rect:
         serializedVersion: 2
-        x: 2665
-        y: 4100
-        width: 454
-        height: 213
+        x: 2306
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1814,10 +1814,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_81"
       rect:
         serializedVersion: 2
-        x: 3815
-        y: 4108
-        width: 454
-        height: 212
+        x: 3459
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1835,10 +1835,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_82"
       rect:
         serializedVersion: 2
-        x: 4972
-        y: 4108
-        width: 454
-        height: 212
+        x: 4612
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1856,10 +1856,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_83"
       rect:
         serializedVersion: 2
-        x: 6121
-        y: 4100
-        width: 454
-        height: 220
+        x: 5765
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1877,10 +1877,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_84"
       rect:
         serializedVersion: 2
-        x: 7271
-        y: 4108
-        width: 454
-        height: 212
+        x: 6918
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1898,10 +1898,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_85"
       rect:
         serializedVersion: 2
-        x: 8428
-        y: 4108
-        width: 454
-        height: 212
+        x: 8071
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1919,10 +1919,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_86"
       rect:
         serializedVersion: 2
-        x: 9578
-        y: 4108
-        width: 461
-        height: 212
+        x: 9224
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1940,10 +1940,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_87"
       rect:
         serializedVersion: 2
-        x: 10727
-        y: 4100
-        width: 461
-        height: 213
+        x: 10377
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1961,10 +1961,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_88"
       rect:
         serializedVersion: 2
-        x: 11884
-        y: 4108
-        width: 461
-        height: 212
+        x: 11530
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1982,10 +1982,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_89"
       rect:
         serializedVersion: 2
-        x: 13034
-        y: 4108
-        width: 461
-        height: 212
+        x: 12683
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2003,10 +2003,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_90"
       rect:
         serializedVersion: 2
-        x: 14191
-        y: 4100
-        width: 461
-        height: 213
+        x: 13836
+        y: 3898.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2024,10 +2024,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_91"
       rect:
         serializedVersion: 2
-        x: 344
-        y: 3456
-        width: 461
-        height: 212
+        x: 0
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2045,10 +2045,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_92"
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 3456
-        width: 468
-        height: 212
+        x: 1153
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2066,10 +2066,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_93"
       rect:
         serializedVersion: 2
-        x: 2651
-        y: 3456
-        width: 461
-        height: 212
+        x: 2306
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2087,10 +2087,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_94"
       rect:
         serializedVersion: 2
-        x: 3800
-        y: 3456
-        width: 469
-        height: 212
+        x: 3459
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2108,10 +2108,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_95"
       rect:
         serializedVersion: 2
-        x: 4950
-        y: 3456
-        width: 476
-        height: 212
+        x: 4612
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2129,10 +2129,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_96"
       rect:
         serializedVersion: 2
-        x: 6107
-        y: 3456
-        width: 468
-        height: 212
+        x: 5765
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2150,10 +2150,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_97"
       rect:
         serializedVersion: 2
-        x: 7256
-        y: 3456
-        width: 469
-        height: 212
+        x: 6918
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2171,10 +2171,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_98"
       rect:
         serializedVersion: 2
-        x: 8406
-        y: 3456
-        width: 476
-        height: 212
+        x: 8071
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2192,10 +2192,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_99"
       rect:
         serializedVersion: 2
-        x: 9563
-        y: 3456
-        width: 476
-        height: 212
+        x: 9224
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2213,10 +2213,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_100"
       rect:
         serializedVersion: 2
-        x: 10712
-        y: 3456
-        width: 476
-        height: 212
+        x: 10377
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2234,10 +2234,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_101"
       rect:
         serializedVersion: 2
-        x: 11869
-        y: 3456
-        width: 476
-        height: 212
+        x: 11530
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2255,10 +2255,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_102"
       rect:
         serializedVersion: 2
-        x: 13019
-        y: 3456
-        width: 476
-        height: 212
+        x: 12683
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2276,10 +2276,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_103"
       rect:
         serializedVersion: 2
-        x: 14169
-        y: 3456
-        width: 483
-        height: 212
+        x: 13836
+        y: 3250.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2297,10 +2297,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_104"
       rect:
         serializedVersion: 2
-        x: 330
-        y: 2804
-        width: 475
-        height: 213
+        x: 0
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2318,10 +2318,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_105"
       rect:
         serializedVersion: 2
-        x: 1486
-        y: 2804
-        width: 476
-        height: 213
+        x: 1153
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2339,10 +2339,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_106"
       rect:
         serializedVersion: 2
-        x: 2636
-        y: 2804
-        width: 476
-        height: 213
+        x: 2306
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2360,10 +2360,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_107"
       rect:
         serializedVersion: 2
-        x: 3786
-        y: 2804
-        width: 483
-        height: 220
+        x: 3459
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2381,10 +2381,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_108"
       rect:
         serializedVersion: 2
-        x: 4943
-        y: 2804
-        width: 483
-        height: 220
+        x: 4612
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2402,10 +2402,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_109"
       rect:
         serializedVersion: 2
-        x: 6092
-        y: 2804
-        width: 483
-        height: 213
+        x: 5765
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2423,10 +2423,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_110"
       rect:
         serializedVersion: 2
-        x: 7249
-        y: 2804
-        width: 483
-        height: 220
+        x: 6918
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2444,10 +2444,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_111"
       rect:
         serializedVersion: 2
-        x: 8406
-        y: 2804
-        width: 476
-        height: 213
+        x: 8071
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2465,10 +2465,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_112"
       rect:
         serializedVersion: 2
-        x: 9563
-        y: 2804
-        width: 476
-        height: 220
+        x: 9224
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2486,10 +2486,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_113"
       rect:
         serializedVersion: 2
-        x: 10712
-        y: 2804
-        width: 484
-        height: 220
+        x: 10377
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2507,10 +2507,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_114"
       rect:
         serializedVersion: 2
-        x: 11869
-        y: 2804
-        width: 476
-        height: 220
+        x: 11530
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2528,10 +2528,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_115"
       rect:
         serializedVersion: 2
-        x: 13019
-        y: 2804
-        width: 476
-        height: 220
+        x: 12683
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2549,10 +2549,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_116"
       rect:
         serializedVersion: 2
-        x: 14176
-        y: 2804
-        width: 476
-        height: 220
+        x: 13836
+        y: 2602.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2570,10 +2570,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_117"
       rect:
         serializedVersion: 2
-        x: 337
-        y: 2160
-        width: 476
-        height: 212
+        x: 0
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2591,10 +2591,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_118"
       rect:
         serializedVersion: 2
-        x: 1486
-        y: 2160
-        width: 476
-        height: 212
+        x: 1153
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2612,10 +2612,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_119"
       rect:
         serializedVersion: 2
-        x: 2643
-        y: 2160
-        width: 469
-        height: 212
+        x: 2306
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2633,10 +2633,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_120"
       rect:
         serializedVersion: 2
-        x: 3800
-        y: 2160
-        width: 469
-        height: 212
+        x: 3459
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2654,10 +2654,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_121"
       rect:
         serializedVersion: 2
-        x: 4957
-        y: 2160
-        width: 469
-        height: 212
+        x: 4612
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2675,10 +2675,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_122"
       rect:
         serializedVersion: 2
-        x: 6114
-        y: 2160
-        width: 461
-        height: 212
+        x: 5765
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2696,10 +2696,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_123"
       rect:
         serializedVersion: 2
-        x: 7264
-        y: 2153
-        width: 468
-        height: 219
+        x: 6918
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2717,10 +2717,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_124"
       rect:
         serializedVersion: 2
-        x: 8421
-        y: 2160
-        width: 461
-        height: 212
+        x: 8071
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2738,10 +2738,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_125"
       rect:
         serializedVersion: 2
-        x: 9578
-        y: 2160
-        width: 461
-        height: 212
+        x: 9224
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2759,10 +2759,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_126"
       rect:
         serializedVersion: 2
-        x: 10734
-        y: 2160
-        width: 462
-        height: 212
+        x: 10377
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2780,10 +2780,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_127"
       rect:
         serializedVersion: 2
-        x: 11884
-        y: 2153
-        width: 461
-        height: 219
+        x: 11530
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2801,10 +2801,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_128"
       rect:
         serializedVersion: 2
-        x: 13041
-        y: 2160
-        width: 454
-        height: 212
+        x: 12683
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2822,10 +2822,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_129"
       rect:
         serializedVersion: 2
-        x: 14198
-        y: 2153
-        width: 454
-        height: 219
+        x: 13836
+        y: 1954.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2843,10 +2843,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_130"
       rect:
         serializedVersion: 2
-        x: 351
-        y: 1508
-        width: 454
-        height: 213
+        x: 0
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2864,10 +2864,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_131"
       rect:
         serializedVersion: 2
-        x: 1508
-        y: 1508
-        width: 454
-        height: 213
+        x: 1153
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2885,10 +2885,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_132"
       rect:
         serializedVersion: 2
-        x: 2658
-        y: 1508
-        width: 461
-        height: 213
+        x: 2306
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2906,10 +2906,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_133"
       rect:
         serializedVersion: 2
-        x: 3815
-        y: 1508
-        width: 454
-        height: 213
+        x: 3459
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2927,10 +2927,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_134"
       rect:
         serializedVersion: 2
-        x: 4972
-        y: 1508
-        width: 454
-        height: 213
+        x: 4612
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2948,10 +2948,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_135"
       rect:
         serializedVersion: 2
-        x: 6129
-        y: 1508
-        width: 446
-        height: 213
+        x: 5765
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2969,10 +2969,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_136"
       rect:
         serializedVersion: 2
-        x: 7278
-        y: 1508
-        width: 454
-        height: 213
+        x: 6918
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2990,10 +2990,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_137"
       rect:
         serializedVersion: 2
-        x: 8435
-        y: 1508
-        width: 447
-        height: 213
+        x: 8071
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3011,10 +3011,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_138"
       rect:
         serializedVersion: 2
-        x: 9592
-        y: 1508
-        width: 447
-        height: 213
+        x: 9224
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3032,10 +3032,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_139"
       rect:
         serializedVersion: 2
-        x: 10742
-        y: 1508
-        width: 446
-        height: 213
+        x: 10377
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3053,10 +3053,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_140"
       rect:
         serializedVersion: 2
-        x: 11899
-        y: 1508
-        width: 446
-        height: 213
+        x: 11530
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3074,10 +3074,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_141"
       rect:
         serializedVersion: 2
-        x: 13048
-        y: 1508
-        width: 447
-        height: 213
+        x: 12683
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3095,10 +3095,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_142"
       rect:
         serializedVersion: 2
-        x: 14205
-        y: 1508
-        width: 447
-        height: 213
+        x: 13836
+        y: 1306.1538
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3116,10 +3116,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_143"
       rect:
         serializedVersion: 2
-        x: 359
-        y: 857
-        width: 446
-        height: 212
+        x: 0
+        y: 658.1539
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3137,10 +3137,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_144"
       rect:
         serializedVersion: 2
-        x: 1516
-        y: 857
-        width: 446
-        height: 219
+        x: 1153
+        y: 658.1539
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3158,10 +3158,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_145"
       rect:
         serializedVersion: 2
-        x: 2673
-        y: 857
-        width: 439
-        height: 212
+        x: 2306
+        y: 658.1539
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3179,10 +3179,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_146"
       rect:
         serializedVersion: 2
-        x: 3822
-        y: 857
-        width: 447
-        height: 212
+        x: 3459
+        y: 658.1539
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3200,10 +3200,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_147"
       rect:
         serializedVersion: 2
-        x: 4979
-        y: 857
-        width: 447
-        height: 212
+        x: 4612
+        y: 658.1539
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3221,10 +3221,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_148"
       rect:
         serializedVersion: 2
-        x: 6136
-        y: 857
-        width: 439
-        height: 219
+        x: 5765
+        y: 658.1539
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3242,10 +3242,10 @@ TextureImporter:
       name: "Torsken Sv\xF8mmer Sprite Sheet_149"
       rect:
         serializedVersion: 2
-        x: 7286
-        y: 857
-        width: 446
-        height: 212
+        x: 6918
+        y: 658.1539
+        width: 1153.5385
+        height: 648.8461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
