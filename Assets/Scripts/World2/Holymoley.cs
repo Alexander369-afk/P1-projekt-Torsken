@@ -25,4 +25,14 @@ public class Holymoley : MonoBehaviour
         SetTriggerActive(leftTrigger, (Vector2)transform.position + Vector2.left);
         SetTriggerActive(downTrigger, (Vector2)transform.position + Vector2.down);
     }
+
+    void SetTriggerActive(GameObject trigger, Vector2 position)
+    {
+        trigger.transform.position = position;
+    }
+
+    public void MoveObject(Vector2 direction)
+    {
+        transform.Translate(direction);
+    }
 }
