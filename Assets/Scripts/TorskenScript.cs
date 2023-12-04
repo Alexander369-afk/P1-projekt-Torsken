@@ -220,7 +220,6 @@ public class Torsken : MonoBehaviour
 
             case 8:
                 MoveTowardsTarget(6f);
-                Debug.Log("Moving towards target");
                 break;
 
             case 9:
@@ -288,7 +287,7 @@ public class Torsken : MonoBehaviour
 
             case 15:
                 // Start countdown timer for 3 seconds
-                StartCoroutine(CountDownTimer(20f));                //venter på at cutscene 2 spiller
+                StartCoroutine(CountDownTimer(30f));                //venter på at cutscene 2 spiller
                 if (CutScene2 != null)
                 {
                     CutScene2.SetActive(true);
@@ -309,7 +308,7 @@ public class Torsken : MonoBehaviour
 
             case 17:
                 //Start spil 2
-                spil1starter.SetActive(true);
+                spil2.SetActive(true);
                 ActivateMainCameraAndVirtualCamera();
                 CmrFlwTorsken = true;
                 sceneCount++;
