@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 755991242108432758, guid: ddf6b018b980d5247aba496079e788b1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1568382726584256790, guid: ddf6b018b980d5247aba496079e788b1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0578319
@@ -171,9 +175,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1908409086910692291, guid: ddf6b018b980d5247aba496079e788b1, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908409086910692291, guid: ddf6b018b980d5247aba496079e788b1, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3258766428529724779, guid: ddf6b018b980d5247aba496079e788b1, type: 3}
       propertyPath: m_Name
       value: Spil 3 verden
+      objectReference: {fileID: 0}
+    - target: {fileID: 3390096926455760278, guid: ddf6b018b980d5247aba496079e788b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821315548415976509, guid: ddf6b018b980d5247aba496079e788b1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333185307362897266, guid: ddf6b018b980d5247aba496079e788b1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
