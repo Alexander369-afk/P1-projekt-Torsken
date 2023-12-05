@@ -1,0 +1,3427 @@
+fileFormatVersion: 2
+guid: d45e5ef8e6e141e4498dc5dc339b17bc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_0"
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 8001
+        width: 463
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38363288eaf82b842a224ca617b748a0
+      internalID: 920046362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_1"
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 8001
+        width: 465
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8707ffb10c203ba44a6d7f4343b979b6
+      internalID: 842356120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_2"
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 8001
+        width: 468
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c01cefbce9ab6449bd8d6ae28c150ac
+      internalID: 1340170895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_3"
+      rect:
+        serializedVersion: 2
+        x: 3795
+        y: 8001
+        width: 469
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bce18512be631247aeeef986879cd65
+      internalID: 780244690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_4"
+      rect:
+        serializedVersion: 2
+        x: 4949
+        y: 8001
+        width: 469
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8770585a9c1a54991de04772a45d28
+      internalID: -1625106213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_5"
+      rect:
+        serializedVersion: 2
+        x: 6103
+        y: 8001
+        width: 468
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62dbd31f238240468bebf45d131854d
+      internalID: 371262287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_6"
+      rect:
+        serializedVersion: 2
+        x: 7257
+        y: 8001
+        width: 467
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5a2d0798ab85b458ddfff41f971fec
+      internalID: 624315741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_7"
+      rect:
+        serializedVersion: 2
+        x: 8411
+        y: 8001
+        width: 467
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3830e61f9c7c6f40b1f86d13fb39244
+      internalID: 1300045334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_8"
+      rect:
+        serializedVersion: 2
+        x: 9565
+        y: 8001
+        width: 466
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893b8c622f6205449b4dee22b1e8e249
+      internalID: 996157092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_9"
+      rect:
+        serializedVersion: 2
+        x: 10719
+        y: 8001
+        width: 466
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30db58245e722e54084976208a6cd1c9
+      internalID: 1863280826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_10"
+      rect:
+        serializedVersion: 2
+        x: 11874
+        y: 8001
+        width: 465
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eeb459d03737a408d90f877e490a9a
+      internalID: 229899822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_11"
+      rect:
+        serializedVersion: 2
+        x: 13028
+        y: 8001
+        width: 464
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39675e5f9224e2b40b6aa8b60301778c
+      internalID: -118918578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_12"
+      rect:
+        serializedVersion: 2
+        x: 14183
+        y: 8001
+        width: 463
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841786b20b5ee0a4981187d7a265bbb8
+      internalID: 221263703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_13"
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 7353
+        width: 461
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35821ca6f36c6114eaf4925b7cc69293
+      internalID: 1062841161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_14"
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 7353
+        width: 461
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa525bdb5800144cb36efe11cbdff25
+      internalID: -1545210290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_15"
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 7353
+        width: 459
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99827dfa1e4ff9c49b70af5d6dcff5eb
+      internalID: 580089695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_16"
+      rect:
+        serializedVersion: 2
+        x: 3806
+        y: 7353
+        width: 458
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d160a9b160db64a9cc8b87239cc182
+      internalID: 157307673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_17"
+      rect:
+        serializedVersion: 2
+        x: 4960
+        y: 7354
+        width: 457
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0257380748d055a4a84d5e3ecb8a0cca
+      internalID: 1059467130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_18"
+      rect:
+        serializedVersion: 2
+        x: 6115
+        y: 7354
+        width: 456
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e0b2f9067e3c941be52e85eada824b
+      internalID: 830672179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_19"
+      rect:
+        serializedVersion: 2
+        x: 7270
+        y: 7355
+        width: 454
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe0f611209c9c64ebd5e97f040a640d
+      internalID: -1633210456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_20"
+      rect:
+        serializedVersion: 2
+        x: 8424
+        y: 7354
+        width: 454
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb19085e6349bfd4f92980223f2a17bf
+      internalID: 888220981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_21"
+      rect:
+        serializedVersion: 2
+        x: 9579
+        y: 7354
+        width: 452
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d583e93eba8b206498e0c3f5d1381190
+      internalID: 74592026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_22"
+      rect:
+        serializedVersion: 2
+        x: 10733
+        y: 7355
+        width: 452
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da997d8d7dce434f90a964c2219dc40
+      internalID: -1640381680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_23"
+      rect:
+        serializedVersion: 2
+        x: 11888
+        y: 7354
+        width: 450
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eab1923d626221419d61af8c4e59518
+      internalID: -98546353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_24"
+      rect:
+        serializedVersion: 2
+        x: 13043
+        y: 7354
+        width: 449
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fdadfb5284d99499ed00994cf84155
+      internalID: 654433942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_25"
+      rect:
+        serializedVersion: 2
+        x: 14197
+        y: 7354
+        width: 448
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbd72fd30c48e54b90d44f817fc962b
+      internalID: -370376578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_26"
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 6705
+        width: 447
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e36cb2db8abfd42ab0223243d5734d
+      internalID: -2119572687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_27"
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 6705
+        width: 445
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260c2ab177ad3724aacf9892a11a4ad4
+      internalID: 363026109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_28"
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 6704
+        width: 445
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15793ad93c2e22f4496abc09d5eba3f6
+      internalID: -283914633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_29"
+      rect:
+        serializedVersion: 2
+        x: 3819
+        y: 6704
+        width: 445
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9555d3a311fd949a7df9e9dca60f0a
+      internalID: -330272360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_30"
+      rect:
+        serializedVersion: 2
+        x: 4973
+        y: 6704
+        width: 444
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7de8d9a7aa5b046a3e4b83b63aad12
+      internalID: 1891852938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_31"
+      rect:
+        serializedVersion: 2
+        x: 6127
+        y: 6704
+        width: 444
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92df0f0138251946b281d6ee8bf34c2
+      internalID: -281865170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_32"
+      rect:
+        serializedVersion: 2
+        x: 7281
+        y: 6704
+        width: 443
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123a99633ef5fa1489c49161fd22627e
+      internalID: 2021183433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_33"
+      rect:
+        serializedVersion: 2
+        x: 8435
+        y: 6704
+        width: 443
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3acdc241349cb4f8aa9cabff85b2b8
+      internalID: -26843250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_34"
+      rect:
+        serializedVersion: 2
+        x: 9589
+        y: 6704
+        width: 442
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0930df13bdf2a428b06df57f70bf7b
+      internalID: 61920690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_35"
+      rect:
+        serializedVersion: 2
+        x: 10743
+        y: 6704
+        width: 442
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae46e881b596aee449bae45c314ae9e5
+      internalID: -2093216466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_36"
+      rect:
+        serializedVersion: 2
+        x: 11897
+        y: 6704
+        width: 441
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6fbd496592e2a48b9254185bef51fb
+      internalID: 711485743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_37"
+      rect:
+        serializedVersion: 2
+        x: 13051
+        y: 6704
+        width: 441
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffb9ef9388c241499fff450c126bbfb
+      internalID: -915885490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_38"
+      rect:
+        serializedVersion: 2
+        x: 14205
+        y: 6704
+        width: 440
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47c238db757477489f9d57c92a772a8
+      internalID: 289671465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_39"
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 6055
+        width: 440
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1c816767d73944f8aa33299bb8d497
+      internalID: 2082787754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_40"
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 6055
+        width: 439
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4479766c7157f94daeeed44ed285662
+      internalID: -2032472387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_41"
+      rect:
+        serializedVersion: 2
+        x: 2671
+        y: 6055
+        width: 439
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713c8827f26d3e546a3db434d7ddedb7
+      internalID: -939092073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_42"
+      rect:
+        serializedVersion: 2
+        x: 3825
+        y: 6055
+        width: 439
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4bec247011e89f41b509cab83bca912
+      internalID: -702438681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_43"
+      rect:
+        serializedVersion: 2
+        x: 4979
+        y: 6055
+        width: 438
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3d894925ed2d44bb35d86a8d809791
+      internalID: 1174490322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_44"
+      rect:
+        serializedVersion: 2
+        x: 6133
+        y: 6055
+        width: 438
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f368ed7c878f08b49ac9b2979594b399
+      internalID: 1288653431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_45"
+      rect:
+        serializedVersion: 2
+        x: 7287
+        y: 6055
+        width: 437
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634a5e8f224763e42a0a23fd9ad18002
+      internalID: -1535214241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_46"
+      rect:
+        serializedVersion: 2
+        x: 8441
+        y: 6055
+        width: 437
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249b0e9834c4a4d439c5e6e6ec9f68cf
+      internalID: 1933330320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_47"
+      rect:
+        serializedVersion: 2
+        x: 9595
+        y: 6055
+        width: 436
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a67910b993a1d94281985158602a58c
+      internalID: 974678970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_48"
+      rect:
+        serializedVersion: 2
+        x: 10749
+        y: 6055
+        width: 435
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2f3ea72b875b74ca5d3d2b40eb5ef8
+      internalID: 2068935886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_49"
+      rect:
+        serializedVersion: 2
+        x: 11903
+        y: 6055
+        width: 435
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b9f617e4a9e30458bb07f8ab49731a
+      internalID: -746169172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_50"
+      rect:
+        serializedVersion: 2
+        x: 13057
+        y: 6055
+        width: 434
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81bb9db1abe76b4ea4e9265a98d2c8b
+      internalID: -2138808830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_51"
+      rect:
+        serializedVersion: 2
+        x: 14211
+        y: 6055
+        width: 434
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6aaa6e31c97af41a8ab69c45c83b02
+      internalID: 503585713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_52"
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 5406
+        width: 432
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bd434623554224a9eba1203bf803ab
+      internalID: -1861891121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_53"
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 5406
+        width: 434
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed8991ce035e0e49b58c620323fb92f
+      internalID: -1836689787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_54"
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 5406
+        width: 432
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d157500bf90e14c973d7f1f826e5c4
+      internalID: 1284188073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_55"
+      rect:
+        serializedVersion: 2
+        x: 3831
+        y: 5406
+        width: 432
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa986e15260ee34e80a6812f8785577
+      internalID: -707654802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_56"
+      rect:
+        serializedVersion: 2
+        x: 4985
+        y: 5406
+        width: 432
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cc374a23ca2cb4697bed9c354151c6
+      internalID: 764525667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_57"
+      rect:
+        serializedVersion: 2
+        x: 6139
+        y: 5406
+        width: 431
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce2fa9de6e44ee44997cecd36207972
+      internalID: -709944736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_58"
+      rect:
+        serializedVersion: 2
+        x: 7292
+        y: 5405
+        width: 432
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89177c10f640b0a4cb37486f326e028d
+      internalID: -1003415224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_59"
+      rect:
+        serializedVersion: 2
+        x: 8446
+        y: 5405
+        width: 431
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a0a3bcf86cf534cafb515df7beec75
+      internalID: -420211475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_60"
+      rect:
+        serializedVersion: 2
+        x: 9599
+        y: 5405
+        width: 432
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207ea604095e247499544a9b68d297f7
+      internalID: -2131997223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_61"
+      rect:
+        serializedVersion: 2
+        x: 10753
+        y: 5405
+        width: 431
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d2cbaddef8cac48968372d78ac5a80
+      internalID: -2111041863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_62"
+      rect:
+        serializedVersion: 2
+        x: 11906
+        y: 5405
+        width: 432
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa6e9966d4fb9e45a8beee7319c0b63
+      internalID: 601433379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_63"
+      rect:
+        serializedVersion: 2
+        x: 13058
+        y: 5405
+        width: 433
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52d1cb6ad225c748a636b7f6171e581
+      internalID: 1107541064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_64"
+      rect:
+        serializedVersion: 2
+        x: 14213
+        y: 5405
+        width: 432
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e027bcf70b501c646a1d7e7f0d6a081e
+      internalID: 147656472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_65"
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 4757
+        width: 432
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149ca5c4cb266cd4ca689e5feec18bfb
+      internalID: -1647659981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_66"
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 4757
+        width: 432
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad7f130d97483f469155b14e2417cec
+      internalID: -994487315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_67"
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 4757
+        width: 435
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fea395504159340a46cb6345327400
+      internalID: 247959860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_68"
+      rect:
+        serializedVersion: 2
+        x: 3828
+        y: 4757
+        width: 435
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05185cce3955b04d97decfc30539363
+      internalID: 58403442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_69"
+      rect:
+        serializedVersion: 2
+        x: 4981
+        y: 4757
+        width: 436
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f613e111c6a47a45a0083202e0fe297
+      internalID: -1112386637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_70"
+      rect:
+        serializedVersion: 2
+        x: 6134
+        y: 4757
+        width: 436
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ca7040b7368a54aa2103112a70fe26
+      internalID: -381305142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_71"
+      rect:
+        serializedVersion: 2
+        x: 7287
+        y: 4757
+        width: 437
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b581b2a0aae72439b6cdec93bfc882
+      internalID: 874006228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_72"
+      rect:
+        serializedVersion: 2
+        x: 8440
+        y: 4757
+        width: 437
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ae91a65531c6545884d29a4b9f2717
+      internalID: 1861473403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_73"
+      rect:
+        serializedVersion: 2
+        x: 9593
+        y: 4757
+        width: 438
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28cb06ebabe91f43be7fcc92a53e6d6
+      internalID: -1700385667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_74"
+      rect:
+        serializedVersion: 2
+        x: 10746
+        y: 4757
+        width: 438
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd139eea2a4e19419b767715654fcde
+      internalID: 1253714483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_75"
+      rect:
+        serializedVersion: 2
+        x: 11899
+        y: 4757
+        width: 439
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4235be8547229b8479608a1cb24ad3ad
+      internalID: -1398087200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_76"
+      rect:
+        serializedVersion: 2
+        x: 13052
+        y: 4757
+        width: 439
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5ef09169f046242864d062fd16a5fc
+      internalID: -1004688281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_77"
+      rect:
+        serializedVersion: 2
+        x: 14205
+        y: 4757
+        width: 440
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b236c03668a663b4eae2630ebab4b0b5
+      internalID: -408737580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_78"
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 4108
+        width: 441
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a1dccb7b8327c4da7de204cb1b3b89
+      internalID: 634760323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_79"
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 4108
+        width: 442
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77cb187cf817474e912d53a2d61e412
+      internalID: -1549772169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_80"
+      rect:
+        serializedVersion: 2
+        x: 2666
+        y: 4108
+        width: 444
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c744906136bd9e4aba194436c8b77fe
+      internalID: 1135860119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_81"
+      rect:
+        serializedVersion: 2
+        x: 3819
+        y: 4108
+        width: 444
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4906e2329d85343b2f228d82fa6951
+      internalID: -487952557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_82"
+      rect:
+        serializedVersion: 2
+        x: 4971
+        y: 4108
+        width: 446
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880f0088b9bc42d42a2fb11e61f31c1f
+      internalID: -1499483161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_83"
+      rect:
+        serializedVersion: 2
+        x: 6123
+        y: 4108
+        width: 448
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e14f43024d1b6848bea1fe8927155a6
+      internalID: 2094825054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_84"
+      rect:
+        serializedVersion: 2
+        x: 7275
+        y: 4108
+        width: 449
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4e38dd78a2e3c4ebe968a3370e7d65
+      internalID: -1825573362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_85"
+      rect:
+        serializedVersion: 2
+        x: 8428
+        y: 4108
+        width: 450
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc650e7d5c30fb64cb3c9d1f04f2178a
+      internalID: 741967462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_86"
+      rect:
+        serializedVersion: 2
+        x: 9580
+        y: 4108
+        width: 451
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9ccb0458f6de84e8f10e893ba0bbe2
+      internalID: 259395576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_87"
+      rect:
+        serializedVersion: 2
+        x: 10733
+        y: 4108
+        width: 452
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cab9c423b1178942a99187fc0126ab3
+      internalID: 254438178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_88"
+      rect:
+        serializedVersion: 2
+        x: 11885
+        y: 4108
+        width: 453
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974e7ebd2d4d82a44897d4bb21462fc7
+      internalID: 364890449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_89"
+      rect:
+        serializedVersion: 2
+        x: 13037
+        y: 4108
+        width: 455
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dd29b8666fb17479b30ab66740c3e9
+      internalID: 674189842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_90"
+      rect:
+        serializedVersion: 2
+        x: 14189
+        y: 4108
+        width: 457
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36928533687e4b642836a9771d897911
+      internalID: 82374802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_91"
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 3459
+        width: 457
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bc0c1db80a1e44b95add152dc6f63a
+      internalID: 1920300834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_92"
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 3459
+        width: 459
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be99bcba6d2c2a45b6449c6060a32e0
+      internalID: 1332010306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_93"
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 3459
+        width: 461
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314aeaa4e599d0145afd520fc5ae2e20
+      internalID: 2140514348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_94"
+      rect:
+        serializedVersion: 2
+        x: 3802
+        y: 3459
+        width: 462
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee84f79e41a7f44b98b63efd26bf154
+      internalID: -981595263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_95"
+      rect:
+        serializedVersion: 2
+        x: 4955
+        y: 3459
+        width: 463
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249ce9ad0d5ded644bb5cc3e46a94015
+      internalID: 1973706586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_96"
+      rect:
+        serializedVersion: 2
+        x: 6107
+        y: 3459
+        width: 464
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc9b6e54a88b5d4ba4b6f5e1502ea3c
+      internalID: 1125214581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_97"
+      rect:
+        serializedVersion: 2
+        x: 7259
+        y: 3459
+        width: 466
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b6145037bf3c044addb0e4060c13a6
+      internalID: -1661952624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_98"
+      rect:
+        serializedVersion: 2
+        x: 8412
+        y: 3459
+        width: 467
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c9e228fc32b9942999a0c1597fb9c5
+      internalID: -1752060717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_99"
+      rect:
+        serializedVersion: 2
+        x: 9564
+        y: 3459
+        width: 468
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02226dcd8521d1d439af7bee97fabb1d
+      internalID: 2070662006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_100"
+      rect:
+        serializedVersion: 2
+        x: 10717
+        y: 3459
+        width: 469
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13622fd626aa7a4d939dcb6e91a2273
+      internalID: 1046068328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_101"
+      rect:
+        serializedVersion: 2
+        x: 11869
+        y: 3459
+        width: 470
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71e57198a1dac849881a961797e5da0
+      internalID: 526403812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_102"
+      rect:
+        serializedVersion: 2
+        x: 13022
+        y: 3459
+        width: 471
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed02ca94c894e44e81aeb21c12f5cb9
+      internalID: 1493399881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_103"
+      rect:
+        serializedVersion: 2
+        x: 14174
+        y: 3459
+        width: 472
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ba61eb0ec66a442bd2dabac0ec5609
+      internalID: 209720298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_104"
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 2810
+        width: 472
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74bbc31a891a22409852dcb4997d76f
+      internalID: -1723871256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_105"
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 2810
+        width: 473
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65eb8fa6a5394914788240656b3d0232
+      internalID: -960446431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_106"
+      rect:
+        serializedVersion: 2
+        x: 2638
+        y: 2810
+        width: 473
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e7e42d6cce4f7478a8d22008b09ef5
+      internalID: 1511808760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_107"
+      rect:
+        serializedVersion: 2
+        x: 3791
+        y: 2810
+        width: 474
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e73d618137147438d8f998d9b302a4
+      internalID: 1572933921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_108"
+      rect:
+        serializedVersion: 2
+        x: 4945
+        y: 2810
+        width: 473
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afb6b607ac07d444ba33adcf5c8866c
+      internalID: -556902809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_109"
+      rect:
+        serializedVersion: 2
+        x: 6099
+        y: 2810
+        width: 473
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcefb2a23bb52454a82eb5571330bd56
+      internalID: -887463933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_110"
+      rect:
+        serializedVersion: 2
+        x: 7253
+        y: 2810
+        width: 472
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869123bb6af624c40a5f6a1489d9a50d
+      internalID: 427789478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_111"
+      rect:
+        serializedVersion: 2
+        x: 8407
+        y: 2810
+        width: 472
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289ddf65d07ad8347b27850d283dea90
+      internalID: -79722130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_112"
+      rect:
+        serializedVersion: 2
+        x: 9561
+        y: 2810
+        width: 472
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317b3625dc53bb04dab85c072efed4d9
+      internalID: -1874301903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_113"
+      rect:
+        serializedVersion: 2
+        x: 10716
+        y: 2810
+        width: 470
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8e431cc6e0f8149a217c4bc4e74df6
+      internalID: 2054526305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_114"
+      rect:
+        serializedVersion: 2
+        x: 11870
+        y: 2810
+        width: 470
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9418422975a82bb4086c10535f6594b9
+      internalID: 1463091399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_115"
+      rect:
+        serializedVersion: 2
+        x: 13025
+        y: 2810
+        width: 468
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f15ff20a757544eae0eab28756d249
+      internalID: 142570733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_116"
+      rect:
+        serializedVersion: 2
+        x: 14180
+        y: 2810
+        width: 467
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c226b7faf15d86449ab69110396d2165
+      internalID: 211562885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_117"
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 2161
+        width: 465
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5314ef486b5518448a0f6d068bc12df
+      internalID: -1992350152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_118"
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 2161
+        width: 464
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc4b4bb45e9afa49a1dfa5e25e7ba1f
+      internalID: 689214601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_119"
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 2161
+        width: 462
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b13a64aeb649a4d9a782e5f929ad28
+      internalID: 1712934888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_120"
+      rect:
+        serializedVersion: 2
+        x: 3804
+        y: 2161
+        width: 461
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bfa264eee45784e96457a9756c5abf
+      internalID: -1218992980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_121"
+      rect:
+        serializedVersion: 2
+        x: 4959
+        y: 2161
+        width: 460
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff82d260d47be674ea4bb9387b49fdc1
+      internalID: -67123617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_122"
+      rect:
+        serializedVersion: 2
+        x: 6114
+        y: 2161
+        width: 458
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853565d6c0325194f80e0a131ece3781
+      internalID: 2054288398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_123"
+      rect:
+        serializedVersion: 2
+        x: 7269
+        y: 2161
+        width: 457
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d26e105e4e6494c915dcba70e18da3
+      internalID: 1068270645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_124"
+      rect:
+        serializedVersion: 2
+        x: 8424
+        y: 2161
+        width: 455
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d359a7f95e2dd4d980dcd5c2826842
+      internalID: 610247773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_125"
+      rect:
+        serializedVersion: 2
+        x: 9579
+        y: 2161
+        width: 454
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da54495ba13cea47837e511b9903ef5
+      internalID: -241683943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_126"
+      rect:
+        serializedVersion: 2
+        x: 10734
+        y: 2161
+        width: 452
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162cedcc0b27efe409f102264e821138
+      internalID: 423905905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_127"
+      rect:
+        serializedVersion: 2
+        x: 11888
+        y: 2161
+        width: 452
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0484971e32987d348967be13ab85ffcf
+      internalID: 1544645033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_128"
+      rect:
+        serializedVersion: 2
+        x: 13043
+        y: 2161
+        width: 450
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a88ca52c41df00489889dc1954d9f90
+      internalID: -2077966610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_129"
+      rect:
+        serializedVersion: 2
+        x: 14197
+        y: 2161
+        width: 450
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d8604bcf7f5ec44ba147aa0b4a640a
+      internalID: 340238788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_130"
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1512
+        width: 448
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93c3d0e2a9c493448dca1f7695ba9b9
+      internalID: -1869074103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_131"
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 1512
+        width: 448
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b6e8a8cc03ccf40a8c6b8f2d632969
+      internalID: -994276158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_132"
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 1512
+        width: 447
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5338445920e1644c94f43105ab1cbb3
+      internalID: 1984719894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_133"
+      rect:
+        serializedVersion: 2
+        x: 3819
+        y: 1512
+        width: 446
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea6518cd4b2ec8448f94e9f4f737765
+      internalID: 1782289874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_134"
+      rect:
+        serializedVersion: 2
+        x: 4973
+        y: 1512
+        width: 445
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6b99e0a9dadc345a2c231b050baada
+      internalID: 954127910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_135"
+      rect:
+        serializedVersion: 2
+        x: 6127
+        y: 1512
+        width: 445
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd99e61c31126e94b85281b06a6bc0d2
+      internalID: -751215309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_136"
+      rect:
+        serializedVersion: 2
+        x: 7281
+        y: 1512
+        width: 444
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fa5edb1354bd746ac30532639c2c77
+      internalID: -910069820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_137"
+      rect:
+        serializedVersion: 2
+        x: 8435
+        y: 1512
+        width: 444
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85787a7467459d944b79d66eabbbe365
+      internalID: 1480275360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_138"
+      rect:
+        serializedVersion: 2
+        x: 9589
+        y: 1512
+        width: 444
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e7feca81e677349bbdd1de474b173e
+      internalID: 1586316554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_139"
+      rect:
+        serializedVersion: 2
+        x: 10743
+        y: 1512
+        width: 443
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a9ef6169d0fd440a543022c49d9aa1
+      internalID: 108900786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_140"
+      rect:
+        serializedVersion: 2
+        x: 11897
+        y: 1512
+        width: 443
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8905270eef5833c41adbbd344fb53868
+      internalID: -1446236137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_141"
+      rect:
+        serializedVersion: 2
+        x: 13052
+        y: 1512
+        width: 441
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4864ed639ee62444bd24d59f6910c32
+      internalID: 1678183639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_142"
+      rect:
+        serializedVersion: 2
+        x: 14206
+        y: 1512
+        width: 440
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc110405e125aa43915940a2e42b721
+      internalID: 1509711739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_143"
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 864
+        width: 440
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb29c2f4b691594788a69d218adb1b6
+      internalID: -707961684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_144"
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 864
+        width: 440
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2466f9a42e3c1684c9e2444849542446
+      internalID: 170547296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_145"
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 864
+        width: 439
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fd5f6486c8f8244b6f65e23d1780d1
+      internalID: -1561659499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_146"
+      rect:
+        serializedVersion: 2
+        x: 3826
+        y: 864
+        width: 439
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7fe1e2525728043a81d3e369dd3abe
+      internalID: -405017297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_147"
+      rect:
+        serializedVersion: 2
+        x: 4980
+        y: 864
+        width: 438
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4048117ff94570458ac346d86431789
+      internalID: -1971557961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_148"
+      rect:
+        serializedVersion: 2
+        x: 6134
+        y: 864
+        width: 438
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d24f3963ac4134aa5926ee967f44dd
+      internalID: -1850370644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Torsken Sv\xF8mmer Sprite Sheet4 1_149"
+      rect:
+        serializedVersion: 2
+        x: 7288
+        y: 864
+        width: 437
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0837ded75ff373a48aaa85d90dec8bf6
+      internalID: -500818091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_0": 920046362
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_1": 842356120
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_10": 229899822
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_100": 1046068328
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_101": 526403812
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_102": 1493399881
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_103": 209720298
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_104": -1723871256
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_105": -960446431
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_106": 1511808760
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_107": 1572933921
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_108": -556902809
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_109": -887463933
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_11": -118918578
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_110": 427789478
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_111": -79722130
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_112": -1874301903
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_113": 2054526305
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_114": 1463091399
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_115": 142570733
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_116": 211562885
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_117": -1992350152
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_118": 689214601
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_119": 1712934888
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_12": 221263703
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_120": -1218992980
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_121": -67123617
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_122": 2054288398
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_123": 1068270645
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_124": 610247773
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_125": -241683943
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_126": 423905905
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_127": 1544645033
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_128": -2077966610
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_129": 340238788
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_13": 1062841161
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_130": -1869074103
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_131": -994276158
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_132": 1984719894
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_133": 1782289874
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_134": 954127910
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_135": -751215309
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_136": -910069820
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_137": 1480275360
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_138": 1586316554
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_139": 108900786
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_14": -1545210290
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_140": -1446236137
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_141": 1678183639
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_142": 1509711739
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_143": -707961684
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_144": 170547296
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_145": -1561659499
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_146": -405017297
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_147": -1971557961
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_148": -1850370644
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_149": -500818091
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_15": 580089695
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_16": 157307673
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_17": 1059467130
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_18": 830672179
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_19": -1633210456
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_2": 1340170895
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_20": 888220981
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_21": 74592026
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_22": -1640381680
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_23": -98546353
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_24": 654433942
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_25": -370376578
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_26": -2119572687
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_27": 363026109
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_28": -283914633
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_29": -330272360
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_3": 780244690
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_30": 1891852938
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_31": -281865170
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_32": 2021183433
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_33": -26843250
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_34": 61920690
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_35": -2093216466
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_36": 711485743
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_37": -915885490
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_38": 289671465
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_39": 2082787754
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_4": -1625106213
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_40": -2032472387
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_41": -939092073
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_42": -702438681
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_43": 1174490322
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_44": 1288653431
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_45": -1535214241
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_46": 1933330320
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_47": 974678970
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_48": 2068935886
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_49": -746169172
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_5": 371262287
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_50": -2138808830
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_51": 503585713
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_52": -1861891121
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_53": -1836689787
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_54": 1284188073
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_55": -707654802
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_56": 764525667
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_57": -709944736
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_58": -1003415224
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_59": -420211475
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_6": 624315741
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_60": -2131997223
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_61": -2111041863
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_62": 601433379
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_63": 1107541064
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_64": 147656472
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_65": -1647659981
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_66": -994487315
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_67": 247959860
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_68": 58403442
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_69": -1112386637
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_7": 1300045334
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_70": -381305142
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_71": 874006228
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_72": 1861473403
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_73": -1700385667
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_74": 1253714483
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_75": -1398087200
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_76": -1004688281
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_77": -408737580
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_78": 634760323
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_79": -1549772169
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_8": 996157092
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_80": 1135860119
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_81": -487952557
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_82": -1499483161
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_83": 2094825054
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_84": -1825573362
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_85": 741967462
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_86": 259395576
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_87": 254438178
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_88": 364890449
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_89": 674189842
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_9": 1863280826
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_90": 82374802
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_91": 1920300834
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_92": 1332010306
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_93": 2140514348
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_94": -981595263
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_95": 1973706586
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_96": 1125214581
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_97": -1661952624
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_98": -1752060717
+      "Torsken Sv\xF8mmer Sprite Sheet4 1_99": 2070662006
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
