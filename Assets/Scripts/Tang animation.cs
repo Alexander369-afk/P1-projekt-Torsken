@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tanganimation : MonoBehaviour
 {
-{
+
     //This is the Tentacle script changed
 
 
@@ -79,6 +79,7 @@ public class Tanganimation : MonoBehaviour
         lineRend.SetPositions(segmentPoses);
         //updates the position of the (lineRend) to match the calculated segmentPoses/points.
     }
+}
 
 
     //source https://www.youtube.com/watch?v=9hTnlp9_wX8 (also, the //explanation is part me, part chatGPT and part the tutorial.) 
