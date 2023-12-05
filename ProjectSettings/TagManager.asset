@@ -12,6 +12,8 @@ TagManager:
   - SlutSpil1
   - Minigame2E
   - IntroTag
+  - CameraZoneEnter
+  - CameraZoneExit
   layers:
   - Default
   - TransparentFX
