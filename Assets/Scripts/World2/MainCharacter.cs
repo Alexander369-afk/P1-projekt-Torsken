@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class MainCharacter : MonoBehaviour
 {
     // Assign these in the Unity Editor
-    public Canvas canvas; // Reference to the Canvas
-    public GameObject buttonPrefab; // Reference to the UI Button Prefab
+    // Reference to the Canvas
+     // Reference to the UI Button Prefab
 
     // Your existing variables
     public float moveSpeed = 5f;

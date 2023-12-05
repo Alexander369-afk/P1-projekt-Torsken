@@ -13,33 +13,38 @@ public class Sauce : MonoBehaviour
     {
         Debug.Log("Mouse Down on: " + gameObject.name);
 
-        if (gameObject == rightTrigger)
+        if (CompareTag("rightTrigger"))
         {
             Debug.Log("Right Trigger Clicked");
             MoveObject(Vector2.right);
         }
-        else if (gameObject == upTrigger)
+        else if (CompareTag("upTrigger"))
         {
             Debug.Log("Up Trigger Clicked");
             MoveObject(Vector2.up);
         }
-        else if (gameObject == leftTrigger)
+        else if (CompareTag("leftTrigger"))
         {
             Debug.Log("Left Trigger Clicked");
             MoveObject(Vector2.left);
         }
-        else if (gameObject == downTrigger)
+        else if (CompareTag("downTrigger"))
         {
             Debug.Log("Down Trigger Clicked");
             MoveObject(Vector2.down);
         }
-        else
+        else if (CompareTag("Gople"))
         {
-            Debug.Log("Main Object Clicked");
-            ShowDirectionTriggers();
+            Debug.Log("Gople Clicked");
+            // Do something for Gople
         }
-
-       
+        else if (CompareTag("Waterjelly"))
+        {
+            Debug.Log("Waterjelly Clicked");
+            ShowDirectionTriggers();
+            // Do something for Waterjelly
+        }
+        
     }
 
     void ShowDirectionTriggers()
