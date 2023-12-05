@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class CameraZoneSwitcher : MonoBehaviour
+public class CameraTriggerSwitcher : MonoBehaviour
 {
     public string triggerEnterTag;
     public string triggerExitTag;
