@@ -280,15 +280,39 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 950091009}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -3880690198865125964, guid: a8a52b57eba3bfb4ea02c06e55e52f78, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 747607514}
     - targetCorrespondingSourceObject: {fileID: 3024075104091146386, guid: a8a52b57eba3bfb4ea02c06e55e52f78, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1568503676}
+    - targetCorrespondingSourceObject: {fileID: 3024075104091146386, guid: a8a52b57eba3bfb4ea02c06e55e52f78, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1568503679}
+    - targetCorrespondingSourceObject: {fileID: -2200974720394778088, guid: a8a52b57eba3bfb4ea02c06e55e52f78, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 917425135}
+    - targetCorrespondingSourceObject: {fileID: 6384787245787978050, guid: a8a52b57eba3bfb4ea02c06e55e52f78, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 170802595}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: a8a52b57eba3bfb4ea02c06e55e52f78, type: 3}
 --- !u!1 &170802592 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6384787245787978050, guid: a8a52b57eba3bfb4ea02c06e55e52f78, type: 3}
   m_PrefabInstance: {fileID: 92840893}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &170802595
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170802592}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &188977374
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +841,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -3880690198865125964, guid: a8a52b57eba3bfb4ea02c06e55e52f78, type: 3}
   m_PrefabInstance: {fileID: 92840893}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &747607514
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747607511}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &907809863
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +926,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -2200974720394778088, guid: a8a52b57eba3bfb4ea02c06e55e52f78, type: 3}
   m_PrefabInstance: {fileID: 92840893}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &917425135
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917425132}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &950091007
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +948,8 @@ GameObject:
   m_Component:
   - component: {fileID: 950091009}
   - component: {fileID: 950091008}
+  - component: {fileID: 950091010}
+  - component: {fileID: 950091011}
   m_Layer: 0
   m_Name: Torsken_ringer_facetime
   m_TagString: Untagged
@@ -974,6 +1024,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 436810401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!225 &950091010
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950091007}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &950091011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950091007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1085277618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,6 +1293,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!225 &1568503679
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568503674}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
