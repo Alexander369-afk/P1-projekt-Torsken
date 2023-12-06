@@ -8,36 +8,54 @@ using UnityEngine;
 
 public class DeclineCall : MonoBehaviour
 {
+    [SerializeField] private Transform targetTransform;
         // Time before the GameObjects are reactivated
     [SerializeField] private float _callBackTime = 3f;
-        // Array of GameObjects that will be deactivated
-    public GameObject[] declineButton;
+
     
         // Call this method to deactivate the GameObjects
     public void Call() {
-        foreach (GameObject button in declineButton)
         {
-            FadeOut(button);
+            FadeOut(targetTransform);
             
         }
         // Reactivate the GameObjects after the specified time
-        Invoke("ReactivateGameObjects",_callBackTime);
+        Invoke("ReactivateGameObjects", _callBackTime);
     }
     // Call this method to reactivate the GameObjects
-    void ReactivateGameObjects() {
-        foreach (GameObject button in declineButton)
+    void ReactivateGameObjects() 
         {
-            FadeIn(button);
-        }}
+            FadeIn(targetTransform);
+        }
     // Fade out the GameObjects
-    void FadeOut(GameObject obj) {
-        obj.GetComponent<CanvasGroup>().DOFade(0f, 1f);
-        obj.GetComponent<CanvasGroup>().interactable = false;
+    void FadeOut(Transform transform)
+    {
+        foreach (Transform child in transform)
+        {
+            FadeOut(child);
+        }
+        CanvasGroup canvasGroup = transform.GetComponent<CanvasGroup>();
+
+        if (canvasGroup != null)
+        {
+            canvasGroup.DOFade(0f, 1f).SetEase(Ease.Linear);
+            canvasGroup.interactable = false;
+        }
     }
 
     // Fade in the GameObjects
-    void FadeIn(GameObject obj) {
-        obj.GetComponent<CanvasGroup>().DOFade(1f, 1f);
-        obj.GetComponent<CanvasGroup>().interactable = true;
+    void FadeIn(Transform transform) 
+    {
+        foreach (Transform child in transform)
+        {
+            FadeIn(child);
+        }
+        CanvasGroup canvasGroup = transform.GetComponent<CanvasGroup>();
+
+        if (canvasGroup != null)
+        {
+            canvasGroup.DOFade(1f, 1f).SetEase(Ease.Linear);
+            canvasGroup.interactable = true;
+        }
     }
 }
