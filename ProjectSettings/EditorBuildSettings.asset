@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro Call.unity
     guid: 4d615621837eaa04984bd9dcf9699fec
   - enabled: 1
-    path: Assets/Scenes/nathalie.unity
+    path: Assets/Scenes/Torsken.unity
     guid: db42e07eaabfde34cba84e2e043694c1
   m_configObjects: {}
