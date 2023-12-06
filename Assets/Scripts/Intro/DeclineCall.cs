@@ -4,28 +4,58 @@ using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
+
 public class DeclineCall : MonoBehaviour
-
 {
-
+    [SerializeField] private Transform targetTransform;
+        // Time before the GameObjects are reactivated
     [SerializeField] private float _callBackTime = 3f;
-    public GameObject[] declineButton;
-      void Start()
-    {
-        // declineButton = GameObject.FindGameObjectsWithTag("IntroTag");
-    }
+
+    
+        // Call this method to deactivate the GameObjects
     public void Call() {
-        foreach (GameObject button in declineButton)
         {
-            button.SetActive(false);
+            FadeOut(targetTransform);
             
         }
-        Invoke("ReactivateGameObjects",_callBackTime);
+        // Reactivate the GameObjects after the specified time
+        Invoke("ReactivateGameObjects", _callBackTime);
     }
-    void ReactivateGameObjects() {
-
-        foreach (GameObject button in declineButton)
+    // Call this method to reactivate the GameObjects
+    void ReactivateGameObjects() 
         {
-            button.SetActive(true);
-        }}
+            FadeIn(targetTransform);
+        }
+    // Fade out the GameObjects
+    void FadeOut(Transform transform)
+    {
+        foreach (Transform child in transform)
+        {
+            FadeOut(child);
+        }
+        CanvasGroup canvasGroup = transform.GetComponent<CanvasGroup>();
+
+        if (canvasGroup != null)
+        {
+            canvasGroup.DOFade(0f, 1f).SetEase(Ease.Linear);
+            canvasGroup.interactable = false;
+        }
+    }
+
+    // Fade in the GameObjects
+    void FadeIn(Transform transform) 
+    {
+        foreach (Transform child in transform)
+        {
+            FadeIn(child);
+        }
+        CanvasGroup canvasGroup = transform.GetComponent<CanvasGroup>();
+
+        if (canvasGroup != null)
+        {
+            canvasGroup.DOFade(1f, 1f).SetEase(Ease.Linear);
+            canvasGroup.interactable = true;
+        }
+    }
 }

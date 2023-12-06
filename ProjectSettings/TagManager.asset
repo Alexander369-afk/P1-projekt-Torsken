@@ -12,8 +12,12 @@ TagManager:
   - SlutSpil1
   - Minigame2E
   - IntroTag
-  - CameraZoneEnter
-  - CameraZoneExit
+  - upTrigger
+  - leftTrigger
+  - downTrigger
+  - rightTrigger
+  - Gople
+  - Waterjelly
   layers:
   - Default
   - TransparentFX

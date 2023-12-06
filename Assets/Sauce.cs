@@ -1,6 +1,6 @@
-/* using UnityEngine;
+using UnityEngine;
 
-public class KOPIHOLY : MonoBehaviour
+public class Sauce : MonoBehaviour
 {
     public GameObject gople;
     public GameObject jellyfish;
@@ -13,8 +13,38 @@ public class KOPIHOLY : MonoBehaviour
     {
         Debug.Log("Mouse Down on: " + gameObject.name);
 
-        ShowDirectionTriggers();
-        Debug.Log("saut");
+        if (CompareTag("rightTrigger"))
+        {
+            Debug.Log("Right Trigger Clicked");
+            MoveObject(Vector2.right);
+        }
+        else if (CompareTag("upTrigger"))
+        {
+            Debug.Log("Up Trigger Clicked");
+            MoveObject(Vector2.up);
+        }
+        else if (CompareTag("leftTrigger"))
+        {
+            Debug.Log("Left Trigger Clicked");
+            MoveObject(Vector2.left);
+        }
+        else if (CompareTag("downTrigger"))
+        {
+            Debug.Log("Down Trigger Clicked");
+            MoveObject(Vector2.down);
+        }
+        else if (CompareTag("Gople"))
+        {
+            Debug.Log("Gople Clicked");
+            // Do something for Gople
+        }
+        else if (CompareTag("Waterjelly"))
+        {
+            Debug.Log("Waterjelly Clicked");
+            ShowDirectionTriggers();
+            // Do something for Waterjelly
+        }
+        
     }
 
     void ShowDirectionTriggers()
@@ -38,32 +68,4 @@ public class KOPIHOLY : MonoBehaviour
     {
         transform.Translate(direction);
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        // Check which trigger was collided with based on tags and move the GameObject accordingly
-        Debug.Log("Trigger activated: " + other.gameObject.name);
-
-        if (other.CompareTag("rightTrigger"))
-        {
-            MoveObject(Vector2.right);
-            Debug.Log("saujht");
-        }
-        else if (other.CompareTag("upTrigger"))
-        {
-            MoveObject(Vector2.up);
-            Debug.Log("saujht");
-        }
-        else if (other.CompareTag("leftTrigger"))
-        {
-            MoveObject(Vector2.left);
-            Debug.Log("saujht");
-        }
-        else if (other.CompareTag("downTrigger"))
-        {
-            MoveObject(Vector2.down);
-            Debug.Log("sautjh");
-        }
-    }
 }
-*/
