@@ -11,6 +11,8 @@ public class DeclineCall : MonoBehaviour
     [SerializeField] private Transform targetTransform;
         // Time before the GameObjects are reactivated
     [SerializeField] private float _callBackTime = 3f;
+    [Range(0f, 5f), SerializeField] private float _fadeIn = 1f;
+    [Range(0f, 5f), SerializeField] private float _fadeOut = 0.5f;
 
     
         // Call this method to deactivate the GameObjects
@@ -34,12 +36,11 @@ public class DeclineCall : MonoBehaviour
         {
             FadeOut(child);
         }
-        CanvasGroup canvasGroup = transform.GetComponent<CanvasGroup>();
+        Renderer renderer = transform.GetComponent<Renderer>();
 
-        if (canvasGroup != null)
+        if (renderer != null)
         {
-            canvasGroup.DOFade(0f, 1f).SetEase(Ease.Linear);
-            canvasGroup.interactable = false;
+            renderer.material.DOFade(0f, _fadeOut).SetEase(Ease.Linear);
         }
     }
 
@@ -50,12 +51,11 @@ public class DeclineCall : MonoBehaviour
         {
             FadeIn(child);
         }
-        CanvasGroup canvasGroup = transform.GetComponent<CanvasGroup>();
+        Renderer renderer = transform.GetComponent<Renderer>();
 
-        if (canvasGroup != null)
+        if (renderer != null)
         {
-            canvasGroup.DOFade(1f, 1f).SetEase(Ease.Linear);
-            canvasGroup.interactable = true;
+            renderer.material.DOFade(1f, _fadeIn).SetEase(Ease.Linear);
         }
     }
 }
