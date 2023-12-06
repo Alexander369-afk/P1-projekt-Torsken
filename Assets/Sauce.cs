@@ -11,49 +11,17 @@ public class Sauce : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("Mouse Down on: " + gameObject.name);
-
-        if (CompareTag("rightTrigger"))
-        {
-            Debug.Log("Right Trigger Clicked");
-            MoveObject(Vector2.right);
-        }
-        else if (CompareTag("upTrigger"))
-        {
-            Debug.Log("Up Trigger Clicked");
-            MoveObject(Vector2.up);
-        }
-        else if (CompareTag("leftTrigger"))
-        {
-            Debug.Log("Left Trigger Clicked");
-            MoveObject(Vector2.left);
-        }
-        else if (CompareTag("downTrigger"))
-        {
-            Debug.Log("Down Trigger Clicked");
-            MoveObject(Vector2.down);
-        }
-        else if (CompareTag("Gople"))
-        {
-            Debug.Log("Gople Clicked");
-            // Do something for Gople
-        }
-        else if (CompareTag("Waterjelly"))
-        {
-            Debug.Log("Waterjelly Clicked");
-            ShowDirectionTriggers();
-            // Do something for Waterjelly
-        }
-        
+        // Logic for showing direction triggers
+        ShowDirectionTriggers();
     }
 
     void ShowDirectionTriggers()
     {
         // Example: Set the triggers active at the transform of the current game object
-        SetTriggerActive(rightTrigger, new Vector2(transform.position.x, transform.position.y) + Vector2.right);
-        SetTriggerActive(upTrigger, new Vector2(transform.position.x, transform.position.y) + Vector2.up);
-        SetTriggerActive(leftTrigger, new Vector2(transform.position.x, transform.position.y) + Vector2.left);
-        SetTriggerActive(downTrigger, new Vector2(transform.position.x, transform.position.y) + Vector2.down);
+        SetTriggerActive(rightTrigger, (Vector2)transform.position + Vector2.right);
+        SetTriggerActive(upTrigger, (Vector2)transform.position + Vector2.up);
+        SetTriggerActive(leftTrigger, (Vector2)transform.position + Vector2.left);
+        SetTriggerActive(downTrigger, (Vector2)transform.position + Vector2.down);
     }
 
     void SetTriggerActive(GameObject trigger, Vector2 position)
@@ -61,11 +29,31 @@ public class Sauce : MonoBehaviour
         // Example: Set the position and activate the trigger
         trigger.transform.position = position;
         trigger.SetActive(true);
-        Debug.Log("saut");
     }
 
-    void MoveObject(Vector2 direction)
+    // Method to move the main object based on trigger direction
+    public void MoveObject(string direction)
     {
-        transform.Translate(direction);
+        Vector2 moveDirection = Vector2.zero;
+
+        // Check the direction based on the tag
+        switch (direction)
+        {
+            case "rightTrigger":
+                moveDirection = Vector2.right;
+                break;
+            case "upTrigger":
+                moveDirection = Vector2.up;
+                break;
+            case "leftTrigger":
+                moveDirection = Vector2.left;
+                break;
+            case "downTrigger":
+                moveDirection = Vector2.down;
+                break;
+        }
+
+        // Move the main object
+        transform.Translate(moveDirection);
     }
 }

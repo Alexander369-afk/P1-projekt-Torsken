@@ -492,8 +492,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -1087,8 +1087,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1828621949
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 8d0200a9eca464363aee24d322dd751e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1146,15 +1146,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 647074318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7982f064774a43d4991f4f8006eb0d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
-  rightTrigger: {fileID: 774890900}
-  upTrigger: {fileID: 647074318}
-  leftTrigger: {fileID: 2069358009}
-  downTrigger: {fileID: 658658129}
 --- !u!1 &658658129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,8 +1206,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1828621949
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 8d0200a9eca464363aee24d322dd751e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1271,15 +1265,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 658658129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7982f064774a43d4991f4f8006eb0d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
-  rightTrigger: {fileID: 774890900}
-  upTrigger: {fileID: 647074318}
-  leftTrigger: {fileID: 2069358009}
-  downTrigger: {fileID: 658658129}
 --- !u!1001 &717406499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1434,7 +1422,6 @@ GameObject:
   m_Component:
   - component: {fileID: 774890902}
   - component: {fileID: 774890901}
-  - component: {fileID: 774890904}
   - component: {fileID: 774890905}
   - component: {fileID: 774890906}
   m_Layer: 0
@@ -1511,18 +1498,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &774890904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774890900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc886f05e62544c8cbdbfd099e587be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &774890905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1553,15 +1528,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 774890900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7982f064774a43d4991f4f8006eb0d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
-  rightTrigger: {fileID: 774890900}
-  upTrigger: {fileID: 647074318}
-  leftTrigger: {fileID: 2069358009}
-  downTrigger: {fileID: 658658129}
 --- !u!1001 &849811635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1702,8 +1671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -1946,8 +1915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -2039,7 +2008,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3564110281009870970, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1868870779}
+      addedObject: {fileID: 1868870770}
   m_SourcePrefab: {fileID: 100100000, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
 --- !u!4 &1057583309 stripped
 Transform:
@@ -2335,7 +2304,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3564110281009870970, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1838265069}
+      addedObject: {fileID: 1838265060}
   m_SourcePrefab: {fileID: 100100000, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
 --- !u!4 &1145821228 stripped
 Transform:
@@ -2386,8 +2355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -2436,8 +2405,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -2587,8 +2556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -2733,8 +2702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -2826,14 +2795,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3564110281009870970, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1337535385}
+      addedObject: {fileID: 1337535376}
   m_SourcePrefab: {fileID: 100100000, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
 --- !u!4 &1337535375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471236804744205347, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
   m_PrefabInstance: {fileID: 1337535374}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1337535385
+--- !u!114 &1337535376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2895,8 +2864,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -3136,8 +3105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -3282,8 +3251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -3375,14 +3344,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3564110281009870970, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1716243572}
+      addedObject: {fileID: 1716243563}
   m_SourcePrefab: {fileID: 100100000, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
 --- !u!4 &1716243562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471236804744205347, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
   m_PrefabInstance: {fileID: 1716243561}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1716243572
+--- !u!114 &1716243563
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3444,8 +3413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
@@ -3455,7 +3424,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3564110281009870970, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
   m_PrefabInstance: {fileID: 1145821227}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1838265069
+--- !u!114 &1838265060
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3478,7 +3447,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3564110281009870970, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
   m_PrefabInstance: {fileID: 1057583308}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1868870779
+--- !u!114 &1868870770
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3718,8 +3687,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1828621949
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 8d0200a9eca464363aee24d322dd751e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3777,15 +3746,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2069358009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7982f064774a43d4991f4f8006eb0d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
-  rightTrigger: {fileID: 774890900}
-  upTrigger: {fileID: 647074318}
-  leftTrigger: {fileID: 2069358009}
-  downTrigger: {fileID: 658658129}
 --- !u!1001 &2094782987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3873,14 +3836,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3564110281009870970, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2094782998}
+      addedObject: {fileID: 2094782989}
   m_SourcePrefab: {fileID: 100100000, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
 --- !u!4 &2094782988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471236804744205347, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
   m_PrefabInstance: {fileID: 2094782987}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2094782998
+--- !u!114 &2094782989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3965,7 +3928,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3564110281009870970, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5802082260662056327}
+      addedObject: {fileID: 5802082260662056315}
   m_SourcePrefab: {fileID: 100100000, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
 --- !u!4 &5802082260662056313 stripped
 Transform:
@@ -3977,7 +3940,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3564110281009870970, guid: 2823211de866e334d87b0872ce60ca73, type: 3}
   m_PrefabInstance: {fileID: 5802082260662056312}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5802082260662056327
+--- !u!114 &5802082260662056315
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4131,7 +4094,7 @@ PrefabInstance:
       addedObject: {fileID: 8130200188390055109}
     - targetCorrespondingSourceObject: {fileID: 5962295077308105156, guid: da16f495caa512644b303a87c361b7bf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8130200188390055110}
+      addedObject: {fileID: 8130200188390055113}
   m_SourcePrefab: {fileID: 100100000, guid: da16f495caa512644b303a87c361b7bf, type: 3}
 --- !u!4 &8130200188390055098 stripped
 Transform:
@@ -4170,7 +4133,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8130200188390055110
+--- !u!114 &8130200188390055113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4182,12 +4145,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e98b5e8a224d81a35a2e1ac7cbcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gople: {fileID: 5802082260662056314}
-  jellyfish: {fileID: 8130200188390055099}
+  gople: {fileID: 8130200188390055099}
+  jellyfish: {fileID: 340480565}
   rightTrigger: {fileID: 774890900}
   upTrigger: {fileID: 647074318}
   leftTrigger: {fileID: 2069358009}
-  downTrigger: {fileID: 917456660}
+  downTrigger: {fileID: 658658129}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
