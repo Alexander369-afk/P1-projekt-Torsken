@@ -3,20 +3,24 @@ using UnityEngine.UI;
 
 public class MainCharacter : MonoBehaviour
 {
-    // Assign these in the Unity Editor
-    // Reference to the Canvas
-     // Reference to the UI Button Prefab
-
     // Your existing variables
     public float moveSpeed = 5f;
-    public LayerMask obstacleLayer;
     public GameObject Circle;
- 
-    private bool isScriptActive = false;
+
+
+
+    // Make obstacleLayer private
+    private LayerMask obstacleLayer;
+
+    void Start()
+    {
+        // Set obstacleLayer to the desired layer
+        obstacleLayer = LayerMask.GetMask("RayHit");
+    }
 
     void Update()
     {
-        if (isScriptActive && IsPathClear())
+        if (IsPathClear())
         {
             MoveCharacter();
         }
@@ -38,10 +42,17 @@ public class MainCharacter : MonoBehaviour
     {
         Vector2 rayDirection = new Vector2(0f, 1f);
         Vector2 rayOrigin = transform.position;
-        float rayDistance = 160f;
+        float rayDistance = 300f;
 
+        // Use the private obstacleLayer
         RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance, obstacleLayer);
-        return hit.collider == null;
+        if (hit.collider != null)
+        { 
+            Debug.Log("Obstacle detected: " + hit.collider.gameObject.name);
+        }
+        Debug.Log("Path is clear");
+        return true; 
+
     }
 
     void DrawDebugRay()
@@ -49,26 +60,10 @@ public class MainCharacter : MonoBehaviour
         Vector2 debugRayDirection = Vector2.right;
         Vector2 debugRayOrigin = transform.position;
         float debugRayDistance = 5f;
-        Debug.DrawRay(debugRayOrigin, debugRayDirection * debugRayDistance, isScriptActive ? Color.green : Color.red);
+        Debug.DrawRay(debugRayOrigin, debugRayDirection * debugRayDistance);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        ScriptMaster(other);
-    }
-
-    void ScriptMaster(Collider2D other)
-    {
-        if (other.CompareTag("Minispil2E"))
-        {
-            isScriptActive = true;
-        }
-        else if (other.CompareTag("Minispil3E"))
-        {
-            isScriptActive = false;
-        }
-    }
-   
 }
+
 
 

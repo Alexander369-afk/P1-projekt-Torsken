@@ -18,6 +18,8 @@ TagManager:
   - rightTrigger
   - Gople
   - Waterjelly
+  - CameraZoneExit
+  - CameraZoneEnter
   layers:
   - Default
   - TransparentFX
@@ -26,7 +28,7 @@ TagManager:
   - Water
   - UI
   - Stinky Particle
-  - Raycast
+  - RayHit
   - BackgroundParty
   - MidgroundParty
   - ForegroundParty

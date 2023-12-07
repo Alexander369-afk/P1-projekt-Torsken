@@ -8,11 +8,15 @@ public class Sauce : MonoBehaviour
     public GameObject upTrigger;
     public GameObject leftTrigger;
     public GameObject downTrigger;
+    public static Sauce currentSelectedMainObject;
+    public Sauce Selected;
 
     void OnMouseDown()
     {
         // Logic for showing direction triggers
         ShowDirectionTriggers();
+        currentSelectedMainObject = this;
+
     }
 
     void ShowDirectionTriggers()
@@ -40,16 +44,16 @@ public class Sauce : MonoBehaviour
         switch (direction)
         {
             case "rightTrigger":
-                moveDirection = Vector2.right;
+                moveDirection = new Vector2(1.35f, 0f);
                 break;
             case "upTrigger":
-                moveDirection = Vector2.up;
+                moveDirection = new Vector2(0f, 1.35f);
                 break;
             case "leftTrigger":
-                moveDirection = Vector2.left;
+                moveDirection = new Vector2(-1.35f, 0f);
                 break;
             case "downTrigger":
-                moveDirection = Vector2.down;
+                moveDirection = new Vector2(0f, -1.35f);
                 break;
         }
 
