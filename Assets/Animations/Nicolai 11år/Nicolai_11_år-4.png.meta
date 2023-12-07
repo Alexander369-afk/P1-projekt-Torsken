@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Layer 17.png.meta
-guid: 9042d871bc1bd4ffaa43586a99390ec8
-========
-guid: 38427548cbe8ae64798de7c6fd7a7eee
->>>>>>>> 2f79bdcb946d3407d8b0704f1158c99c1a9863b7:Assets/AssetsSprites/Intro Call/Cancel_Call_Button_Highlight.png.meta
+guid: 3a99577ac1f73d8488150c7c67297c54
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -76,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
