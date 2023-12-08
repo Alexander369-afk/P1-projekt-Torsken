@@ -2,20 +2,49 @@ using UnityEngine;
 
 public class Sauce : MonoBehaviour
 {
-    public GameObject gople;
-    public GameObject jellyfish;
+
     public GameObject rightTrigger;
     public GameObject upTrigger;
     public GameObject leftTrigger;
     public GameObject downTrigger;
     public static Sauce currentSelectedMainObject;
-    public Sauce Selected;
 
+    void Update()
+    {
+        if (currentSelectedMainObject != null)
+        {
+            // Logic for showing direction triggers for the current selected main object
+            if (currentSelectedMainObject.gameObject.CompareTag("Waterjelly"))
+            {
+                currentSelectedMainObject.ShowDirectionTriggers();
+            }
+
+            if (currentSelectedMainObject.gameObject.CompareTag("Gople"))
+            {
+                currentSelectedMainObject.ShowdDirectionGople();
+            }
+        }
+
+    }
+    
     void OnMouseDown()
     {
-        // Logic for showing direction triggers
-        ShowDirectionTriggers();
         currentSelectedMainObject = this;
+
+      
+
+        if (this.gameObject.tag == "Waterjelly") // https://www.youtube.com/watch?v=LoeFzKTTZU4&ab_channel=ChargerGames
+        {
+            ShowDirectionTriggers(); 
+        }
+
+        // Logic for showing direction triggers
+        if (this.gameObject.tag == "Gople") // https://www.youtube.com/watch?v=LoeFzKTTZU4&ab_channel=ChargerGames
+        {
+            ShowdDirectionGople();
+        }
+
+       
 
     }
 
@@ -25,6 +54,12 @@ public class Sauce : MonoBehaviour
         SetTriggerActive(rightTrigger, (Vector2)transform.position + Vector2.right);
         SetTriggerActive(upTrigger, (Vector2)transform.position + Vector2.up);
         SetTriggerActive(leftTrigger, (Vector2)transform.position + Vector2.left);
+        SetTriggerActive(downTrigger, (Vector2)transform.position + Vector2.down);
+    }
+
+    void ShowdDirectionGople()
+    {
+        SetTriggerActive(upTrigger, (Vector2)transform.position + Vector2.up);
         SetTriggerActive(downTrigger, (Vector2)transform.position + Vector2.down);
     }
 
@@ -60,4 +95,6 @@ public class Sauce : MonoBehaviour
         // Move the main object
         transform.Translate(moveDirection);
     }
+     
+
 }
