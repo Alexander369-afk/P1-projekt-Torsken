@@ -119,9 +119,10 @@ public class Sauce : MonoBehaviour
         else
         {
             SetTriggerPosition(rightTrigger, (Vector2)transform.position + Vector2.right);
+            rightTrigger.SetActive(true);
         }
 
-        Debug.DrawRay(transform.position, Vector2.right * raycastDistance, Color.white);
+        Debug.DrawRay(transform.position, Vector2.right * raycastDistance, Color.yellow);
     }
 
     private void ShootLeftRay(float delay)
