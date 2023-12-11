@@ -20,6 +20,7 @@ TagManager:
   - Waterjelly
   - CameraZoneExit
   - CameraZoneEnter
+  - Obstacle
   layers:
   - Default
   - TransparentFX
