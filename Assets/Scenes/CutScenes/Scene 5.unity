@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 0000000083710193d7189e0f5f2e1a5d3f08ac1d09d4a00d
+  m_ApplyToSortingLayers: d7189e0f
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -256,8 +256,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.0797, y: -0.23595, z: 0}
-    m_Extent: {x: 3.0823002, y: 1.24535, z: 0}
+    m_Center: {x: -2.08815, y: -0.24269998, z: 0}
+    m_Extent: {x: 3.08175, y: 1.2414, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.69109964
@@ -300,9 +300,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1912909380567894378, guid: 3b49c096b4b92421da38932584dabecb, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912909380567894378, guid: 3b49c096b4b92421da38932584dabecb, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912909380567894378, guid: 3b49c096b4b92421da38932584dabecb, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912909380567894378, guid: 3b49c096b4b92421da38932584dabecb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 2984672041748905798, guid: 3b49c096b4b92421da38932584dabecb, type: 3}
       propertyPath: m_Name
       value: "d\xE6kker for tekst"
@@ -313,7 +325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8032482907247933096, guid: 3b49c096b4b92421da38932584dabecb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4058346
+      value: 0.34329966
       objectReference: {fileID: 0}
     - target: {fileID: 8032482907247933096, guid: 3b49c096b4b92421da38932584dabecb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -321,7 +333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8032482907247933096, guid: 3b49c096b4b92421da38932584dabecb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.23
+      value: 5.11
       objectReference: {fileID: 0}
     - target: {fileID: 8032482907247933096, guid: 3b49c096b4b92421da38932584dabecb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -566,7 +578,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 0000000083710193d7189e0f5f2e1a5d3f08ac1d09d4a00d
+  m_ApplyToSortingLayers: d7189e0f
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -580,8 +592,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.5815501, y: -0.33114997, z: 0}
-    m_Extent: {x: 3.5869498, y: 1.32945, z: 0}
+    m_Center: {x: -2.5843499, y: -0.32804996, z: 0}
+    m_Extent: {x: 3.58235, y: 1.33125, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.69109964
