@@ -1,69 +1,83 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MainCharacter : MonoBehaviour
 {
-    // Your existing variables
     public float moveSpeed = 5f;
     public GameObject Circle;
+    public GameObject objectToIgnore1;
+    public GameObject objectToIgnore2;
 
-
-
-    // Make obstacleLayer private
+    private float rayDistance;
+    private Vector2 rayDirection;
+    private Vector2 rayOrigin;
     private LayerMask obstacleLayer;
 
     void Start()
     {
-        // Set obstacleLayer to the desired layer
         obstacleLayer = LayerMask.GetMask("RayHit");
+        rayDirection = Vector2.right;
+        rayDistance = Vector2.Distance(transform.position, Circle.transform.position);
+        float distance = Vector2.Distance(transform.position, Circle.transform.position);
+        Debug.Log("Distance between transform and Circle: " + distance);
     }
 
     void Update()
     {
-        if (IsPathClear())
+        if (CheckRays())
         {
             MoveCharacter();
         }
 
-        // Debugging: Draw the ray
-        DrawDebugRay();
+
     }
 
     void MoveCharacter()
     {
-        if (IsPathClear())
+        Vector2 nextPosition = Vector2.MoveTowards(transform.position, Circle.transform.position, moveSpeed * Time.deltaTime);
+        transform.position = nextPosition;
+    }
+
+    bool CheckRays()
+    {
+        string[] ignoreTags = { "IgnoreRay" };  // Add any additional tags to ignore
+
+        // Define ray parameters manually
+        Vector2[] rayOrigins = {
+            transform.position,
+            (Vector2)transform.position + new Vector2(2f, 0f),
+            (Vector2)transform.position + new Vector2(5f, 0f),
+            (Vector2)transform.position + new Vector2(10f, 0f),
+            (Vector2)transform.position + new Vector2(15f, 0f)
+        };
+
+        for (int i = 0; i < rayOrigins.Length; i++)
         {
-            Vector2 nextPosition = Vector2.MoveTowards(transform.position, Circle.transform.position, moveSpeed * Time.deltaTime);
-            transform.position = nextPosition;
+            Vector2 origin = rayOrigins[i];
+
+
+            RaycastHit2D hit = Physics2D.Raycast(origin, rayDirection, rayDistance, obstacleLayer);
+
+            Debug.Log($"Ray {i + 1} - Origin: {origin}, Direction: {rayDirection}, Hit: {hit.collider != null}");
+
+            if (hit.collider != null)
+            {
+                if (Array.Exists(ignoreTags, tag => hit.collider.CompareTag(tag)))
+                {
+                    Debug.Log("Ignoring obstacle: " + hit.collider.gameObject.name);
+                }
+                else
+                {
+                    Debug.Log("Obstacle detected: " + hit.collider.gameObject.name);
+                    return false; // Obstacle detected, return false
+                }
+            }
+
         }
+
+        return true; // Return true only if none of the rays detect an obstacle
     }
 
-    bool IsPathClear()
-    {
-        Vector2 rayDirection = new Vector2(0f, 1f);
-        Vector2 rayOrigin = transform.position;
-        float rayDistance = 300f;
-
-        // Use the private obstacleLayer
-        RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance, obstacleLayer);
-        if (hit.collider != null)
-        { 
-            Debug.Log("Obstacle detected: " + hit.collider.gameObject.name);
-        }
-        Debug.Log("Path is clear");
-        return true; 
-
-    }
-
-    void DrawDebugRay()
-    {
-        Vector2 debugRayDirection = Vector2.right;
-        Vector2 debugRayOrigin = transform.position;
-        float debugRayDistance = 5f;
-        Debug.DrawRay(debugRayOrigin, debugRayDirection * debugRayDistance);
-    }
 
 }
-
-
-
