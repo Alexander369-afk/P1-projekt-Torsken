@@ -20,7 +20,7 @@ TagManager:
   - Waterjelly
   - CameraZoneExit
   - CameraZoneEnter
-  - CameraZone
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -29,10 +29,10 @@ TagManager:
   - Water
   - UI
   - Stinky Particle
-  - Raycast
-  - BackgroundParty
-  - MidgroundParty
+  - RayHit
   - ForegroundParty
+  - Game_3_stone
+  - wheel
   - 
   - 
   - 
