@@ -9,7 +9,7 @@ public class TriggerScript : MonoBehaviour
     {
         // Cache references to the MainCharacter and PathScript components
         mainCharacterScript = GetComponent<MainCharacter>();
-        pathScript = GetComponent<PathScript>();
+        pathScript = GetComponent<Path>();
 
         // Ensure both scripts are initially disabled
         if (mainCharacterScript != null)
