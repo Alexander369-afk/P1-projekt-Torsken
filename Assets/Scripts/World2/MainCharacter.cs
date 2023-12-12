@@ -16,7 +16,7 @@ public class MainCharacter : MonoBehaviour
 
     void Start()
     {
-        obstacleLayer = LayerMask.GetMask("RayHit", "default");
+        obstacleLayer = LayerMask.GetMask("RayHit", "TransparentFX");
         rayDirection = Vector2.right;
         rayDistance = Vector2.Distance(transform.position, Circle.transform.position);
         float distance = Vector2.Distance(transform.position, Circle.transform.position);
