@@ -9,10 +9,25 @@ public class Path : MonoBehaviour
 
     private float timer;
     private int waypointsIndex;
+    private AudioManager audioManager;
 
     // Start is called before the first frame update
+
+
+    void Awake()
+    {
+        audioManager =FindAnyObjectByType<AudioManager>();
+
+        if(audioManager == null)
+        {
+
+            Debug.LogWarning("AudioMangager not found in the scene.");
+        }
+    }
+
     void Start()
     {
+        audioManager.Play("HighPitchBu");
         waypointsIndex = 0;
         timer = 0f;
     }
