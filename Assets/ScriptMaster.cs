@@ -24,13 +24,16 @@ public class ScriptManager : MonoBehaviour
             Debug.Log("Failed to retrieve MainCharacter script.");
     }
 
+    // Spil 2 Start
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Trigger entered by: " + other.gameObject.name);
 
-        if (other.CompareTag("SLUK"))
+
+                // Spil 2 Start
+        if (other.CompareTag("Spil 2"))
         {
-            Debug.Log("Collider with tag 'SLUK' detected.");
+            Debug.Log("Collider with tag 'Spil 2 Start' detected.");
 
             if (pathScript != null)
             {
@@ -44,7 +47,34 @@ public class ScriptManager : MonoBehaviour
                 Debug.Log("MainCharacter enabled.");
             }
 
-            // ... other conditions and actions
+                    // Spil 2 Slut
+            if (other.CompareTag("Spil 2 Slut"))
+            {
+                Debug.Log("Collider with tag 'Spil 2 Slut' detected.");
+
+                if (pathScript != null)
+                {
+                    pathScript.enabled = true;
+                    Debug.Log("PathScript enable.");
+                }
+
+                if (mainCharacter != null)
+                {
+                    mainCharacter.enabled = false;
+                    Debug.Log("MainCharacter Disable.");
+                }
+
+
+            }
         }
+
+    
+
+   
+    
+
+        
+
+        
     }
 }
