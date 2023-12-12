@@ -9,7 +9,7 @@ public class TriggerScript : MonoBehaviour
     {
         // Cache references to the MainCharacter and PathScript components
         mainCharacterScript = GetComponent<MainCharacter>();
-        pathScript = GetComponent<PathScript>();
+        pathScript = GetComponent<Path>();
 
         // Ensure both scripts are initially disabled
         if (mainCharacterScript != null)
@@ -19,7 +19,7 @@ public class TriggerScript : MonoBehaviour
 
         if (pathScript != null)
         {
-            pathScript.enabled = false;
+            pathScript.enabled = true;
         }
     }
 
@@ -29,29 +29,29 @@ public class TriggerScript : MonoBehaviour
         if (other.CompareTag("Spil 2"))
         {
             // Toggle the state of the MainCharacter script
-            if (mainCharacterScript != null)
+            if (mainCharacterScript != false)
             {
-                mainCharacterScript.enabled = !mainCharacterScript.enabled;
+                mainCharacterScript.enabled = true;
             }
 
             // Toggle the state of the Path script
-            if (pathScript != null)
+            if (pathScript != true)
             {
-                pathScript.enabled = !pathScript.enabled;
+                pathScript.enabled = false;
             }
         }
         // Check if the entered collider has the tag "Spil 2 slut"
-        else if (other.CompareTag("Spil 2 slut"))
+        else if (other.CompareTag("Spil 2 Slut"))
         {
             // Toggle the state back to the initial state
-            if (mainCharacterScript != null)
+            if (mainCharacterScript != true)
             {
                 mainCharacterScript.enabled = false; // Change to the initial state if needed
             }
 
-            if (pathScript != null)
+            if (pathScript != false)
             {
-                pathScript.enabled = false; // Change to the initial state if needed
+                pathScript.enabled = true; // Change to the initial state if needed
             }
         }
     }
