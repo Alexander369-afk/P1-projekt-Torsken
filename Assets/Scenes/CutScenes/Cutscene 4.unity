@@ -135,6 +135,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spil 3 verden
       objectReference: {fileID: 0}
+    - target: {fileID: 5394339347330489433, guid: 629b5e69b48c6496b8c8d8efc180c353, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394339347330489433, guid: 629b5e69b48c6496b8c8d8efc180c353, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394339347330489433, guid: 629b5e69b48c6496b8c8d8efc180c353, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394339347330489433, guid: 629b5e69b48c6496b8c8d8efc180c353, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394339347330489433, guid: 629b5e69b48c6496b8c8d8efc180c353, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394339347330489433, guid: 629b5e69b48c6496b8c8d8efc180c353, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394339347330489433, guid: 629b5e69b48c6496b8c8d8efc180c353, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9176757591856603579, guid: 629b5e69b48c6496b8c8d8efc180c353, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0578319
