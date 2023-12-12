@@ -41,6 +41,7 @@ public class Sauce : MonoBehaviour
 
     void OnMouseDown()
     {
+        FindObjectOfType<AudioManager>().Play("DIKI");
         currentSelectedMainObject = this;
 
         if (this.gameObject.tag == "Waterjelly")

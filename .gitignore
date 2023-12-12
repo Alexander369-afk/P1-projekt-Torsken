@@ -72,3 +72,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 ProjectSettings/TagManager.asset
 Assets/AssetsSprites/Blå_Baggrund (2).png.meta
+*.meta
+*.meta
+Assets/Animations/Nicolai 11år/Nicolai_11_år-1.controller.meta
+*.meta
