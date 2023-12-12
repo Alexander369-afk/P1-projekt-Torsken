@@ -4,17 +4,23 @@ public class ScriptManager : MonoBehaviour
 {
     private Path pathScript;
     private MainCharacter mainCharacter;
+    private AudioManager audioManager;
     // ... other scripts
 
-    void Start()
+
+    private void Awake()
     {
-        // Get the scripts from the same GameObject
         pathScript = GetComponent<Path>();
         mainCharacter = GetComponent<MainCharacter>();
-        // ... get other scripts similarly
+        audioManager = FindAnyObjectByType<AudioManager>();
+    }
+    void Start()
+    {
+     
 
         if (pathScript != null)
             Debug.Log("Path script successfully retrieved.");
+
         else
             Debug.Log("Failed to retrieve Path script.");
 

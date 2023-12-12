@@ -10,6 +10,7 @@ public class TriggerFunctionality : MonoBehaviour
         // Move the main object based on the trigger's tag
         Sauce sauceScript = FindObjectOfType<Sauce>();
         Sauce.currentSelectedMainObject.MoveObject(triggerTag);
-        
+        FindObjectOfType<AudioManager>().Play("LowPitchBu");
+
     }
 }

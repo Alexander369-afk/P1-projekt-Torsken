@@ -17,19 +17,27 @@ public class AudioManager : MonoBehaviour
             s.AudioSource.loop = s.loop; 
         }
     }
+    void Start()
+    {
+        Play("TorskenBlinker");   
+    }
 
     public void Play(string name)
     {
         SoundPlaceHolder s = Array.Find(sounds, sound => sound.name == name);
 
         // Check if the sound is found before attempting to play
-        if (s != null && s.AudioSource != null)
+        if (s==null)
         {
-            s.AudioSource.Play();
+
+            Debug.LogWarning("Sound with name " + name + " not found.");
+            return;
+            
         }
         else
         {
-            Debug.LogWarning("Sound with name " + name + " not found.");
+            s.AudioSource.Play();
+            Debug.Log("Music played" + name);
         }
     }
 }

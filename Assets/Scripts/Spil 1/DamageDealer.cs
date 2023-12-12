@@ -14,5 +14,15 @@ public class DamageDealer : MonoBehaviour
     public void Hit()
     {
         Destroy(gameObject);
+
+        // Play different sounds based on the damage value
+        if (damage == 1)
+        {
+            FindObjectOfType<AudioManager>().Play("LowPitchBu");
+        }
+        else if (damage == 5)
+        {
+            FindObjectOfType<AudioManager>().Play("HighPitchBu");
+        }
     }
 }
