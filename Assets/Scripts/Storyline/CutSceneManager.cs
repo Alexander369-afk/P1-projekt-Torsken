@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CutsceneManager : MonoBehaviour    
+public class CutsceneManager : MonoBehaviour
 {
+
     public static CutsceneManager Instance;
 
     [SerializeField] private List<CutsceneStruct> cutscenes = new List<CutsceneStruct>();
@@ -12,11 +13,15 @@ public class CutsceneManager : MonoBehaviour
 
     public static GameObject activeCutscene;
 
-    private float currentCutsceneTime;  // Add a variable to track the current running time
-
     private void Awake()
     {
         Instance = this;
+
+        if (cutscenes == null)
+        {
+            Debug.LogError("Cutscenes list is not assigned!");
+            return;
+        }
 
         InitializeCutsceneDataBase();
 
@@ -60,27 +65,6 @@ public class CutsceneManager : MonoBehaviour
         }
 
         cutsceneDataBase[cutsceneKey].SetActive(true);
-
-        // Reset the current cutscene time
-        currentCutsceneTime = 0f;
-    }
-
-    public void UpdateCutscene(float deltaTime)
-    {
-        if (activeCutscene != null)
-        {
-            // Update the current cutscene time
-            currentCutsceneTime += deltaTime;
-
-            // Get the cutscene duration from the associated Cutscene component
-            float cutsceneDuration = activeCutscene.GetComponent<CutsceneScript>().Duration;
-
-            // Check if the cutscene should end based on its duration
-            if (currentCutsceneTime >= cutsceneDuration)
-            {
-                EndCutscene();
-            }
-        }
     }
 
     public void EndCutscene()
@@ -91,12 +75,11 @@ public class CutsceneManager : MonoBehaviour
             activeCutscene = null;
         }
     }
-    
-    [System.Serializable]
-    public struct CutsceneStruct
-    {
-        public string cutsceneKey;
-        public GameObject cutsceneObject;
-    }
+}
 
+[System.Serializable]
+public struct CutsceneStruct
+{
+    public string cutsceneKey;
+    public GameObject cutsceneObject;
 }
