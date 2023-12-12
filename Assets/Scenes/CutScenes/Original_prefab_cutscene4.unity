@@ -296,7 +296,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2107203628446571323, guid: 010caf2276cd5a745a006531d8efd9ba, type: 3}
       propertyPath: m_Name
-      value: 'Scene 4 '
+      value: Scene 4
       objectReference: {fileID: 0}
     - target: {fileID: 8143168135836481566, guid: 010caf2276cd5a745a006531d8efd9ba, type: 3}
       propertyPath: m_LocalPosition.x
