@@ -1,43 +1,58 @@
-using UnityEngine.Audio;
-using UnityEngine;
 using System;
+using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public SoundPlaceHolder[] sounds;
+    public static AudioManager instance;
+    public Sound[] sounds;
 
     void Awake()
     {
-        foreach (SoundPlaceHolder s in sounds)
+        if (instance != null)
         {
-            s.AudioSource = gameObject.AddComponent<AudioSource>();
-            s.AudioSource.clip = s.clip;
-            s.AudioSource.volume = s.volume;
-            s.AudioSource.pitch = s.pitch;
-            s.AudioSource.loop = s.loop; 
-        }
-    }
-    void Start()
-    {
-        Play("TorskenBlinker");   
-    }
-
-    public void Play(string name)
-    {
-        SoundPlaceHolder s = Array.Find(sounds, sound => sound.name == name);
-
-        // Check if the sound is found before attempting to play
-        if (s==null)
-        {
-
-            Debug.LogWarning("Sound with name " + name + " not found.");
-            return;
-            
+            Destroy(gameObject);
         }
         else
         {
-            s.AudioSource.Play();
-            Debug.Log("Music played" + name);
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
+
+        foreach (Sound s in sounds)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.loop = s.loop;
+        }
+    }
+
+    public void Play(string sound)
+    {
+        Sound s = Array.Find(sounds, item => item.name == sound);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + sound + " not found!");
+            return;
+        }
+
+        s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));
+        s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
+
+        s.source.Play();
+    }
+
+    public void StopPlaying(string sound)
+    {
+        Sound s = Array.Find(sounds, item => item.name == sound);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + sound + " not found!");
+            return;
+        }
+
+        s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));
+        s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
+
+        s.source.Stop();
     }
 }
