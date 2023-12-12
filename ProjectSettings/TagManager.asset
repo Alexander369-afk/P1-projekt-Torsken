@@ -21,6 +21,7 @@ TagManager:
   - CameraZoneExit
   - CameraZoneEnter
   - Obstacle
+  - IgnoreRay
   layers:
   - Default
   - TransparentFX

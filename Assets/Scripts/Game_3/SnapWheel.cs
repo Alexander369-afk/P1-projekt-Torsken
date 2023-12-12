@@ -1,5 +1,7 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -11,12 +13,13 @@ public class SnapWheel : MonoBehaviour
     public List<DragDropWheel> wheelObject;
     public float snapRange = 0.5f;
 
-   void Awake()
+
+    void Awake()
     {
         foreach(DragDropWheel dragdropwheel in wheelObject) 
         {
             dragdropwheel.dragEndedCallback = OnDragEnded;
-            Debug.Log("ondragended");
+            Debug.Log("on drag ended");
         }
     }
 
@@ -44,5 +47,6 @@ public class SnapWheel : MonoBehaviour
 
       
     }
+
 
 }
