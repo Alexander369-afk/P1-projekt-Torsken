@@ -97,7 +97,7 @@ public class Sauce : MonoBehaviour
     private void ShootRightRay(float delay)
     {
         // Temporary layer for raycasting.
-        int temporaryLayer = 0;
+        int temporaryLayer = 1;
         gameObject.layer = temporaryLayer;
 
         StartCoroutine(ShootRightRayCoroutine(delay));
