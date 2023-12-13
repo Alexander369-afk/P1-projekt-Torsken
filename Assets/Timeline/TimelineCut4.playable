@@ -2061,7 +2061,7 @@ MonoBehaviour:
     m_Objects: []
   m_InfiniteClipPreExtrapolation: 1
   m_InfiniteClipPostExtrapolation: 1
-  m_InfiniteClipOffsetPosition: {x: -5.2250385, y: -1.0047338, z: -9.926794}
+  m_InfiniteClipOffsetPosition: {x: 40.2, y: 9.88, z: -9.926794}
   m_InfiniteClipOffsetEulerAngles: {x: -0, y: 0, z: 0}
   m_InfiniteClipTimeOffset: 0
   m_InfiniteClipRemoveOffset: 0
@@ -2269,7 +2269,7 @@ MonoBehaviour:
   m_Name: Recorded (2)
   m_EditorClassIdentifier: 
   m_Clip: {fileID: -8946292461018496478}
-  m_Position: {x: 13.309999, y: 8.56, z: 104.98}
+  m_Position: {x: 341, y: 39.9, z: -27.35}
   m_EulerAngles: {x: 0.5469991, y: 359.98102, z: 351.323}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
@@ -3759,7 +3759,7 @@ MonoBehaviour:
   m_Name: Recorded
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 3452043604051819707}
-  m_Position: {x: -15.76, y: 4.1, z: 104.4518}
+  m_Position: {x: 344.2, y: 48, z: -27.35}
   m_EulerAngles: {x: -0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
