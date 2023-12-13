@@ -27,10 +27,12 @@ public class Path : MonoBehaviour
 
     void Start()
     {
-        audioManager.Play("Havlyden Loop");
+        AudioManager.instance.Play("Havlyden Loop");
+        audioManager.Play("AV");
         waypointsIndex = 0;
         timer = 0f;
-       
+        FindObjectOfType<AudioManager>().Play("AV");
+
     }
 
     // Update is called once per frame

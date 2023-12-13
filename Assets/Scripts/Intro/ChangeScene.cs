@@ -19,7 +19,7 @@ public class ChangeScene : MonoBehaviour
         AudioManager audioManager = FindObjectOfType<AudioManager>();
         if (audioManager != null)
         {
-            audioManager.StopPlaying("Telefonen Ringer");
+            audioManager.Stop("Telefonen Ringer");
         }
         SceneManager.LoadScene(sceneID);
     }
