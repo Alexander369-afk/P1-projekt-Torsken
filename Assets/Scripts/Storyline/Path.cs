@@ -27,9 +27,10 @@ public class Path : MonoBehaviour
 
     void Start()
     {
-        audioManager.Play("HighPitchBu");
+        audioManager.Play("Havlyden Loop");
         waypointsIndex = 0;
         timer = 0f;
+       
     }
 
     // Update is called once per frame
