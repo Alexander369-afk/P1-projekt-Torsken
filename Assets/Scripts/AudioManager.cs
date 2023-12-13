@@ -3,55 +3,58 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    
+    public Sound[] sounds; // Renamed the array field
     public static AudioManager instance;
-    public Sound[] sounds;
 
     void Awake()
     {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-        }
+        if (instance == null)
+            instance = this;
         else
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            Destroy(gameObject);
+            return;
         }
 
-        foreach (Sound s in sounds)
+        DontDestroyOnLoad(gameObject);
+
+        foreach (Sound s in sounds) // Updated here as well
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
+
+
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
     }
 
-    public void Play(string sound)
+    public void Play(string name)
     {
-        Sound s = Array.Find(sounds, item => item.name == sound);
+        Sound s = Array.Find(sounds, sound => sound.name == name); // Updated here
+
+        // Check if the sound is found before attempting to play
         if (s == null)
         {
-            Debug.LogWarning("Sound: " + sound + " not found!");
+            Debug.LogWarning("Sound with name " + name + " not found.");
             return;
         }
-
-        s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));
-        s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
 
         s.source.Play();
     }
 
-    public void StopPlaying(string sound)
+    public void Stop(string name)
     {
-        Sound s = Array.Find(sounds, item => item.name == sound);
+        Sound s = Array.Find(sounds, sound => sound.name == name); // Updated here
+
+        // Check if the sound is found before attempting to stop
         if (s == null)
         {
-            Debug.LogWarning("Sound: " + sound + " not found!");
+            Debug.LogWarning("Sound with name " + name + " not found.");
             return;
         }
-
-        s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));
-        s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
 
         s.source.Stop();
     }
