@@ -54,7 +54,7 @@ MonoBehaviour:
   - name: AV
     clip: {fileID: 8300000, guid: 16ed5a213b3725f4e986c13f3101f834, type: 3}
     volume: 0.78
-    pitch: 1
+    pitch: 1.15
     loop: 0
     source: {fileID: 0}
   - name: wert
@@ -64,7 +64,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Telefonen Ringer
-    clip: {fileID: 8300000, guid: 448d99cc61abf4d4b8ed249d52722980, type: 3}
+    clip: {fileID: 8300000, guid: 7fb9739cdf62c4362a9ebf4c8fdd50e4, type: 3}
     volume: 0.78
     pitch: 1
     loop: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: BakterieSnak
-    clip: {fileID: 8300000, guid: f9d7505abe263464daef874ecda93de0, type: 3}
+    clip: {fileID: 8300000, guid: db7cba555e49749bb8aa1e1ba1b08488, type: 3}
     volume: 0.78
     pitch: 1
     loop: 0
@@ -121,5 +121,11 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 2e6ad50126471c44a9a322da5104bc04, type: 3}
     volume: 0.78
     pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Samtale
+    clip: {fileID: 8300000, guid: ac3153fa0768e48d2a659abf60d357b5, type: 3}
+    volume: 0.78
+    pitch: 1.08
     loop: 0
     source: {fileID: 0}

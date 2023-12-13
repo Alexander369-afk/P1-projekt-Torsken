@@ -8,7 +8,8 @@ public class Sauce : MonoBehaviour
     public GameObject leftTrigger;
     public GameObject downTrigger;
     public static Sauce currentSelectedMainObject;
-    private float raycastDistance = 1.5f;
+    private float raycastDistance = 2.70f;
+    
     private LayerMask raycastLayer;
     private int originalLayer;
     private AudioManager audioManager;
@@ -58,13 +59,13 @@ public class Sauce : MonoBehaviour
         if (this.gameObject.tag == "Waterjelly")
         {
             ShowDirectionWaterjelly();
-            audioManager.Play("Vandmand");
+            
         }
 
         if (this.gameObject.tag == "Gople")
         {
             ShowdDirectionGople();
-            audioManager.Play("Brandmand");
+            
         }
     }
 
@@ -93,16 +94,16 @@ public class Sauce : MonoBehaviour
         switch (direction)
         {
             case "rightTrigger":
-                moveDirection = new Vector2(1.35f, 0f);
+                moveDirection = new Vector2(2.70f, 0f);
                 break;
             case "upTrigger":
-                moveDirection = new Vector2(0f, 1.35f);
+                moveDirection = new Vector2(0f, 2.70f);
                 break;
             case "leftTrigger":
-                moveDirection = new Vector2(-1.35f, 0f);
+                moveDirection = new Vector2(-2.70f, 0f);
                 break;
             case "downTrigger":
-                moveDirection = new Vector2(0f, -1.35f);
+                moveDirection = new Vector2(0f, -2.70f);
                 break;
         }
 

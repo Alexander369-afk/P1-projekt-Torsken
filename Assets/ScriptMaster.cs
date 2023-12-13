@@ -1,3 +1,4 @@
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 public class ScriptManager : MonoBehaviour
@@ -34,9 +35,11 @@ public class ScriptManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Trigger entered by: " + other.gameObject.name);
+        audioManager.Play("Samtale");
 
 
-                // Spil 2 Start
+
+        // Spil 2 Start
         if (other.CompareTag("Spil 2"))
         {
             Debug.Log("Collider with tag 'Spil 2 Start' detected.");

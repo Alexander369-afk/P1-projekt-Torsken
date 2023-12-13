@@ -11,6 +11,7 @@ public class ChangeScene : MonoBehaviour
         if (audioManager != null)
         {
             audioManager.Play("Telefonen Ringer");
+            
         }
     }
 
@@ -20,6 +21,7 @@ public class ChangeScene : MonoBehaviour
         if (audioManager != null)
         {
             audioManager.Stop("Telefonen Ringer");
+            audioManager.Play("Cut Scene Nul");
         }
         SceneManager.LoadScene(sceneID);
     }
