@@ -105,8 +105,8 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: "F\xE6rdigMedSpil2"
-    clip: {fileID: 8300000, guid: ec170d0516902bc4d8436db5f075206b, type: 3}
+  - name: Spil3
+    clip: {fileID: 8300000, guid: 2e6ad50126471c44a9a322da5104bc04, type: 3}
     volume: 0.78
     pitch: 1
     loop: 0
