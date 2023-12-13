@@ -16,9 +16,6 @@ public class ScriptManager : MonoBehaviour
     }
     void Start()
     {
-        AudioManager.instance.Play("Havlyden Loop");
-        audioManager.Play("AV");
-        FindObjectOfType<AudioManager>().Play("AV");
 
 
         if (pathScript != null)

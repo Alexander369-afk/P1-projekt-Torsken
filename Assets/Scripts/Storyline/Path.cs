@@ -28,10 +28,9 @@ public class Path : MonoBehaviour
     void Start()
     {
         AudioManager.instance.Play("Havlyden Loop");
-        audioManager.Play("AV");
         waypointsIndex = 0;
         timer = 0f;
-        FindObjectOfType<AudioManager>().Play("AV");
+       
 
     }
 

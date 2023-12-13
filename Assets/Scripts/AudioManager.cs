@@ -30,20 +30,27 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
         }
     }
+    void Start()
+    {
+      
+    }
 
     public void Play(string name)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name); // Updated here
+        Debug.Log("Trying to play sound: " + name);
 
-        // Check if the sound is found before attempting to play
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+
         if (s == null)
         {
             Debug.LogWarning("Sound with name " + name + " not found.");
             return;
         }
 
+        Debug.Log("Playing sound: " + s.name + " with volume: " + s.volume);
         s.source.Play();
     }
+
 
     public void Stop(string name)
     {
