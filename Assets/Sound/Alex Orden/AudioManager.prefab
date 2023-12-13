@@ -64,7 +64,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Telefonen Ringer
-    clip: {fileID: 8300000, guid: ec170d0516902bc4d8436db5f075206b, type: 3}
+    clip: {fileID: 8300000, guid: 448d99cc61abf4d4b8ed249d52722980, type: 3}
     volume: 0.78
     pitch: 1
     loop: 0
@@ -101,6 +101,18 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: StartScene
     clip: {fileID: 8300000, guid: feed4dc69d7458a4eafc6aa821138e69, type: 3}
+    volume: 0.78
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SpilTre
+    clip: {fileID: 8300000, guid: 2e6ad50126471c44a9a322da5104bc04, type: 3}
+    volume: 0.78
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BakterieSnak
+    clip: {fileID: 8300000, guid: f9d7505abe263464daef874ecda93de0, type: 3}
     volume: 0.78
     pitch: 1
     loop: 0
