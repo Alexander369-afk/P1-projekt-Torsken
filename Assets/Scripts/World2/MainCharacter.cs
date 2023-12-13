@@ -13,7 +13,19 @@ public class MainCharacter : MonoBehaviour
     private Vector2 rayDirection;
     private Vector2 rayOrigin;
     private LayerMask obstacleLayer;
+    private AudioManager audioManager;
 
+
+    void Awake()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+
+        if (audioManager == null)
+        {
+
+            Debug.LogWarning("AudioMangager not found in the scene.");
+        }
+    }
     void Start()
     {
         obstacleLayer = LayerMask.GetMask("RayHit", "TransparentFX");
@@ -75,8 +87,10 @@ public class MainCharacter : MonoBehaviour
             }
 
         }
-
+        audioManager.Play("FærdigMedSpilTo");
+        audioManager.Stop(" MusikSpilTo");
         return true; // Return true only if none of the rays detect an obstacle
+       
     }
 
 

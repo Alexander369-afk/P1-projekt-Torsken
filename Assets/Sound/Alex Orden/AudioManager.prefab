@@ -63,3 +63,45 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Telefonen Ringer
+    clip: {fileID: 8300000, guid: ec170d0516902bc4d8436db5f075206b, type: 3}
+    volume: 0.78
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Vandmand
+    clip: {fileID: 8300000, guid: ec170d0516902bc4d8436db5f075206b, type: 3}
+    volume: 0.78
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Brandmand
+    clip: {fileID: 8300000, guid: ec170d0516902bc4d8436db5f075206b, type: 3}
+    volume: 0.78
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MusikSpilTo
+    clip: {fileID: 8300000, guid: ec170d0516902bc4d8436db5f075206b, type: 3}
+    volume: 0.78
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: "F\xE6rdigMedSpil2"
+    clip: {fileID: 8300000, guid: e9ea8e05e8abeec46b68f86d6b40758c, type: 3}
+    volume: 0.78
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: ec170d0516902bc4d8436db5f075206b, type: 3}
+    volume: 0.78
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: "F\xE6rdigMedSpil2"
+    clip: {fileID: 8300000, guid: ec170d0516902bc4d8436db5f075206b, type: 3}
+    volume: 0.78
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

@@ -11,7 +11,19 @@ public class Sauce : MonoBehaviour
     private float raycastDistance = 1.5f;
     private LayerMask raycastLayer;
     private int originalLayer;
+    private AudioManager audioManager;
 
+
+    void Awake()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+
+        if (audioManager == null)
+        {
+
+            Debug.LogWarning("AudioMangager not found in the scene.");
+        }
+    }
     void Start()
     {
         raycastLayer = LayerMask.GetMask("RayHit");
@@ -46,11 +58,13 @@ public class Sauce : MonoBehaviour
         if (this.gameObject.tag == "Waterjelly")
         {
             ShowDirectionWaterjelly();
+            audioManager.Play("Vandmand");
         }
 
         if (this.gameObject.tag == "Gople")
         {
             ShowdDirectionGople();
+            audioManager.Play("Brandmand");
         }
     }
 
@@ -60,6 +74,7 @@ public class Sauce : MonoBehaviour
         ShootUpRay(0.1f);
         ShootLeftRay(0.1f);
         ShootRightRay(0.1f);
+
     }
 
     void ShowdDirectionGople()
