@@ -37,6 +37,8 @@ public class Path : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if (waypointsIndex < Waypoints.Length)
         {
             float distance = Vector2.Distance(transform.position, Waypoints[waypointsIndex].position);
@@ -51,7 +53,19 @@ public class Path : MonoBehaviour
             {
                 // Arrived at the waypoint, start waiting
                 timer += Time.deltaTime;
+                if (waypointsIndex == 0)
+                {
+                    AudioManager.instance.Play("CutScene0");
+                }
+                if (waypointsIndex == 1)
+                {
+                    AudioManager.instance.Play("BakterieSnak");
+                }
 
+                if (waypointsIndex == 4)
+                {
+                    AudioManager.instance.Play("Spil1Forklaring");
+                }
                 if (timer >= waitTimes[waypointsIndex])
                 {
                     // Reset the timer and move to the next waypoint

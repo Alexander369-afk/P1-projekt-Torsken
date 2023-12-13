@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DragDropWheel : MonoBehaviour
@@ -68,21 +69,13 @@ public class DragDropWheel : MonoBehaviour
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
 
-        }
 
-        if (trigged)
-        {
-            timer += Time.deltaTime;
-
-            if (timer > delay)
-            {
-                transform.Rotate(rotateAmount * Time.deltaTime);
-            }
+            /* Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = mousePos; */
 
         }
-
-       
     }
+
 
     void OnTriggerEnter2D(Collider2D collision)         //https://www.youtube.com/watch?v=jwEPKY9poa4 bruger ikke alligvel
     {

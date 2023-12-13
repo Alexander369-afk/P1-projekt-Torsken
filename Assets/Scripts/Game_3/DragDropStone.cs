@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DragStone : MonoBehaviour
@@ -33,13 +34,13 @@ public class DragStone : MonoBehaviour
     private void Update()
     {
         if (dragged)
-        { 
+        {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
-            
-            
+
+
             /* Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = mousePos; */
-        
+
         }
     }
 
@@ -60,5 +61,5 @@ public class DragStone : MonoBehaviour
         }
 
     }*/
-    
+
 }
