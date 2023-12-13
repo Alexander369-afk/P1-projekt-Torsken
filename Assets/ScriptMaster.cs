@@ -53,34 +53,33 @@ public class ScriptManager : MonoBehaviour
                 Debug.Log("MainCharacter enabled.");
             }
 
-                    // Spil 2 Slut
-            if (other.CompareTag("Spil 2 Slut"))
+                    
+        }
+        // Spil 2 Slut
+        if (other.CompareTag("Spil 2 Slut"))
+        {
+            Debug.Log("Collider with tag 'Spil 2 Slut' detected.");
+
+            if (pathScript != null)
             {
-                Debug.Log("Collider with tag 'Spil 2 Slut' detected.");
-
-                if (pathScript != null)
-                {
-                    pathScript.enabled = true;
-                    Debug.Log("PathScript enable.");
-                }
-
-                if (mainCharacter != null)
-                {
-                    mainCharacter.enabled = false;
-                    Debug.Log("MainCharacter Disable.");
-                }
-
-
+                pathScript.enabled = true;
+                Debug.Log("PathScript enable.");
             }
+
+            if (mainCharacter != null)
+            {
+                mainCharacter.enabled = false;
+                Debug.Log("MainCharacter Disable.");
+            }
+
         }
 
-    
 
-   
-    
 
-        
 
-        
+
+
+
+
     }
 }
