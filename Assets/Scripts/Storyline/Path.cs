@@ -28,10 +28,9 @@ public class Path : MonoBehaviour
     void Start()
     {
         AudioManager.instance.Play("Havlyden Loop");
-        audioManager.Play("AV");
         waypointsIndex = 0;
         timer = 0f;
-        FindObjectOfType<AudioManager>().Play("AV");
+       
 
     }
 
@@ -47,6 +46,7 @@ public class Path : MonoBehaviour
                 // Move towards the waypoint with the specified move speed
                 transform.position = Vector2.MoveTowards(transform.position, Waypoints[waypointsIndex].position, moveSpeeds[waypointsIndex] * Time.deltaTime);
             }
+            
             else
             {
                 // Arrived at the waypoint, start waiting
