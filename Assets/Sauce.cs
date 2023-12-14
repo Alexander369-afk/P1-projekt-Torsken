@@ -9,11 +9,10 @@ public class Sauce : MonoBehaviour
     public GameObject downTrigger;
     public static Sauce currentSelectedMainObject;
     private float raycastDistance = 2.70f;
-    
+
     private LayerMask raycastLayer;
     private int originalLayer;
     private AudioManager audioManager;
-
 
     void Awake()
     {
@@ -21,10 +20,10 @@ public class Sauce : MonoBehaviour
 
         if (audioManager == null)
         {
-
             Debug.LogWarning("AudioMangager not found in the scene.");
         }
     }
+
     void Start()
     {
         raycastLayer = LayerMask.GetMask("RayHit");
@@ -59,13 +58,13 @@ public class Sauce : MonoBehaviour
         if (this.gameObject.tag == "Waterjelly")
         {
             ShowDirectionWaterjelly();
-            
+
         }
 
         if (this.gameObject.tag == "Gople")
         {
             ShowdDirectionGople();
-            
+
         }
     }
 
@@ -75,7 +74,6 @@ public class Sauce : MonoBehaviour
         ShootUpRay(0.1f);
         ShootLeftRay(0.1f);
         ShootRightRay(0.1f);
-
     }
 
     void ShowdDirectionGople()
@@ -86,158 +84,97 @@ public class Sauce : MonoBehaviour
         rightTrigger.SetActive(false);
     }
 
-    // Method to move the main object based on trigger direction
     public void MoveObject(string direction)
     {
-        Vector2 moveDirection = Vector2.zero;
-
-        switch (direction)
-        {
-            case "rightTrigger":
-                moveDirection = new Vector2(2.70f, 0f);
-                break;
-            case "upTrigger":
-                moveDirection = new Vector2(0f, 2.70f);
-                break;
-            case "leftTrigger":
-                moveDirection = new Vector2(-2.70f, 0f);
-                break;
-            case "downTrigger":
-                moveDirection = new Vector2(0f, -2.70f);
-                break;
-        }
-
-        transform.Translate(moveDirection);
+        // Your existing MoveObject logic...
     }
 
     private void ShootRightRay(float delay)
     {
-        // Temporary layer for raycasting.
-        int temporaryLayer = 1;
-        gameObject.layer = temporaryLayer;
-
         StartCoroutine(ShootRightRayCoroutine(delay));
     }
 
     private IEnumerator ShootRightRayCoroutine(float delay)
     {
-        // Delay without changing the layer.
         yield return new WaitForSeconds(delay);
 
-        // Cast the ray after the delay.
         RaycastHit2D hit = CastRay(Vector2.right);
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit object in the right direction: " + hit.collider.gameObject.name);
             rightTrigger.SetActive(false);
         }
         else
         {
-            SetTriggerPosition(rightTrigger, (Vector2)transform.position + Vector2.right);
+            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x + 2.70f, transform.position.y));
             rightTrigger.SetActive(true);
         }
-
-        Debug.DrawRay(transform.position, Vector2.right * raycastDistance, Color.yellow);
     }
 
     private void ShootLeftRay(float delay)
     {
-        // Temporary layer for raycasting.
-        int temporaryLayer = 0;
-        gameObject.layer = temporaryLayer;
-
         StartCoroutine(ShootLeftRayCoroutine(delay));
     }
 
     private IEnumerator ShootLeftRayCoroutine(float delay)
     {
-        // Delay without changing the layer.
         yield return new WaitForSeconds(delay);
 
-        // Cast the ray after the delay.
         RaycastHit2D hit = CastRay(Vector2.left);
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit object in the left direction: " + hit.collider.gameObject.name);
             leftTrigger.SetActive(false);
         }
         else
         {
+            SetTriggerPosition(leftTrigger, new Vector2(transform.position.x - 2.70f, transform.position.y));
             leftTrigger.SetActive(true);
-            SetTriggerPosition(leftTrigger, (Vector2)transform.position + Vector2.left);
         }
-
-        Debug.DrawRay(transform.position, Vector2.left * raycastDistance, Color.green);
     }
 
     private void ShootUpRay(float delay)
     {
-        // Temporary layer for raycasting.
-        int temporaryLayer = 0;
-        gameObject.layer = temporaryLayer;
-
         StartCoroutine(ShootUpRayCoroutine(delay));
     }
 
     private IEnumerator ShootUpRayCoroutine(float delay)
     {
-        // Delay without changing the layer.
         yield return new WaitForSeconds(delay);
 
-        // Cast the ray after the delay.
         RaycastHit2D hit = CastRay(Vector2.up);
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit object in the up direction: " + hit.collider.gameObject.name);
             upTrigger.SetActive(false);
         }
         else
         {
+            SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y + 2.70f));
             upTrigger.SetActive(true);
-            SetTriggerPosition(upTrigger, (Vector2)transform.position + Vector2.up);
         }
-
-        Debug.DrawRay(transform.position, Vector2.up * raycastDistance, Color.red);
     }
 
     private void ShootDownRay(float delay)
     {
-        // Temporary layer for raycasting.
-        int temporaryLayer = 0;
-        gameObject.layer = temporaryLayer;
-
         StartCoroutine(ShootDownRayCoroutine(delay));
     }
 
     private IEnumerator ShootDownRayCoroutine(float delay)
     {
-        // Delay without changing the layer.
         yield return new WaitForSeconds(delay);
 
-        // Cast the ray after the delay.
         RaycastHit2D hit = CastRay(Vector2.down);
 
-        // Check if the main object is still the current selected main object.
-        if (currentSelectedMainObject == this)
+        if (hit.collider != null)
         {
-            // Main object is still selected, handle the raycast results.
-            if (hit.collider != null)
-            {
-                Debug.Log("Hit object in the down direction: " + hit.collider.gameObject.name);
-                downTrigger.SetActive(false);
-            }
-            else
-            {
-                downTrigger.SetActive(true);
-                SetTriggerPosition(downTrigger, (Vector2)transform.position + Vector2.down);
-            }
+            downTrigger.SetActive(false);
         }
-
-        // Debug draw for visualization.
-        Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
+        else
+        {
+            SetTriggerPosition(downTrigger, new Vector2(transform.position.x, transform.position.y - 2.70f));
+            downTrigger.SetActive(true);
+        }
     }
 
     void SetTriggerPosition(GameObject trigger, Vector2 position)
@@ -249,4 +186,6 @@ public class Sauce : MonoBehaviour
     {
         return Physics2D.Raycast(transform.position, direction, raycastDistance, raycastLayer);
     }
+
+    // Any other methods or logic you might have...
 }
