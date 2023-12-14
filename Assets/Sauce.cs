@@ -8,12 +8,13 @@ public class Sauce : MonoBehaviour
     public GameObject leftTrigger;
     public GameObject downTrigger;
     public static Sauce currentSelectedMainObject;
-    private float raycastDistance = 2.70f;
+    private float raycastDistance = 4.25f;
 
     private LayerMask raycastLayer;
     private int originalLayer;
     private AudioManager audioManager;
     private float fuckmagicnumber = 0.1f;
+    private float ArrowDistance = 2.35f;
     
 
 
@@ -137,7 +138,7 @@ public class Sauce : MonoBehaviour
         }
         else
         {
-            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(raycastDistance, 0f));
+            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(ArrowDistance, 0f));
             rightTrigger.SetActive(true);
         }
 
@@ -169,7 +170,7 @@ public class Sauce : MonoBehaviour
         else
         {
             leftTrigger.SetActive(true);
-            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(-raycastDistance,0f));
+            SetTriggerPosition(leftTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(-ArrowDistance, 0f));
 ;        }
 
         Debug.DrawRay(transform.position, Vector2.left * raycastDistance, Color.green);
@@ -200,7 +201,7 @@ public class Sauce : MonoBehaviour
         else
         {
             upTrigger.SetActive(true);
-            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, raycastDistance));
+            SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, ArrowDistance));
         }
 
         Debug.DrawRay(transform.position, Vector2.up * raycastDistance, Color.red);
@@ -235,7 +236,7 @@ public class Sauce : MonoBehaviour
             else
             {
                 downTrigger.SetActive(true);
-                SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, -raycastDistance));
+                SetTriggerPosition(downTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, -ArrowDistance));
             }
         }
 
