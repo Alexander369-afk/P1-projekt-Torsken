@@ -11,17 +11,13 @@ public class Path : MonoBehaviour
     private int waypointsIndex;
     private AudioManager audioManager;
 
-    // Start is called before the first frame update
-
-
     void Awake()
     {
-        audioManager =FindAnyObjectByType<AudioManager>();
+        audioManager = FindObjectOfType<AudioManager>();
 
-        if(audioManager == null)
+        if (audioManager == null)
         {
-
-            Debug.LogWarning("AudioMangager not found in the scene.");
+            Debug.LogWarning("AudioManager not found in the scene.");
         }
     }
 
@@ -30,15 +26,10 @@ public class Path : MonoBehaviour
         AudioManager.instance.Play("Havlyden Loop");
         waypointsIndex = 0;
         timer = 0f;
-       
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-
         if (waypointsIndex < Waypoints.Length)
         {
             float distance = Vector2.Distance(transform.position, Waypoints[waypointsIndex].position);
@@ -48,24 +39,24 @@ public class Path : MonoBehaviour
                 // Move towards the waypoint with the specified move speed
                 transform.position = Vector2.MoveTowards(transform.position, Waypoints[waypointsIndex].position, moveSpeeds[waypointsIndex] * Time.deltaTime);
             }
-            
             else
             {
-                // Arrived at the waypoint, start waiting
-                timer += Time.deltaTime;
+                // Arrived at the waypoint, play audio and start waiting
                 if (waypointsIndex == 0)
                 {
                     AudioManager.instance.Play("CutScene0");
                 }
-                if (waypointsIndex == 1)
+                else if (waypointsIndex == 1)
                 {
                     AudioManager.instance.Play("BakterieSnak");
                 }
-
-                if (waypointsIndex == 4)
+                else if (waypointsIndex == 4)
                 {
                     AudioManager.instance.Play("Spil1Forklaring");
                 }
+
+                timer += Time.deltaTime;
+
                 if (timer >= waitTimes[waypointsIndex])
                 {
                     // Reset the timer and move to the next waypoint
@@ -74,5 +65,12 @@ public class Path : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void WheelSnapped()
+    {
+        // Implement the logic to handle waypoint change when the wheel is snapped
+        // For example, you can increment waypointsIndex or set a specific waypoint index
+        waypointsIndex = (waypointsIndex + 1) % Waypoints.Length;
     }
 }
