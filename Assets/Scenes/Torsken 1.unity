@@ -2017,8 +2017,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00075006485, y: -0.46375, z: 0}
-    m_Extent: {x: 2.81335, y: 3.2806501, z: 0}
+    m_Center: {x: 0.0022999048, y: -0.46439993, z: 0}
+    m_Extent: {x: 2.8137999, y: 3.2764, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2773,8 +2773,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0032000542, y: 0.00069999695, z: 0}
-    m_Extent: {x: 5.0453, y: 5.0462, z: 0}
+    m_Center: {x: -0.0014500618, y: 0.00065016747, z: 0}
+    m_Extent: {x: 5.04535, y: 5.04755, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.1
@@ -4295,7 +4295,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 8.96
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -4320,7 +4320,7 @@ Transform:
   m_GameObject: {fileID: 345433416}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 648.761, y: 198.54951, z: -35.14141}
+  m_LocalPosition: {x: -44, y: 31.3, z: 29.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5117,7 +5117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cutscenes:
   - cutsceneKey: Scene 0
-    cutsceneObject: {fileID: 599485391}
+    cutsceneObject: {fileID: 1271679841}
   - cutsceneKey: Cut Scene 1
     cutsceneObject: {fileID: 597086075}
   - cutsceneKey: Spil 1
@@ -6738,8 +6738,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.004949957, y: -0.4633, z: 0}
-    m_Extent: {x: 1.00475, y: 1.4682, z: 0}
+    m_Center: {x: -0.0023500323, y: -0.46110004, z: 0}
+    m_Extent: {x: 1.00705, y: 1.4614999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10835,7 +10835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &780336830
 Transform:
   m_ObjectHideFlags: 0
@@ -11458,12 +11458,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7208590148040032784, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7208590148040032784, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].key
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7208590148040032784, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
+      propertyPath: m_SceneBindings.Array.data[4].key
+      value: 
+      objectReference: {fileID: -2994571786973908941, guid: 9eedd1f1cb06c45618182cabfde8c473, type: 2}
+    - target: {fileID: 7208590148040032784, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
+      propertyPath: m_SceneBindings.Array.data[5].key
+      value: 
+      objectReference: {fileID: 1343758707093023155, guid: 9eedd1f1cb06c45618182cabfde8c473, type: 2}
+    - target: {fileID: 7208590148040032784, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
+      propertyPath: m_SceneBindings.Array.data[6].key
+      value: 
+      objectReference: {fileID: 3741454371725756940, guid: 9eedd1f1cb06c45618182cabfde8c473, type: 2}
+    - target: {fileID: 7208590148040032784, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
+      propertyPath: m_SceneBindings.Array.data[7].key
+      value: 
+      objectReference: {fileID: -654898819374282536, guid: 9eedd1f1cb06c45618182cabfde8c473, type: 2}
     - target: {fileID: 7208590148040032784, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
@@ -14788,8 +14804,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00040000677, y: -0.46179998, z: 0}
-    m_Extent: {x: 1.9210999, y: 2.3839998, z: 0}
+    m_Center: {x: 0.0038999915, y: -0.46199995, z: 0}
+    m_Extent: {x: 1.9247, y: 2.3847, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -16884,6 +16900,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1271679841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7535950283401871804, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
+  m_PrefabInstance: {fileID: 812206739}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1283960547
 GameObject:
   m_ObjectHideFlags: 0
@@ -17931,8 +17952,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0002501011, y: -0.0023498535, z: 0}
-    m_Extent: {x: 5.0485497, y: 5.04325, z: 0}
+    m_Center: {x: 0.0018000603, y: -0.0027999878, z: 0}
+    m_Extent: {x: 5.0425, y: 5.0394, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.1
@@ -18802,7 +18823,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.08538652, y: 0.0000016290704}
-  m_Size: {x: 5.513729, y: 2.5415509}
+  m_Size: {x: 13.92, y: 5.06}
   m_Direction: 1
 --- !u!114 &1409830918
 MonoBehaviour:
@@ -18870,6 +18891,8 @@ MonoBehaviour:
   virtualCameras:
   - {fileID: 605226995}
   - {fileID: 32857141}
+  - {fileID: 137047659}
+  - {fileID: 1400731349}
 --- !u!114 &1409830923
 MonoBehaviour:
   m_ObjectHideFlags: 0
