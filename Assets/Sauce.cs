@@ -14,8 +14,9 @@ public class Sauce : MonoBehaviour
     private int originalLayer;
     private AudioManager audioManager;
     private float fuckmagicnumber = 0.1f;
-    private float ArrowDistance = 2.35f;
-    
+    private float ArrowDistanceW = 2.35f;
+    private float ArrowDistanceG = 4f; 
+
 
 
 
@@ -29,6 +30,7 @@ public class Sauce : MonoBehaviour
             Debug.LogWarning("AudioMangager not found in the scene.");
         }
     }
+
     void Start()
     {
         raycastLayer = LayerMask.GetMask("RayHit");
@@ -84,8 +86,8 @@ public class Sauce : MonoBehaviour
 
     void ShowdDirectionGople()
     {
-        ShootDownRay(fuckmagicnumber);
-        ShootUpRay(fuckmagicnumber);
+        ShootDownRayGople(fuckmagicnumber);
+        ShootUpRayGople(fuckmagicnumber);
         leftTrigger.SetActive(false);
         rightTrigger.SetActive(false);
     }
@@ -138,7 +140,7 @@ public class Sauce : MonoBehaviour
         }
         else
         {
-            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(ArrowDistance, 0f));
+            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(ArrowDistanceW, 0f));
             rightTrigger.SetActive(true);
         }
 
@@ -148,7 +150,7 @@ public class Sauce : MonoBehaviour
     private void ShootLeftRay(float delay)
     {
         // Temporary layer for raycasting.
-        int temporaryLayer = 0;
+        int temporaryLayer = 1;
         gameObject.layer = temporaryLayer;
 
         StartCoroutine(ShootLeftRayCoroutine(delay));
@@ -170,7 +172,7 @@ public class Sauce : MonoBehaviour
         else
         {
             leftTrigger.SetActive(true);
-            SetTriggerPosition(leftTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(-ArrowDistance, 0f));
+            SetTriggerPosition(leftTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(-ArrowDistanceW, 0f));
 ;        }
 
         Debug.DrawRay(transform.position, Vector2.left * raycastDistance, Color.green);
@@ -179,7 +181,7 @@ public class Sauce : MonoBehaviour
     private void ShootUpRay(float delay)
     {
         // Temporary layer for raycasting.
-        int temporaryLayer = 0;
+        int temporaryLayer = 1;
         gameObject.layer = temporaryLayer;
 
         StartCoroutine(ShootUpRayCoroutine(delay));
@@ -201,7 +203,7 @@ public class Sauce : MonoBehaviour
         else
         {
             upTrigger.SetActive(true);
-            SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, ArrowDistance));
+            SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, ArrowDistanceW));
         }
 
         Debug.DrawRay(transform.position, Vector2.up * raycastDistance, Color.red);
@@ -210,7 +212,7 @@ public class Sauce : MonoBehaviour
     private void ShootDownRay(float delay)
     {
         // Temporary layer for raycasting.
-        int temporaryLayer = 0;
+        int temporaryLayer = 1;
         gameObject.layer = temporaryLayer;
 
         StartCoroutine(ShootDownRayCoroutine(delay));
@@ -236,13 +238,94 @@ public class Sauce : MonoBehaviour
             else
             {
                 downTrigger.SetActive(true);
-                SetTriggerPosition(downTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, -ArrowDistance));
+                SetTriggerPosition(downTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, -ArrowDistanceW));
             }
         }
 
         // Debug draw for visualization.
         Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
     }
+
+
+    private void ShootDownRayGople(float delay)
+    {
+        // Temporary layer for raycasting.
+        int temporaryLayer = 1;
+        gameObject.layer = temporaryLayer;
+
+        StartCoroutine(ShootDownRayGopleCoroutine(delay));
+    }
+
+    private IEnumerator ShootDownRayGopleCoroutine(float delay)
+    {
+        // Delay without changing the layer.
+        yield return new WaitForSeconds(delay);
+
+        // Cast the ray after the delay.
+        RaycastHit2D hit = CastRay(Vector2.down);
+
+        // Check if the main object is still the current selected main object.
+        if (currentSelectedMainObject == this)
+        {
+            // Main object is still selected, handle the raycast results.
+            if (hit.collider != null)
+            {
+                Debug.Log("Hit object in the down direction: " + hit.collider.gameObject.name);
+                downTrigger.SetActive(false);
+            }
+            else
+            {
+                downTrigger.SetActive(true);
+                SetTriggerPosition(downTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, -3.4f));
+            }
+        }
+
+        // Debug draw for visualization.
+        Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
+    }
+
+
+    private void ShootUpRayGople(float delay)
+    {
+        // Temporary layer for raycasting.
+        int temporaryLayer = 1;
+        gameObject.layer = temporaryLayer;
+
+        StartCoroutine(ShootUpRayGopleCoroutine(delay));
+    }
+
+    private IEnumerator ShootUpRayGopleCoroutine(float delay)
+    {
+        // Delay without changing the layer.
+        yield return new WaitForSeconds(delay);
+
+        // Cast the ray after the delay.
+        RaycastHit2D hit = CastRay(Vector2.down);
+
+        // Check if the main object is still the current selected main object.
+        if (currentSelectedMainObject == this)
+        {
+            // Main object is still selected, handle the raycast results.
+            if (hit.collider != null)
+            {
+                Debug.Log("Hit object in the down direction: " + hit.collider.gameObject.name);
+                upTrigger.SetActive(false);
+            }
+            else
+            {
+                upTrigger.SetActive(true);
+                SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, 6f));
+            }
+        }
+
+        // Debug draw for visualization.
+        Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
+    }
+
+
+
+
+
 
     void SetTriggerPosition(GameObject trigger, Vector2 position)
     {
