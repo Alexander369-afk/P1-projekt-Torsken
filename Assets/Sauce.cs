@@ -9,10 +9,13 @@ public class Sauce : MonoBehaviour
     public GameObject downTrigger;
     public static Sauce currentSelectedMainObject;
     private float raycastDistance = 2.70f;
-    
+
     private LayerMask raycastLayer;
     private int originalLayer;
     private AudioManager audioManager;
+    private float fuckmagicnumber = 0.1f;
+    
+
 
 
     void Awake()
@@ -59,29 +62,29 @@ public class Sauce : MonoBehaviour
         if (this.gameObject.tag == "Waterjelly")
         {
             ShowDirectionWaterjelly();
-            
+
         }
 
         if (this.gameObject.tag == "Gople")
         {
             ShowdDirectionGople();
-            
+
         }
     }
 
     void ShowDirectionWaterjelly()
     {
-        ShootDownRay(0.1f);
-        ShootUpRay(0.1f);
-        ShootLeftRay(0.1f);
-        ShootRightRay(0.1f);
+        ShootDownRay(fuckmagicnumber);
+        ShootUpRay(fuckmagicnumber);
+        ShootLeftRay(fuckmagicnumber);
+        ShootRightRay(fuckmagicnumber);
 
     }
 
     void ShowdDirectionGople()
     {
-        ShootDownRay(0.1f);
-        ShootUpRay(0.1f);
+        ShootDownRay(fuckmagicnumber);
+        ShootUpRay(fuckmagicnumber);
         leftTrigger.SetActive(false);
         rightTrigger.SetActive(false);
     }
@@ -94,16 +97,16 @@ public class Sauce : MonoBehaviour
         switch (direction)
         {
             case "rightTrigger":
-                moveDirection = new Vector2(2.70f, 0f);
+                moveDirection = new Vector2(raycastDistance, 0f);
                 break;
             case "upTrigger":
-                moveDirection = new Vector2(0f, 2.70f);
+                moveDirection = new Vector2(0f, raycastDistance);
                 break;
             case "leftTrigger":
-                moveDirection = new Vector2(-2.70f, 0f);
+                moveDirection = new Vector2(-raycastDistance, 0f);
                 break;
             case "downTrigger":
-                moveDirection = new Vector2(0f, -2.70f);
+                moveDirection = new Vector2(0f, -raycastDistance);
                 break;
         }
 
@@ -134,7 +137,7 @@ public class Sauce : MonoBehaviour
         }
         else
         {
-            SetTriggerPosition(rightTrigger, (Vector2)transform.position + Vector2.right);
+            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(raycastDistance, 0f));
             rightTrigger.SetActive(true);
         }
 
@@ -166,8 +169,8 @@ public class Sauce : MonoBehaviour
         else
         {
             leftTrigger.SetActive(true);
-            SetTriggerPosition(leftTrigger, (Vector2)transform.position + Vector2.left);
-        }
+            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(-raycastDistance,0f));
+;        }
 
         Debug.DrawRay(transform.position, Vector2.left * raycastDistance, Color.green);
     }
@@ -197,7 +200,7 @@ public class Sauce : MonoBehaviour
         else
         {
             upTrigger.SetActive(true);
-            SetTriggerPosition(upTrigger, (Vector2)transform.position + Vector2.up);
+            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, raycastDistance));
         }
 
         Debug.DrawRay(transform.position, Vector2.up * raycastDistance, Color.red);
@@ -232,7 +235,7 @@ public class Sauce : MonoBehaviour
             else
             {
                 downTrigger.SetActive(true);
-                SetTriggerPosition(downTrigger, (Vector2)transform.position + Vector2.down);
+                SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, -raycastDistance));
             }
         }
 

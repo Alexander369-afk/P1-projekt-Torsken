@@ -67,6 +67,7 @@ public class ScriptManager : MonoBehaviour
             {
                 pathScript.enabled = true;
                 Debug.Log("PathScript enable.");
+                audioManager.Stop("Samtale");
             }
 
             if (mainCharacter != null)
