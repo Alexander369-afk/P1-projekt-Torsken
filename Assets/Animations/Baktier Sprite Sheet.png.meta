@@ -1,0 +1,941 @@
+fileFormatVersion: 2
+guid: 8dd458d29407b452fac816d988696a32
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 3954
+        y: 3092
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cb1f05745174432bcb1bb36e8ef8c3
+      internalID: 23926544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 3940
+        y: 3085
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b10f1b97dce4c8a88dcb614da59c26
+      internalID: 1731842336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2749
+        y: 3042
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80effc60108f640c288ff6450e1c5151
+      internalID: 1308324619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 3042
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecb1b6fddd224f6f88e37094a5752de
+      internalID: 186405184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3038
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec4d1a8a3794b93a7278eed4c1edfe
+      internalID: 2139680206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3937
+        y: 3038
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed5f89075b6a44d1b3b293031836f70
+      internalID: -1477837875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2988
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a6a85e3b50540cb889389b3160d74b
+      internalID: -1971247910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2993
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46086c54bdad41148a81539585276b8
+      internalID: 866241463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 2988
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a750427fe81349b79c2bc103ca755c8
+      internalID: -1106438832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 2993
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a979c9fa678c4313a86225228f312e3
+      internalID: -1569059750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 2988
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47040a8d97b7b4e3982b0019bb9e072a
+      internalID: -1131175797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 2993
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a3011c1538a4cdab2929ce4a14f79c
+      internalID: 433300280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3874
+        y: 2257
+        width: 620
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785dc778dc23745728ca76d7b2aaf84b
+      internalID: 354059591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 2296
+        width: 570
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89412bb8d5cc40d4b02da72dea71ba3
+      internalID: 1112312728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 2960
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa912acf767514170a89134c16b027d6
+      internalID: 1902022732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 2928
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db7372e3b89b450bab41b701fbc70a4
+      internalID: -127516692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 2329
+        width: 513
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859557058eede4cb48e0bc050e14e8cd
+      internalID: 1167868196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 2327
+        width: 514
+        height: 597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d261612d7bbe545bb9144b9cc8b712a6
+      internalID: 757928405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 2918
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a98b8994de6240adba0c0823520f021
+      internalID: 1978228860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1395
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b61d630a69549b9bbb1ec0197bcf02
+      internalID: -142558179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 1397
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1523e6fea944359a8778f395e0cf85
+      internalID: 1039566461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1388
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07956b0e320304e36afd273cc6578f7d
+      internalID: 155435761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1390
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ee6a43a12804595a7a39fb79af3253
+      internalID: 1677211320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1360
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0471b0251bf144bbb0f0fab1cee8d6c
+      internalID: 1749498592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1362
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e98a9604224c45dfb3085f25f509f6d
+      internalID: -1212035270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1345
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4696cb7918bc47959f92868acb52f90
+      internalID: 1033626996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1348
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d45bfd80e9f45ba979ae89373b2fbb
+      internalID: 800249140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1341
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd682cc53f294d3c9f9175daf532ee0
+      internalID: 761231455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1341
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ea02da8d9d94fa080ce714fafbd089
+      internalID: 1044282489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 560
+        width: 627
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11759f38be5a3402e8fac6c7307bc832
+      internalID: -627796237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 1305
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0b48d3b5815440a936ee4daa3da07a
+      internalID: 376790236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1291
+        width: 115
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0e9c3ed7d704ac2b45ada766ab5ec0
+      internalID: -1165696987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1092
+        width: 50
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926f25704fdf74d799653354625f3a4b
+      internalID: -1537994942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 562
+        width: 627
+        height: 742
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b093252bfc546d8beff5297b154bb6
+      internalID: -2054215618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 989
+        width: 14
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078a491dc229545d983e4a4d68c27231
+      internalID: -1687031001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 902
+        width: 35
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac85e98689a040f2bbe7dbc5d2561e1
+      internalID: 502850862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baktier Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 733
+        width: 44
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d369cd985124554a9ec6aec0b630fd
+      internalID: 1101455477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Baktier Sprite Sheet_0: 23926544
+      Baktier Sprite Sheet_1: 1731842336
+      Baktier Sprite Sheet_10: -1131175797
+      Baktier Sprite Sheet_11: 433300280
+      Baktier Sprite Sheet_12: 354059591
+      Baktier Sprite Sheet_13: 1112312728
+      Baktier Sprite Sheet_14: 1902022732
+      Baktier Sprite Sheet_15: -127516692
+      Baktier Sprite Sheet_16: 1167868196
+      Baktier Sprite Sheet_17: 757928405
+      Baktier Sprite Sheet_18: 1978228860
+      Baktier Sprite Sheet_19: -142558179
+      Baktier Sprite Sheet_2: 1308324619
+      Baktier Sprite Sheet_20: 1039566461
+      Baktier Sprite Sheet_21: 155435761
+      Baktier Sprite Sheet_22: 1677211320
+      Baktier Sprite Sheet_23: 1749498592
+      Baktier Sprite Sheet_24: -1212035270
+      Baktier Sprite Sheet_25: 1033626996
+      Baktier Sprite Sheet_26: 800249140
+      Baktier Sprite Sheet_27: 761231455
+      Baktier Sprite Sheet_28: 1044282489
+      Baktier Sprite Sheet_29: -627796237
+      Baktier Sprite Sheet_3: 186405184
+      Baktier Sprite Sheet_30: 376790236
+      Baktier Sprite Sheet_31: -1165696987
+      Baktier Sprite Sheet_32: -1537994942
+      Baktier Sprite Sheet_33: -2054215618
+      Baktier Sprite Sheet_34: -1687031001
+      Baktier Sprite Sheet_35: 502850862
+      Baktier Sprite Sheet_36: 1101455477
+      Baktier Sprite Sheet_4: 2139680206
+      Baktier Sprite Sheet_5: -1477837875
+      Baktier Sprite Sheet_6: -1971247910
+      Baktier Sprite Sheet_7: 866241463
+      Baktier Sprite Sheet_8: -1106438832
+      Baktier Sprite Sheet_9: -1569059750
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
