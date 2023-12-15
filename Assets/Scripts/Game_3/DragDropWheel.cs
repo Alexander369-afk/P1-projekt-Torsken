@@ -11,8 +11,8 @@ public class DragDropWheel : MonoBehaviour
     public DragEndedDelegate dragEndedCallback;
 
     public float delay = 2;         //https://gamedevbeginner.com/how-to-delay-a-function-in-unity/ delay on wheel rotate after snap
-    float timer;
-
+    private float timer;
+    
    
 
     bool dragged = false;           //variable either being true or false

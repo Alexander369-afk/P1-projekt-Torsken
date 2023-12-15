@@ -15,7 +15,7 @@ public class Sauce : MonoBehaviour
     private AudioManager audioManager;
     private float fuckmagicnumber = 0.1f;
     private float ArrowDistanceW = 2.35f;
-    private float ArrowDistanceG = 4f; 
+    //private float ArrowDistanceG = 4f; 
 
 
 

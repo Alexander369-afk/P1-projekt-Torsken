@@ -2533,7 +2533,7 @@ MonoBehaviour:
   m_Name: Recorded (2)
   m_EditorClassIdentifier: 
   m_Clip: {fileID: -8946292461018496478}
-  m_Position: {x: 341, y: 39.9, z: -27.35}
+  m_Position: {x: 341, y: 39.9, z: 0}
   m_EulerAngles: {x: 0.5469991, y: 359.98102, z: 351.323}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
@@ -4588,7 +4588,7 @@ MonoBehaviour:
   m_Name: Recorded
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 3452043604051819707}
-  m_Position: {x: 344.2, y: 48, z: -27.35}
+  m_Position: {x: 344.2, y: 48, z: 0}
   m_EulerAngles: {x: -0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63

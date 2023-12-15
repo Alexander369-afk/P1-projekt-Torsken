@@ -32,7 +32,7 @@ public class MainCharacter : MonoBehaviour
         rayDirection = Vector2.right;
         rayDistance = Vector2.Distance(transform.position, Circle.transform.position);
         float distance = Vector2.Distance(transform.position, Circle.transform.position);
-        Debug.Log("Distance between transform and Circle: " + distance);
+        //Debug.Log("Distance between transform and Circle: " + distance);
     }
 
     void Update()
@@ -71,23 +71,23 @@ public class MainCharacter : MonoBehaviour
 
             RaycastHit2D hit = Physics2D.Raycast(origin, rayDirection, rayDistance, obstacleLayer);
 
-            Debug.Log($"Ray {i + 1} - Origin: {origin}, Direction: {rayDirection}, Hit: {hit.collider != null}");
+            //Debug.Log($"Ray {i + 1} - Origin: {origin}, Direction: {rayDirection}, Hit: {hit.collider != null}");
 
             if (hit.collider != null)
             {
                 if (Array.Exists(ignoreTags, tag => hit.collider.CompareTag(tag)))
                 {
-                    Debug.Log("Ignoring obstacle: " + hit.collider.gameObject.name);
+                    //Debug.Log("Ignoring obstacle: " + hit.collider.gameObject.name);
                 }
                 else
                 {
-                    Debug.Log("Obstacle detected: " + hit.collider.gameObject.name);
+                    //Debug.Log("Obstacle detected: " + hit.collider.gameObject.name);
                     return false; // Obstacle detected, return false
                 }
             }
 
         }
-        audioManager.Play("FærdigMedSpilTo");
+        audioManager.Play("Fï¿½rdigMedSpilTo");
         audioManager.Stop(" MusikSpilTo");
         return true; // Return true only if none of the rays detect an obstacle
        
