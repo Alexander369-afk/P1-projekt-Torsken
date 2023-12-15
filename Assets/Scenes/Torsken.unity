@@ -2233,6 +2233,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &235423381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6469600827125044407, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+  m_PrefabInstance: {fileID: 567803165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &235423386
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235423381}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &236834713
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,6 +4640,10 @@ PrefabInstance:
       propertyPath: m_LocalBounds.m_Extent.y
       value: 55.5704
       objectReference: {fileID: 0}
+    - target: {fileID: 630431961427338547, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: assignedCamera
+      value: 
+      objectReference: {fileID: 345433420}
     - target: {fileID: 710059137787250619, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.1
@@ -4696,6 +4732,10 @@ PrefabInstance:
       propertyPath: m_LocalBounds.m_Extent.y
       value: 12.132
       objectReference: {fileID: 0}
+    - target: {fileID: 1660027646232541658, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: assignedCamera
+      value: 
+      objectReference: {fileID: 345433420}
     - target: {fileID: 1662539694755560444, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
       value: 12.842251
@@ -4760,6 +4800,10 @@ PrefabInstance:
       propertyPath: m_LocalBounds.m_Extent.y
       value: 12.04375
       objectReference: {fileID: 0}
+    - target: {fileID: 2020432106886619282, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: assignedCamera
+      value: 
+      objectReference: {fileID: 345433420}
     - target: {fileID: 2617204472947983270, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
       value: 41.476948
@@ -4792,6 +4836,14 @@ PrefabInstance:
       propertyPath: m_LocalBounds.m_Extent.y
       value: 1.8368499
       objectReference: {fileID: 0}
+    - target: {fileID: 2938971063367764516, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: assignedCamera
+      value: 
+      objectReference: {fileID: 345433420}
+    - target: {fileID: 3145913575468342264, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: assignedCamera
+      value: 
+      objectReference: {fileID: 345433420}
     - target: {fileID: 3754257136422763055, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
       value: -3.1461499
@@ -5008,6 +5060,10 @@ PrefabInstance:
       propertyPath: m_LocalBounds.m_Extent.y
       value: 42.6749
       objectReference: {fileID: 0}
+    - target: {fileID: 8952179351750119393, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: assignedCamera
+      value: 
+      objectReference: {fileID: 345433420}
     - target: {fileID: 9046171258774642981, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
       value: -2.3790498
@@ -5043,7 +5099,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6469600827125044407, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 235423386}
   m_SourcePrefab: {fileID: 100100000, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
 --- !u!4 &567803166 stripped
 Transform:

@@ -4,18 +4,7 @@ public class DragStone : MonoBehaviour
 {
     bool dragged = false;
     Vector3 offset;
-    Camera activeCamera; // The camera to use
-
-    private void Start()
-    {
-        // Assign the initial active camera (you might want to set this based on your game logic)
-        activeCamera = Camera.main;
-
-        if (activeCamera == null)
-        {
-            Debug.LogError("No main camera found!");
-        }
-    }
+    public Camera assignedCamera; // Assign the camera in the Unity Editor
 
     private void OnMouseDown()
     {
@@ -24,13 +13,15 @@ public class DragStone : MonoBehaviour
 
         dragged = true;
 
-        if (activeCamera != null)
+        if (assignedCamera != null)
         {
             // Get the mouse position in world space without using ScreenToWorldPoint
-            Vector3 mousePosition = activeCamera.ScreenToWorldPoint(Input.mousePosition);
-            offset = transform.position - mousePosition;
-
+            offset = transform.position - assignedCamera.ScreenToWorldPoint(Input.mousePosition);
             GetComponent<Rigidbody2D>().isKinematic = true;
+        }
+        else
+        {
+            Debug.LogError("No camera found!");
         }
     }
 
@@ -43,10 +34,10 @@ public class DragStone : MonoBehaviour
 
     private void Update()
     {
-        if (dragged && activeCamera != null)
+        if (dragged && assignedCamera != null)
         {
             // Get the mouse position in world space without using ScreenToWorldPoint
-            Vector3 mousePosition = activeCamera.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 mousePosition = assignedCamera.ScreenToWorldPoint(Input.mousePosition);
             transform.position = mousePosition + offset;
         }
     }

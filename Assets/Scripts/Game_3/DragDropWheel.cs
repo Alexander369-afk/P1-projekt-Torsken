@@ -12,14 +12,14 @@ public class DragDropWheel : MonoBehaviour
 
     public float delay = 2;         //https://gamedevbeginner.com/how-to-delay-a-function-in-unity/ delay on wheel rotate after snap
     private float timer;
+
     
-   
+    Vector3 offset;
+    public Camera assignedCamera;
+
 
     bool dragged = false;           //variable either being true or false
     bool trigged = false;
-
-
-    Vector3 offset;
 
     //Vector3 wheelDragStartPosition;
 
@@ -29,50 +29,44 @@ public class DragDropWheel : MonoBehaviour
 
     public Vector3 rotateAmount;
 
-    private void OnMouseDown()      //Unity function; whenever mouse button is
-                                    //clicked down on an object this function will get called. 
+    private void OnMouseDown()
     {
-        dragged = true;             //set to true, as this is when we want to drag
+        if (dragged)
+            return;
 
-        
-        offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        dragged = true;
 
-        //offset = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //wheelDragStartPosition = transform.localPosition;
-
-        //GetComponent<Rigidbody2D>().isKinematic = true;
-
+        if (assignedCamera != null)
+        {
+            // Get the mouse position in world space without using ScreenToWorldPoint
+            offset = transform.position - assignedCamera.ScreenToWorldPoint(Input.mousePosition);
+            GetComponent<Rigidbody2D>().isKinematic = true;
+        }
+        else
+        {
+            Debug.LogError("No camera found!");
+        }
     }
 
-    /* private void OnMouseDrag()
-     {
-         if(dragged) 
-         {
-             transform.localPosition = wheelDragStartPosition + (Camera.main.ScreenToWorldPoint(Input.mousePosition) - offset);
-         }
-     }*/
+    
 
     private void OnMouseUp()      //Whenever mouse button is released 
     {
         Debug.Log("Mouse up");
-
         dragged = false;
-
-        //GetComponent<Rigidbody2D>().isKinematic = false;
+        GetComponent<Rigidbody2D>().isKinematic = false;
+        
 
         dragEndedCallback(this);
     }
 
     private void Update()
     {
-        if (dragged)
+        if (dragged && assignedCamera != null)
         {
-            transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
-
-
-            /* Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = mousePos; */
-
+            // Get the mouse position in world space without using ScreenToWorldPoint
+            Vector3 mousePosition = assignedCamera.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = mousePosition + offset;
         }
     }
 
