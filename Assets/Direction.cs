@@ -1,13 +1,13 @@
 using System.Collections;
 using UnityEngine;
 
-public class Sauce : MonoBehaviour
+public class Direction : MonoBehaviour
 {
     public GameObject rightTrigger;
     public GameObject upTrigger;
     public GameObject leftTrigger;
     public GameObject downTrigger;
-    public static Sauce currentSelectedMainObject;
+    public static Direction currentSelectedMainObject;
     private float raycastDistance = 4.25f;
 
     private LayerMask raycastLayer;
