@@ -135,7 +135,7 @@ public class Direction : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit object in the right direction: " + hit.collider.gameObject.name);
+            //Debug.Log("Hit object in the right direction: " + hit.collider.gameObject.name);
             rightTrigger.SetActive(false);
         }
         else
@@ -144,7 +144,7 @@ public class Direction : MonoBehaviour
             rightTrigger.SetActive(true);
         }
 
-        Debug.DrawRay(transform.position, Vector2.right * raycastDistance, Color.yellow);
+        //Debug.DrawRay(transform.position, Vector2.right * raycastDistance, Color.yellow);
     }
 
     private void ShootLeftRay(float delay)
@@ -166,7 +166,7 @@ public class Direction : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit object in the left direction: " + hit.collider.gameObject.name);
+            //Debug.Log("Hit object in the left direction: " + hit.collider.gameObject.name);
             leftTrigger.SetActive(false);
         }
         else
@@ -175,7 +175,7 @@ public class Direction : MonoBehaviour
             SetTriggerPosition(leftTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(-ArrowDistanceW, 0f));
 ;        }
 
-        Debug.DrawRay(transform.position, Vector2.left * raycastDistance, Color.green);
+        //Debug.DrawRay(transform.position, Vector2.left * raycastDistance, Color.green);
     }
 
     private void ShootUpRay(float delay)
@@ -197,7 +197,7 @@ public class Direction : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit object in the up direction: " + hit.collider.gameObject.name);
+            //Debug.Log("Hit object in the up direction: " + hit.collider.gameObject.name);
             upTrigger.SetActive(false);
         }
         else
@@ -206,7 +206,7 @@ public class Direction : MonoBehaviour
             SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, ArrowDistanceW));
         }
 
-        Debug.DrawRay(transform.position, Vector2.up * raycastDistance, Color.red);
+        //Debug.DrawRay(transform.position, Vector2.up * raycastDistance, Color.red);
     }
 
     private void ShootDownRay(float delay)
@@ -232,7 +232,7 @@ public class Direction : MonoBehaviour
             // Main object is still selected, handle the raycast results.
             if (hit.collider != null)
             {
-                Debug.Log("Hit object in the down direction: " + hit.collider.gameObject.name);
+                //Debug.Log("Hit object in the down direction: " + hit.collider.gameObject.name);
                 downTrigger.SetActive(false);
             }
             else
@@ -243,7 +243,7 @@ public class Direction : MonoBehaviour
         }
 
         // Debug draw for visualization.
-        Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
+        //Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
     }
 
 
@@ -270,7 +270,7 @@ public class Direction : MonoBehaviour
             // Main object is still selected, handle the raycast results.
             if (hit.collider != null)
             {
-                Debug.Log("Hit object in the down direction: " + hit.collider.gameObject.name);
+                //Debug.Log("Hit object in the down direction: " + hit.collider.gameObject.name);
                 downTrigger.SetActive(false);
             }
             else
@@ -281,7 +281,7 @@ public class Direction : MonoBehaviour
         }
 
         // Debug draw for visualization.
-        Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
+        //Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
     }
 
 
@@ -308,7 +308,7 @@ public class Direction : MonoBehaviour
             // Main object is still selected, handle the raycast results.
             if (hit.collider != null)
             {
-                Debug.Log("Hit object in the down direction: " + hit.collider.gameObject.name);
+                //Debug.Log("Hit object in the down direction: " + hit.collider.gameObject.name);
                 upTrigger.SetActive(false);
             }
             else
@@ -319,7 +319,7 @@ public class Direction : MonoBehaviour
         }
 
         // Debug draw for visualization.
-        Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
+        //Debug.DrawRay(transform.position, Vector2.down * raycastDistance, Color.blue);
     }
 
 
