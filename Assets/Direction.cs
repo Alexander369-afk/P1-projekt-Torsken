@@ -9,6 +9,7 @@ public class Direction : MonoBehaviour
     public GameObject downTrigger;
     public static Direction currentSelectedMainObject;
     private float raycastDistance = 4.25f;
+    private float raycastDistanceGople = 6.5f;
 
     private LayerMask raycastLayer;
     private int originalLayer;
@@ -17,7 +18,7 @@ public class Direction : MonoBehaviour
     private float ArrowDistanceW = 2.35f;
     //private float ArrowDistanceG = 4f; 
 
-
+    /* ChatGPT was used to help implement the whole script. */
 
 
     void Awake()
@@ -131,7 +132,7 @@ public class Direction : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Cast the ray after the delay.
-        RaycastHit2D hit = CastRay(Vector2.right);
+        RaycastHit2D hit = CastRay(Vector2.right, raycastDistance);
 
         if (hit.collider != null)
         {
@@ -162,7 +163,7 @@ public class Direction : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Cast the ray after the delay.
-        RaycastHit2D hit = CastRay(Vector2.left);
+        RaycastHit2D hit = CastRay(Vector2.left, raycastDistance);
 
         if (hit.collider != null)
         {
@@ -193,7 +194,7 @@ public class Direction : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Cast the ray after the delay.
-        RaycastHit2D hit = CastRay(Vector2.up);
+        RaycastHit2D hit = CastRay(Vector2.up, raycastDistance);
 
         if (hit.collider != null)
         {
@@ -203,7 +204,7 @@ public class Direction : MonoBehaviour
         else
         {
             upTrigger.SetActive(true);
-            SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, ArrowDistanceW));
+            SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, 3f));
         }
 
         //Debug.DrawRay(transform.position, Vector2.up * raycastDistance, Color.red);
@@ -224,7 +225,7 @@ public class Direction : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Cast the ray after the delay.
-        RaycastHit2D hit = CastRay(Vector2.down);
+        RaycastHit2D hit = CastRay(Vector2.down, raycastDistance);
 
         // Check if the main object is still the current selected main object.
         if (currentSelectedMainObject == this)
@@ -262,7 +263,7 @@ public class Direction : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Cast the ray after the delay.
-        RaycastHit2D hit = CastRay(Vector2.down);
+        RaycastHit2D hit = CastRay(Vector2.down, raycastDistanceGople);
 
         // Check if the main object is still the current selected main object.
         if (currentSelectedMainObject == this)
@@ -300,7 +301,7 @@ public class Direction : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Cast the ray after the delay.
-        RaycastHit2D hit = CastRay(Vector2.down);
+        RaycastHit2D hit = CastRay(Vector2.up, raycastDistanceGople);
 
         // Check if the main object is still the current selected main object.
         if (currentSelectedMainObject == this)
@@ -314,7 +315,7 @@ public class Direction : MonoBehaviour
             else
             {
                 upTrigger.SetActive(true);
-                SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, 6f));
+                SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, 5f));
             }
         }
 
@@ -332,8 +333,10 @@ public class Direction : MonoBehaviour
         trigger.transform.position = position;
     }
 
-    private RaycastHit2D CastRay(Vector2 direction)
+    private RaycastHit2D CastRay(Vector2 direction,float distance)
     {
-        return Physics2D.Raycast(transform.position, direction, raycastDistance, raycastLayer);
+        return Physics2D.Raycast(transform.position, direction, distance, raycastLayer);
     }
 }
+
+
