@@ -27,6 +27,10 @@ TagManager:
   - Spil 2 Slut
   - SLUK
   - AudioCutscene
+  - IntroMusic
+  - Spil 1 Music
+  - Spil 1 Forklaring
+  - Spil 1 Music Stop
   layers:
   - Default
   - TransparentFX
