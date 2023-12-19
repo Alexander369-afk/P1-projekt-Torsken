@@ -7246,9 +7246,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4220643978473227028, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
       insertIndex: -1
       addedObject: {fileID: 600151052}
-    - targetCorrespondingSourceObject: {fileID: 4220643978473227028, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 851251905}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7877e2009ded4fd39e09dc4338f3300, type: 3}
 --- !u!1 &397120343
@@ -11841,8 +11838,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0018000007, y: 0.0037499964, z: 0}
-    m_Extent: {x: 1.0032, y: 1.00335, z: 0}
+    m_Center: {x: 0.0018999875, y: -0.005799979, z: 0}
+    m_Extent: {x: 0.99660003, y: 0.99889994, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.1
@@ -14802,6 +14799,83 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 6008670008295034186, guid: f8835f74fbc77b049b3662b1101ee03d, type: 3}
   m_PrefabInstance: {fileID: 1155080233}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &740902794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 740902795}
+  - component: {fileID: 740902796}
+  m_Layer: 0
+  m_Name: Cutscene 2 Music
+  m_TagString: Cutscene 2 Music
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &740902795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740902794}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 111.8, y: 34.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 874932100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &740902796
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740902794}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.93, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 28.66}
+  m_EdgeRadius: 0
 --- !u!1 &744413351
 GameObject:
   m_ObjectHideFlags: 0
@@ -16763,7 +16837,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 673649579}
+    m_TransformParent: {fileID: 1557225640}
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: 24e524f1f58e7464dbc9d1b9dd6bac97, type: 3}
       propertyPath: m_Name
@@ -16783,15 +16857,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 24e524f1f58e7464dbc9d1b9dd6bac97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 444.01285
+      value: 249.91284
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 24e524f1f58e7464dbc9d1b9dd6bac97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 55.55134
+      value: 14.171341
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 24e524f1f58e7464dbc9d1b9dd6bac97, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 67.755486
+      value: -6.1399994
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 24e524f1f58e7464dbc9d1b9dd6bac97, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17076,6 +17150,10 @@ Transform:
   m_Children:
   - {fileID: 105451159}
   - {fileID: 1778688586}
+  - {fileID: 1540482770}
+  - {fileID: 740902795}
+  - {fileID: 1296870362}
+  - {fileID: 1462701572}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &883107097
@@ -25435,6 +25513,83 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1296870361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1296870362}
+  - component: {fileID: 1296870363}
+  m_Layer: 0
+  m_Name: Cutscene 2 Music Stop
+  m_TagString: Cutscene 2 Music
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1296870362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296870361}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 151.8, y: 40.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 874932100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1296870363
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296870361}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.93, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 28.66}
+  m_EdgeRadius: 0
 --- !u!1 &1300193053
 GameObject:
   m_ObjectHideFlags: 0
@@ -28143,6 +28298,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6780373369825863783, guid: 680db544ffe314711a16ece4cfc00279, type: 3}
   m_PrefabInstance: {fileID: 2142413630}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1462701571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1462701572}
+  - component: {fileID: 1462701573}
+  m_Layer: 0
+  m_Name: Spil 2 Music
+  m_TagString: Cutscene 2 Music
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1462701572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462701571}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 151.8, y: 40.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 874932100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1462701573
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462701571}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.93, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 28.66}
+  m_EdgeRadius: 0
 --- !u!1 &1464165954
 GameObject:
   m_ObjectHideFlags: 0
@@ -29432,6 +29664,83 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1540482769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1540482770}
+  - component: {fileID: 1540482771}
+  m_Layer: 0
+  m_Name: Spil 1 - Music Stop
+  m_TagString: Spil 1 Music Stop
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1540482770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540482769}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 111.6, y: 30.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 874932100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1540482771
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540482769}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.93, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 28.66}
+  m_EdgeRadius: 0
 --- !u!1 &1543154487
 GameObject:
   m_ObjectHideFlags: 0
@@ -30032,6 +30341,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7089305}
+  - {fileID: 851251905}
   - {fileID: 673649579}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39001,7 +39311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.size
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: soundClips.Array.size
@@ -39022,42 +39332,58 @@ PrefabInstance:
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 16ed5a213b3725f4e986c13f3101f834, type: 3}
+      objectReference: {fileID: 8300000, guid: 9bae67f9785b9a04c956d4d32b1ba56f, type: 3}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[2].name
-      value: AV
+      value: CutScene0
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: ec170d0516902bc4d8436db5f075206b, type: 3}
+      objectReference: {fileID: 8300000, guid: 548fc2eda2af244319a39b471a9f748b, type: 3}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[3].loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[3].name
-      value: wert
+      value: Spil 1 Music
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[4].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 7fb9739cdf62c4362a9ebf4c8fdd50e4, type: 3}
+      objectReference: {fileID: 8300000, guid: 6bfc85f5c4f758f4eb71e1e5b1af70c2, type: 3}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[4].loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[4].name
-      value: Telefonen Ringer
+      value: Spil 1 Forklaring
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[5].clip
       value: 
-      objectReference: {fileID: 8300000, guid: e9ea8e05e8abeec46b68f86d6b40758c, type: 3}
+      objectReference: {fileID: 8300000, guid: d8149a2bdd07f41d7bd9493c39d6b855, type: 3}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[5].loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[5].name
-      value: "F\xE6rdigMedSpil2"
+      value: Cutscene 2
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[6].clip
       value: 
-      objectReference: {fileID: 8300000, guid: feed4dc69d7458a4eafc6aa821138e69, type: 3}
+      objectReference: {fileID: 8300000, guid: 92aba6f81d55846cfa8e2d2b030471da, type: 3}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[6].loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[6].name
-      value: StartScene
+      value: Cutscene 2 Music
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[7].clip
@@ -39065,39 +39391,43 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 2e6ad50126471c44a9a322da5104bc04, type: 3}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[7].name
-      value: SpilTre
+      value: Spil3
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[8].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 2e6ad50126471c44a9a322da5104bc04, type: 3}
+      objectReference: {fileID: 8300000, guid: 16ed5a213b3725f4e986c13f3101f834, type: 3}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[8].name
-      value: Spil3
+      value: AV
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[9].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 9bae67f9785b9a04c956d4d32b1ba56f, type: 3}
+      objectReference: {fileID: 8300000, guid: 7fb9739cdf62c4362a9ebf4c8fdd50e4, type: 3}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[9].name
-      value: CutScene0
+      value: Telefonen Ringer
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[10].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 6bfc85f5c4f758f4eb71e1e5b1af70c2, type: 3}
+      objectReference: {fileID: 8300000, guid: 7fb9739cdf62c4362a9ebf4c8fdd50e4, type: 3}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[10].name
-      value: Spil 1 Forklaring
+      value: Telefonen Ringer
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[11].clip
       value: 
-      objectReference: {fileID: 8300000, guid: d8149a2bdd07f41d7bd9493c39d6b855, type: 3}
+      objectReference: {fileID: 8300000, guid: 7fb9739cdf62c4362a9ebf4c8fdd50e4, type: 3}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[11].loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[11].name
-      value: Cutscene 2
+      value: Telefonen Ringer
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[12].clip
@@ -39125,7 +39455,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[4].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[5].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[6].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[7].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[8].pitch
       value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[9].pitch
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[0].volume
@@ -39141,7 +39499,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[2].volume
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 0.638
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[5].volume
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[6].volume
+      value: 0.638
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[7].volume
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[8].volume
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[9].volume
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[11].volume
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[12].volume
@@ -39181,7 +39571,7 @@ SceneRoots:
   - {fileID: 1811686526}
   - {fileID: 1674942609}
   - {fileID: 1984908263}
+  - {fileID: 874932100}
   - {fileID: 455520583}
   - {fileID: 3236541969646530987}
   - {fileID: 266713364}
-  - {fileID: 874932100}

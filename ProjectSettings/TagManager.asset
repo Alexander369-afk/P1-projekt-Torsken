@@ -31,6 +31,9 @@ TagManager:
   - Spil 1 Music
   - Spil 1 Forklaring
   - Spil 1 Music Stop
+  - Cutscene 2 Music
+  - Cutscene 2 Music Stop
+  - Spil 2 Music
   layers:
   - Default
   - TransparentFX

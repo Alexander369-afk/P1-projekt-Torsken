@@ -49,7 +49,14 @@ public class ColliderAudio : MonoBehaviour
         if (other.CompareTag("Spil 1 Music Stop"))
         {
             AudioManager.instance.Stop("Spil 1 Music");
-            Debug.Log("Afspiller Lyd til Spil 1 Music");
+            Debug.Log("Stopper Lyd til Spil 1 Music");
+            other.enabled = false;
+        }
+
+        if (other.CompareTag("Cutscene 2 Music Stop"))
+        {
+            AudioManager.instance.Stop("Cutscene 2 Music");
+            Debug.Log("Stopper Lyd til Cutscene 2 Music");
             other.enabled = false;
         }
     }

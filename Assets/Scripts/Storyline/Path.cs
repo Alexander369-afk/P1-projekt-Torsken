@@ -29,20 +29,21 @@ public class Path : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position,
                     Waypoints[waypointsIndex].position, moveSpeeds[waypointsIndex] * Time.deltaTime);
             }
+            
             if (timer >= waitTimes[waypointsIndex])
             {
-                    // Reset the timer and move to the next waypoint
-                    timer = 0f;
-                    waypointsIndex++;
+                // Reset the timer and move to the next waypoint
+                timer = 0f;
+                waypointsIndex++;
             }
         }
     }
 
     public void WheelSnapped()
     {
-        // Implement the logic to handle waypoint change when the wheel is snapped
-        // For example, you can increment waypointsIndex or set a specific waypoint index
+        // Feature for Game 3 where if the wheel is snapped it will update the waypoint index. 
         waypointsIndex = (waypointsIndex + 1) % Waypoints.Length;
+        timer = 0f; // Reset timer when changing waypoints
     }
 }
 
