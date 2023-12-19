@@ -20,7 +20,7 @@ public class ChangeScene : MonoBehaviour
         if (audioManager != null)
         {
             audioManager.Stop("Telefonen Ringer");
-            audioManager.Play("Cut Scene Nul");
+            
         }
         SceneManager.LoadScene(sceneID); // this loads the scene with the sceneID passed to the method, meaning it'll change scenen and start the game
     }

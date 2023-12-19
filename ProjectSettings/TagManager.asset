@@ -34,6 +34,11 @@ TagManager:
   - Cutscene 2 Music
   - Cutscene 2 Music Stop
   - Spil 2 Music
+  - Spil 2 Music Stop
+  - Spil 2 Vinder
+  - Spil 3 Music
+  - Spil 3 Music Stop
+  - DisablePathScript
   layers:
   - Default
   - TransparentFX

@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class Path : MonoBehaviour
 {
-    [SerializeField] Transform[] Waypoints; // Array that sets a GameObject as a waypoint
-    [SerializeField] private float[] moveSpeeds; // Array that sets the move speed from one waypoint to the next
-    [SerializeField] private float[] waitTimes;  // Array for amount of seconds Torsken should wait at each waypoint
+    [SerializeField] Transform[] Waypoints;
+    [SerializeField] private float[] moveSpeeds;
+    [SerializeField] private float[] waitTimes;
 
     private float timer;
     private int waypointsIndex;
@@ -19,31 +19,51 @@ public class Path : MonoBehaviour
 
     void Update()
     {
+        // Check if the path script should be disabled
+        if (!IsPathScriptEnabled())
+        {
+            return;
+        }
+
         if (waypointsIndex < Waypoints.Length)
         {
             float distance = Vector2.Distance(transform.position, Waypoints[waypointsIndex].position);
 
             if (distance > 0.1f)
             {
-                // Move towards the waypoint with the specified move speed
                 transform.position = Vector2.MoveTowards(transform.position,
                     Waypoints[waypointsIndex].position, moveSpeeds[waypointsIndex] * Time.deltaTime);
             }
-            
+
             if (timer >= waitTimes[waypointsIndex])
             {
-                // Reset the timer and move to the next waypoint
                 timer = 0f;
                 waypointsIndex++;
             }
         }
     }
 
+    // Method to check if the path script should be disabled
+    private bool IsPathScriptEnabled()
+    {
+        // Check if there is a collision with an object tagged as "DisablePathScript"
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.CompareTag("DisablePathScript"))
+            {
+                // Disable the path script and return false
+                enabled = false;
+                return false;
+            }
+        }
+
+        // Return true if no disabling collision is detected
+        return true;
+    }
+
     public void WheelSnapped()
     {
-        // Feature for Game 3 where if the wheel is snapped it will update the waypoint index. 
         waypointsIndex = (waypointsIndex + 1) % Waypoints.Length;
-        timer = 0f; // Reset timer when changing waypoints
     }
 }
-

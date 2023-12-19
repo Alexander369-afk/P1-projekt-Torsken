@@ -34,7 +34,7 @@ public class ColliderAudio : MonoBehaviour
         if (other.CompareTag("Spil 1 Music"))
         {
             AudioManager.instance.Play("Spil 1 Music");
-            Debug.Log("Afspiller Lyd til Spil 1 Music");           
+            Debug.Log("Afspiller Lyd til Spil 1 Music");
             other.enabled = false;
         }
 
@@ -42,6 +42,27 @@ public class ColliderAudio : MonoBehaviour
         {
             AudioManager.instance.Play("Cutscene 2 Music");
             Debug.Log("Afspiller Lyd til Cutscene 2 Music");
+            other.enabled = false;
+        }
+
+        if (other.CompareTag("Spil 2 Music"))
+        {
+            AudioManager.instance.Play("Spil 2 Music");
+            Debug.Log("Afspiller Lyd til Spil 2");
+            other.enabled = false;
+        }
+
+        if (other.CompareTag("Spil 2 Vinder"))
+        {
+            AudioManager.instance.Play("Spil 2 Vinder");
+            Debug.Log("Afspiller Lyd til Spil 2 Vinder");
+            other.enabled = false;
+        }
+
+        if (other.CompareTag("Spil 3 Music"))
+        {
+            AudioManager.instance.Play("Spil 3 Music");
+            Debug.Log("Afspiller Lyd til Spil 3 Music");
             other.enabled = false;
         }
 
@@ -57,6 +78,21 @@ public class ColliderAudio : MonoBehaviour
         {
             AudioManager.instance.Stop("Cutscene 2 Music");
             Debug.Log("Stopper Lyd til Cutscene 2 Music");
+            other.enabled = false;
+        }
+
+        if (other.CompareTag("Spil 2 Music Stop"))
+        {
+            AudioManager.instance.Stop("Spil 2 Music");
+            Debug.Log("Stopper Lyd til Spil 2");
+            other.enabled = false;
+        }
+
+        if (other.CompareTag("Spil 3 Music Stop"))
+        {
+            AudioManager.instance.Stop("Spil 3 Done");
+            Debug.Log("Stopper Lyd til Spil 3 Done og Afspiller Spil 3 Musik");
+            AudioManager.instance.Play("Spil 3 Music");
             other.enabled = false;
         }
     }
