@@ -87,13 +87,5 @@ public class ColliderAudio : MonoBehaviour
             Debug.Log("Stopper Lyd til Spil 2");
             other.enabled = false;
         }
-
-        if (other.CompareTag("Spil 3 Music Stop"))
-        {
-            AudioManager.instance.Stop("Spil 3 Done");
-            Debug.Log("Stopper Lyd til Spil 3 Done og Afspiller Spil 3 Musik");
-            AudioManager.instance.Play("Spil 3 Music");
-            other.enabled = false;
-        }
     }
 }
