@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class SnapWheel : MonoBehaviour
 {
-    public List<Transform> snapPosition;
+    public List<Transform> snapPosition;                            //public variable lists to store the snap position and the dragable wheel
     public List<DragDropWheel> wheelObject;
-    public float snapRange = 0.5f;
+    public float snapRange = 0.5f;                                  //variable type float as snap range where we will specify who close the wheel need to be to the snap position to snap on
 
     // Reference to the Path script
     public Path pathScript;
@@ -22,7 +22,7 @@ public class SnapWheel : MonoBehaviour
         }
     }
 
-    private void OnDragEnded(DragDropWheel dragdropwheel)
+    private void OnDragEnded(DragDropWheel dragdropwheel)                   //in the DragDropWheel script .....
     {
         float closestDistance = -1;
         Transform closestSnapPoint = null;
@@ -38,7 +38,7 @@ public class SnapWheel : MonoBehaviour
             }
         }
 
-        if (closestSnapPoint != null && closestDistance <= snapRange)
+        if (closestSnapPoint != null && closestDistance <= snapRange)                       //When wheel is snapped then cutscene 6 and spil 3 music will start, and the sound to spil 3 will stop. 
         {
             dragdropwheel.transform.localPosition = closestSnapPoint.localPosition;
             Debug.Log("wheel on snap");
