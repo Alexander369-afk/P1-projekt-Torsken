@@ -42,12 +42,10 @@ public class SnapWheel : MonoBehaviour
         {
             dragdropwheel.transform.localPosition = closestSnapPoint.localPosition;
             Debug.Log("wheel on snap");
-
-            // Notify the Path script that the wheel is snapped
-            if (pathScript != null)
-            {
-                pathScript.WheelSnapped();
-            }
+            CutsceneManager.Instance.StartCutscene("Cut Scene 6");
+            AudioManager.instance.Stop("Spil 3 Music");
+            Debug.Log("Stopper Lyd til Cutscene 3 Music");
+            AudioManager.instance.Play("Spil 3 Done");
         }
     }
 }
