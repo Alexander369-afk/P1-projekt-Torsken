@@ -66,7 +66,7 @@ public class ColliderAudio : MonoBehaviour
             other.enabled = false;
         }
 
-        //Stop Statements
+  //Stop Statements
         if (other.CompareTag("Spil 1 Music Stop"))
         {
             AudioManager.instance.Stop("Spil 1 Music");

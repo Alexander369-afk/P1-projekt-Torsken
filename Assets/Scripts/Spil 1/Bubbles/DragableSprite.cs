@@ -33,16 +33,7 @@ public class DragableSprite : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!isDragging)
-        {
-            // Handle explosion or destruction logic here
             Explode();
-        }
-        else
-        {
-            isDragging = true;
-            clickOffset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        }
     }
 
     private void OnMouseUp()
@@ -52,11 +43,9 @@ public class DragableSprite : MonoBehaviour
 
     void Explode()
     { 
-        scoreKeeper.ModifyScore(score);
         animator.SetTrigger("PopTrigger");
         float delay = 0.2f;
         Destroy(gameObject,delay);
-
     }
 
     

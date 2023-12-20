@@ -39,7 +39,6 @@ public class PlayerHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            
             LevelManager.instance.GameOver();
             
             gameObject.SetActive(false);

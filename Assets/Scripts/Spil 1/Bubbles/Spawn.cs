@@ -10,8 +10,6 @@ public class Spawn : MonoBehaviour
 
     public float frequency;
 
-    public float initialSpeed;
-
     float lastSpawnedTime;
 
     private bool isGameActive = true;

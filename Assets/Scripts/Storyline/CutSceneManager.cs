@@ -66,7 +66,7 @@ public class CutsceneManager : MonoBehaviour
 
         cutsceneDataBase[cutsceneKey].SetActive(true);
     }
-
+    
     public void EndCutscene()
     {
         if (activeCutscene != null)

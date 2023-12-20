@@ -1942,6 +1942,14 @@ PlayableDirector:
     value: {fileID: 1673455354}
   - key: {fileID: -5209091621277276514, guid: 7d9a16b4de4ba4a5b919fad97c4014bd, type: 2}
     value: {fileID: 1332240294}
+  - key: {fileID: -4778407869678723252, guid: 7d9a16b4de4ba4a5b919fad97c4014bd, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8696279667288817483, guid: 7d9a16b4de4ba4a5b919fad97c4014bd, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4598004999903549538, guid: 7d9a16b4de4ba4a5b919fad97c4014bd, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5720944114174076589, guid: 7d9a16b4de4ba4a5b919fad97c4014bd, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &89518950
@@ -12229,8 +12237,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00040000677, y: 0.0023500025, z: 0}
-    m_Extent: {x: 0.9993, y: 0.99364996, z: 0}
+    m_Center: {x: -0.0010499954, y: 0.0020500422, z: 0}
+    m_Extent: {x: 1.00865, y: 1.00385, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.1
@@ -39282,6 +39290,14 @@ PrefabInstance:
     - target: {fileID: 4783793615705367292, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
