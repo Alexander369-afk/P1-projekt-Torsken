@@ -24,7 +24,7 @@ public class CameraTriggerSwitcher : MonoBehaviour
             CinemachineVirtualCamera targetCamera = other.GetComponentInChildren<CinemachineVirtualCamera>();
             Debug.Log("Entered trigger. Switching to camera: " + targetCamera.name);
             SwitchToCamera(targetCamera);
-            
+
         }
     }
 

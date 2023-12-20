@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 
+// Made by the danish youtuber Brackeys https://www.youtube.com/watch?v=6OT43pvUyfY&t=637s&ab_channel=Brackeys
+
 public class AudioManager : MonoBehaviour
 {
     
@@ -52,9 +54,9 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    public void Stop(string name)
+    public void Stop(string name)   // made with the help from ChatGPT
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name); // Updated here
+        Sound s = Array.Find(sounds, sound => sound.name == name); 
 
         // Check if the sound is found before attempting to stop
         if (s == null)

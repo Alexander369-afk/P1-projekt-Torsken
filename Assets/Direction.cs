@@ -15,8 +15,11 @@ public class Direction : MonoBehaviour
     private int originalLayer;
     private AudioManager audioManager;
     private float fuckmagicnumber = 0.1f;
-    private float ArrowDistanceW = 2.35f;
-    //private float ArrowDistanceG = 4f; 
+    private float ArrowDistanceJelly = 2.35f;
+    private float upArrowJelly = 3f;
+    private float upArrowGople = 5f;
+    private float downArrowGople = 3.4f;
+    
 
     /* ChatGPT was used to help implement the whole script. */
 
@@ -141,11 +144,11 @@ public class Direction : MonoBehaviour
         }
         else
         {
-            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(ArrowDistanceW, 0f));
+            SetTriggerPosition(rightTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(ArrowDistanceJelly, 0f));
             rightTrigger.SetActive(true);
         }
 
-        //Debug.DrawRay(transform.position, Vector2.right * raycastDistance, Color.yellow);
+        Debug.DrawRay(transform.position, Vector2.right * raycastDistance, Color.yellow);
     }
 
     private void ShootLeftRay(float delay)
@@ -173,7 +176,7 @@ public class Direction : MonoBehaviour
         else
         {
             leftTrigger.SetActive(true);
-            SetTriggerPosition(leftTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(-ArrowDistanceW, 0f));
+            SetTriggerPosition(leftTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(-ArrowDistanceJelly, 0f));
 ;        }
 
         //Debug.DrawRay(transform.position, Vector2.left * raycastDistance, Color.green);
@@ -204,7 +207,7 @@ public class Direction : MonoBehaviour
         else
         {
             upTrigger.SetActive(true);
-            SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, 3f));
+            SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, upArrowJelly));
         }
 
         //Debug.DrawRay(transform.position, Vector2.up * raycastDistance, Color.red);
@@ -239,7 +242,7 @@ public class Direction : MonoBehaviour
             else
             {
                 downTrigger.SetActive(true);
-                SetTriggerPosition(downTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, -ArrowDistanceW));
+                SetTriggerPosition(downTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, -ArrowDistanceJelly));
             }
         }
 
@@ -277,7 +280,7 @@ public class Direction : MonoBehaviour
             else
             {
                 downTrigger.SetActive(true);
-                SetTriggerPosition(downTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, -3.4f));
+                SetTriggerPosition(downTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, downArrowGople));
             }
         }
 
@@ -315,7 +318,7 @@ public class Direction : MonoBehaviour
             else
             {
                 upTrigger.SetActive(true);
-                SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, 5f));
+                SetTriggerPosition(upTrigger, new Vector2(transform.position.x, transform.position.y) + new Vector2(0f, upArrowGople));
             }
         }
 

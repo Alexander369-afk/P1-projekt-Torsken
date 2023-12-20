@@ -1,6 +1,8 @@
 using UnityEngine.Audio;
 using UnityEngine;
 
+// // Made by the danish youtuber Brackeys https://www.youtube.com/watch?v=6OT43pvUyfY&t=637s&ab_channel=Brackeys
+
 [System.Serializable]
 public class Sound
 {
