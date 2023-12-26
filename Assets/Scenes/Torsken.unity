@@ -12229,8 +12229,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.000050008297, y: 0.00025001168, z: 0}
-    m_Extent: {x: 1.0097499, y: 0.99615, z: 0}
+    m_Center: {x: -0.00069999695, y: -0.0061999857, z: 0}
+    m_Extent: {x: 1.0072, y: 0.9993, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.1
@@ -27503,7 +27503,7 @@ GameObject:
   - component: {fileID: 1409830929}
   - component: {fileID: 1409830927}
   - component: {fileID: 1409830930}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Torsken
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -33367,7 +33367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1102231740132243336, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 12.10498
+      value: 12.105103
       objectReference: {fileID: 0}
     - target: {fileID: 1102231740132243336, guid: 71b599b30c6d6402d9de010588d701ec, type: 3}
       propertyPath: m_AnchoredPosition.y
