@@ -2437,7 +2437,7 @@ Transform:
   m_GameObject: {fileID: 127094682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3315.5728, y: -14.300008, z: -7.193982}
+  m_LocalPosition: {x: -3315.5725, y: -14.300007, z: -7.193982}
   m_LocalScale: {x: 10.684295, y: 1.758653, z: 1.1690916}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11179,6 +11179,18 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1282181480949765038, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: simulationSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282181480949765038, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282181480949765038, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1660027646232541658, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
       propertyPath: assignedCamera
       value: 
@@ -11467,9 +11479,29 @@ PrefabInstance:
       propertyPath: m_LocalBounds.m_Extent.y
       value: 23.44635
       objectReference: {fileID: 0}
+    - target: {fileID: 7927585082619377872, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7980734886060388000, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353919593737344543, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: simulationSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353919593737344543, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353919593737344543, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353919593737344543, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8383460492330330928, guid: 37122e7fedc187e43b1b41c105e328ad, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
@@ -12229,8 +12261,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00040000677, y: 0.0023500025, z: 0}
-    m_Extent: {x: 0.9993, y: 0.99364996, z: 0}
+    m_Center: {x: 0.0014500022, y: 0.0072000325, z: 0}
+    m_Extent: {x: 1.00575, y: 1.0024, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.1
@@ -19543,7 +19575,7 @@ Transform:
   m_GameObject: {fileID: 967021390}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.83381295, y: -1.0157152, z: -2.8954082}
+  m_LocalPosition: {x: 0.8338129, y: -1.0157151, z: -2.895408}
   m_LocalScale: {x: 0.47614193, y: 0.47619852, z: 0.4761905}
   m_ConstrainProportionsScale: 0
   m_Children:
