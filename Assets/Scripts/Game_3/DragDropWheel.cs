@@ -10,8 +10,8 @@ public class DragDropWheel : MonoBehaviour
 
     public DragEndedDelegate dragEndedCallback;
 
-    public float delay = 2;         //https://gamedevbeginner.com/how-to-delay-a-function-in-unity/ delay on wheel rotate after snap
-    private float timer;
+   /* public float delay = 2;         //update 4/1-24: bliver ikke brugt alligevel. https://gamedevbeginner.com/how-to-delay-a-function-in-unity/ delay on wheel rotate after snap
+    private float timer;*/
 
     
     Vector3 offset;
