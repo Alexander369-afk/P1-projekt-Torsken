@@ -1400,7 +1400,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 51.4
+  field of view: 43.1
   orthographic: 0
   orthographic size: 2.42
   m_Depth: -1
@@ -1547,8 +1547,8 @@ MonoBehaviour:
   Waypoints:
   - {fileID: 1682544466}
   - {fileID: 1091787203}
-  moveSpeed: 2
-  waypointsIndex: 0
+  moveSpeeds: []
+  waitTimes: []
 --- !u!212 &2094997478
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1628,7 +1628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfcf5b48b67344deea374023b239b38b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerTag: CameraZone
+  triggerEnterTag: 
+  triggerExitTag: 
   primaryCamera: {fileID: 193245517}
   virtualCameras:
   - {fileID: 877568454}
