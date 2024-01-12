@@ -1,21 +1,34 @@
 using UnityEngine;
 
+
+// Code from YouTube https://www.youtube.com/watch?v=izag_ZHwOtM&t=100s + modified
+
 public class DragStone : MonoBehaviour
 {
-    bool dragged = false;           //boolean variable, indicates if the stone is being dragged or not (true or false)
-    Vector3 offset;
+    //-----------------------------------------------------------------------------------------------------------//
+                                                //     Declarations     //
+    //-----------------------------------------------------------------------------------------------------------//
+    bool dragged = false;             //boolean variable, indicates if the stone is being dragged or not (true or false)
+   
+    Vector3 offset;                  //Three-dimensional space (x, y, z). To hold/store position data
+    
     public Camera assignedCamera;   //Assign the camera in the Unity Editor
 
-    private void OnMouseDown()      //Method that is called: when mousebutton is pressed,
-                                    //this definition will happen
+
+    //-----------------------------------------------------------------------------------------------------------//
+                                                  //     CODE     //
+    //-----------------------------------------------------------------------------------------------------------//
+
+    private void OnMouseDown()           //Method that is called: when left mousebutton is pressed,
+                                         //this definition will happen
     {
-        if (dragged)                //checks if the stone is already being dragged,  
-            return;                 //if so 'return' will exit and not execute the code
+        if (dragged)                     //checks if the stone is already being dragged,  
+            return;                      //if so 'return' will exit and not execute the code
 
-        dragged = true;             //the stone is being dragged
+        dragged = true;                  //the stone is being dragged
 
-        if (assignedCamera != null)     //if the value (assignedCamera) on the left is not equal to null
-                                        //(a camera has been assigned), then execute the code below
+        if (assignedCamera != null)      //if the value (assignedCamera) on the left is not equal to null
+                                         //(a camera has been assigned), then execute the code below
         {
             //When pressing the mouse on the stone, this code calculates the offset/difference/distance
             //between the stone position and the mouse position. Makes it possible to drag the stone
@@ -24,8 +37,8 @@ public class DragStone : MonoBehaviour
            
             
             GetComponent<Rigidbody2D>().isKinematic = true;     //the dragged stone will not be influenced by physics,
-                                                                //in this case not bump into other stones
-                                                                //when being dragged
+                                                                //in this case not bump into other stones og other objects
+                                                                //with a rigidbody2D, when being dragged
         }
         else                                    //if no camera is assigned (if assignedCamera is equal to null)
                                                 //then show error
@@ -34,19 +47,19 @@ public class DragStone : MonoBehaviour
         }
     }
 
-    private void OnMouseUp()        //method that is called: when mousebutton is released,
+    private void OnMouseUp()        //method that is called: when left mousebutton is released,
                                     //this definition will happen
     {
         dragged = false;            //the stone is no longer being dragged
                                     
-        GetComponent<Rigidbody2D>().isKinematic = false; //and the stone is now influenced by physics again
-                                                         //in this case: when dropping the stone it will fall
-                                                         //and land on the ground
+        GetComponent<Rigidbody2D>().isKinematic = false;    //and the stone is now influenced by physics again
+                                                            //in this case: when dropping the stone it will fall
+                                                            //and land on the ground
     }
 
     private void Update()
     {
-        if (dragged && assignedCamera != null)    //checks if the stone is being dragged and if a camera has been assigned,
+        if (dragged && assignedCamera != null)    //checks if the stone is being dragged and if assignedCamera has been assigned,
                                                   //if so the code will be executed
         {
             //If the conditions are met the update method ensures that the stones position is updated and follows the mouse movement
