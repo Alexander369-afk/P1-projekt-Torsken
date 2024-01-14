@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 901d242499e725c4d8facd1edb97dcbf
+guid: b8130c8698a664f76bb178a25abd0cf5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Talking Torsk Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1252
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebec3f75ffd24acf978f766f3841262
+      internalID: -1412004205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talking Torsk Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 4030
+        y: 1252
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82ed5e95bec5482b9883b0610fdd6d7
+      internalID: 2094477066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talking Torsk Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 451
+        width: 1558
+        height: 679
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995d2684ed91340c9a7218b093c1dd08
+      internalID: -2010888889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talking Torsk Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 451
+        width: 1558
+        height: 679
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9488038814e4c7c83ee155149a0b09
+      internalID: 494840449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Talking Torsk Sprite Sheet_0: -1412004205
+      Talking Torsk Sprite Sheet_1: 2094477066
+      Talking Torsk Sprite Sheet_2: -2010888889
+      Talking Torsk Sprite Sheet_3: 494840449
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
