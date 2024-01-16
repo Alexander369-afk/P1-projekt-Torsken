@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Code from https://www.youtube.com/watch?v=zxqQ_Uwt-eU&ab_channel=KoryCode
+
 public class Spawn : MonoBehaviour
 {
     public int numberToSpawn;
     public List<GameObject> spawnPool;
     public GameObject quad;
 
+    private int randomTile;
     public float frequency;
-
     public float initialSpeed;
-
     float lastSpawnedTime;
-
-    private bool isGameActive = true;
+        private bool isGameActive = true;
 
     void Update()
     {
@@ -27,12 +27,10 @@ public class Spawn : MonoBehaviour
 
     public void spawnObjects()
     {
-        int randomTile = 0;
         GameObject toSpawn;
         MeshCollider c = quad.GetComponent<MeshCollider>();
 
         float screenX, screenY;
-        //float screenZ = 50f;
         Vector3 pos;
 
         for (int i = 0; i < numberToSpawn; i++)
