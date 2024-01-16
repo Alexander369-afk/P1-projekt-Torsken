@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Code from https://www.gamedev.tv/courses/unity-2d-rpg-combat/lectures/45669213
+
 public class Flash : MonoBehaviour
 {
     [SerializeField] private Material whiteFlashMat;
