@@ -10,6 +10,7 @@ public class BubbleScript : MonoBehaviour
         {
             // Destroy the bubble GameObject
             Destroy(gameObject);
+            FindObjectOfType<AudioManager>().Play("Bubble Pop");
         }
     }
 }

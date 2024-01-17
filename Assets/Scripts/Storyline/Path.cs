@@ -19,12 +19,6 @@ public class Path : MonoBehaviour
 
     void Update()
     {
-        // Check if the path script should be disabled
-        if (!IsPathScriptEnabled())
-        {
-            return;
-        }
-
         if (waypointsIndex < Waypoints.Length)
         {
             float distance = Vector2.Distance(transform.position, Waypoints[waypointsIndex].position);
@@ -41,25 +35,6 @@ public class Path : MonoBehaviour
                 waypointsIndex++;
             }
         }
-    }
-
-    // Method to check if the path script should be disabled
-    private bool IsPathScriptEnabled()
-    {
-        // Check if there is a collision with an object tagged as "DisablePathScript"
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
-        foreach (Collider2D collider in colliders)
-        {
-            if (collider.CompareTag("DisablePathScript"))
-            {
-                // Disable the path script and return false
-                enabled = false;
-                return false;
-            }
-        }
-
-        // Return true if no disabling collision is detected
-        return true;
     }
 
     public void WheelSnapped()
