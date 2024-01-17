@@ -40,10 +40,18 @@ public class ColliderAudio : MonoBehaviour
             other.enabled = false;
         }
 
+        if (other.CompareTag("SnakMedÅlegræsOgSpil2Forklaring"))
+        {
+            AudioManager.instance.Play("SnakMedÅlegræsOgSpil2Forklare 1");
+            Debug.Log("Afspiller Lyd til Cutscene 2");
+            other.enabled = false;
+        }
+
         if (other.CompareTag("Cutscene 2 Music"))
         {
             AudioManager.instance.Play("Cutscene 2 Music");
-            Debug.Log("Afspiller Lyd til Cutscene 2 Music");
+            AudioManager.instance.Play("SnakMedÅlegræsOgSpil2Forklare 1");
+            Debug.Log("Afspiller Lyd til Cutscene 2 Music + Forklaring");
             other.enabled = false;
         }
 
@@ -69,6 +77,13 @@ public class ColliderAudio : MonoBehaviour
         }
 
         //Stop Statements
+        if (other.CompareTag("Intro Music Stop"))
+        {
+            AudioManager.instance.Stop("IntroMusic");
+            Debug.Log("Stopper Lyd til Intro Music");
+            other.enabled = false;
+        }
+
         if (other.CompareTag("Spil 1 Music Stop"))
         {
             AudioManager.instance.Stop("Spil 1 Music");

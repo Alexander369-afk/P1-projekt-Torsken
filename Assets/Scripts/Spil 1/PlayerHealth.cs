@@ -32,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damageAmount;
         StartCoroutine(flash.FlashRoutine());
+        FindObjectOfType<AudioManager>().Play("HighPitchBu");
         DetectDeath();
     }
 
