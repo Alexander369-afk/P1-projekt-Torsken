@@ -6,12 +6,30 @@ using UnityEngine;
 
 public class SnapWheel : MonoBehaviour
 {
+    //-----------------------------------------------------------------------------------------------//
+                                        //  Declarations    //
+    //-----------------------------------------------------------------------------------------------//
+    
+    //Collection type (list). Transform 
     public List<Transform> snapPosition;
     public List<DragDropWheel> wheelObject;
+    
+    //Variable to tell at what range the wheel has to be to make it snap onto the position
     public float snapRange = 0.5f;
 
+   
+    
+    
     // Reference to the Path script
     public Path pathScript;
+
+
+    //-----------------------------------------------------------------------------------------------//
+                                            //     CODE    //
+    //-----------------------------------------------------------------------------------------------//
+            //Point of the code: When the wheel is dragged and dropped close to the position where it is
+            //supposed to be placed, the wheel will snap to the center of the position. This is to make it
+            //easier for the user to succeed with the wheel placing 
 
     void Awake()
     {
