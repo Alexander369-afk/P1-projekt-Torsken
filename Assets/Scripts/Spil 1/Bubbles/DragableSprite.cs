@@ -26,7 +26,7 @@ public class DragableSprite : MonoBehaviour
         //Set the animator to PopTrigger animation
         animator.SetTrigger("PopTrigger");
         // Plays pop sound
-        FindObjectOfType<AudioManager>().Play("Bubble Pop");
+        FindObjectOfType<AudioManager>().Play("Bubble Pop Spil");
         //Sets a delay for 0.2f
         float delay = 0.2f;
         //Destroys the gameObject after delay
