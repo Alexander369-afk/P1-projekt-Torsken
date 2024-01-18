@@ -47,7 +47,7 @@ public class ColliderAudio : MonoBehaviour
             other.enabled = false;
         }
 
-        if (other.CompareTag("Cutscene 2 Music"))
+        if (other.CompareTag("Cutscene 2 Musik"))
         {
             AudioManager.instance.Play("Cutscene 2 Music");
             Debug.Log("Afspiller Lyd til Cutscene 2 Music + Forklaring");

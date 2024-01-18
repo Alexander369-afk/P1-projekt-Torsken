@@ -12487,8 +12487,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.002399981, y: -0.00015002489, z: 0}
-    m_Extent: {x: 1.0056, y: 1.00285, z: 0}
+    m_Center: {x: -0.0045000017, y: -0.00019997358, z: 0}
+    m_Extent: {x: 1.0011, y: 1.0088999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.1
@@ -24787,7 +24787,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 59.77, y: 10.2}
+  m_Offset: {x: 59.96, y: 10.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -40312,14 +40312,14 @@ PrefabInstance:
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[8].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 17e439ba60a08fe4083eaf910dc8cfd2, type: 3}
+      objectReference: {fileID: 8300000, guid: 3f63d11c6ace6426c98378530e787b37, type: 3}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[8].loop
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[8].name
-      value: Spil 2 Music
+      value: Spil 2 Musik
       objectReference: {fileID: 0}
     - target: {fileID: 8605391465072720550, guid: da22a86161ddc6f46aefbf36a6400d48, type: 3}
       propertyPath: sounds.Array.data[9].clip
