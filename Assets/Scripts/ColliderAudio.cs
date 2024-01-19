@@ -8,6 +8,17 @@ public class ColliderAudio : MonoBehaviour
 {
     public AudioManager audioManager;
 
+    void Awake()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+
+        if (audioManager == null)
+        {
+
+            Debug.LogWarning("AudioMangager not found in the scene.");
+        }
+    }
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         //Start Statements
@@ -47,19 +58,21 @@ public class ColliderAudio : MonoBehaviour
             other.enabled = false;
         }
 
-        if (other.CompareTag("Cutscene 2 Musik"))
+        if (other.CompareTag("Cutscene 2 Music"))
         {
             AudioManager.instance.Play("Cutscene 2 Music");
             Debug.Log("Afspiller Lyd til Cutscene 2 Music + Forklaring");
             other.enabled = false;
         }
 
-        if (other.CompareTag("Spil 2 Music"))
+        if (other.CompareTag("Game2"))
         {
-            AudioManager.instance.Play("Spil 2 Music");
+            /*AudioManager.instance.Play("Game2");
             Debug.Log("Afspiller Lyd til Spil 2");
-            other.enabled = false;
+            other.enabled = false;*/
+            audioManager.Play("Game2");
         }
+
 
         if (other.CompareTag("Spil 2 Vinder"))
         {

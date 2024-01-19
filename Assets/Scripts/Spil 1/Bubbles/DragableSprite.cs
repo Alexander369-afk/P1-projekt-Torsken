@@ -6,6 +6,19 @@ public class DragableSprite : MonoBehaviour
     // Class to control animation system
     private Animator animator;
 
+    public AudioManager audioManager;
+
+    void Awake()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+
+        if (audioManager == null)
+        {
+
+            Debug.LogWarning("AudioMangager not found in the scene.");
+        }
+    }
+
     // Start Method
     private void Start()
     {
@@ -26,7 +39,7 @@ public class DragableSprite : MonoBehaviour
         //Set the animator to PopTrigger animation
         animator.SetTrigger("PopTrigger");
         // Plays pop sound
-        FindObjectOfType<AudioManager>().Play("Bubble Pop Spil");
+        audioManager.Play("PopSound");
         //Sets a delay for 0.2f
         float delay = 0.2f;
         //Destroys the gameObject after delay

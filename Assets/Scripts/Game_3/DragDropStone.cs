@@ -2,7 +2,7 @@ using UnityEngine;
 
 // Code from YouTube https://www.youtube.com/watch?v=izag_ZHwOtM&t=100s + modified
 
-public class DragStone : MonoBehaviour      //Ingen ide om hvorfor class navn er anderledes?? Ingen error i Unity. og hvorfor mangler der nogle namespace
+public class DragDropStone : MonoBehaviour      //Ingen ide om hvorfor class navn er anderledes?? Ingen error i Unity. og hvorfor mangler der nogle namespace
 {
     //-----------------------------------------------------------------------------------------------//
                                      //  Declarations    //

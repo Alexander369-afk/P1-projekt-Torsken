@@ -7,11 +7,22 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    
+
+    private AudioManager audioManager;
     public int maxHealth = 3;
     private int currentHealth;
     private Flash flash;
 
+    void Awake()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+
+        if (audioManager == null)
+        {
+
+            Debug.LogWarning("AudioMangager not found in the scene.");
+        }
+    }
     void Start()
     {
         currentHealth = maxHealth;
@@ -32,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damageAmount;
         StartCoroutine(flash.FlashRoutine());
-        FindObjectOfType<AudioManager>().Play("Torsken Av");
+        audioManager.Play("TorskenAv");
         DetectDeath();
     }
 
