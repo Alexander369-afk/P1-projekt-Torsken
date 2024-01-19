@@ -112,7 +112,7 @@ public class ColliderAudio : MonoBehaviour
 
         if (other.CompareTag("Spil 2 Music Stop"))
         {
-            AudioManager.instance.Stop("Spil 2 Music");
+            AudioManager.instance.Stop("Game2");
             Debug.Log("Stopper Lyd til Spil 2");
             other.enabled = false;
         }
