@@ -1,9 +1,8 @@
+// Code from https://www.gamedev.tv/courses/enrolled/2002332
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-// Code from https://www.gamedev.tv/courses/enrolled/2002332
 
 public class PlayerHealth : MonoBehaviour
 {

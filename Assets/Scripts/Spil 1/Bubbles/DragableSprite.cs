@@ -1,5 +1,5 @@
-using UnityEngine;
 // Code from https://stackoverflow.com/questions/55399392/destroy-gameobject-when-its-clicked-on 
+using UnityEngine;
 
 public class DragableSprite : MonoBehaviour
 {
@@ -14,7 +14,6 @@ public class DragableSprite : MonoBehaviour
 
         if (audioManager == null)
         {
-
             Debug.LogWarning("AudioMangager not found in the scene.");
         }
     }

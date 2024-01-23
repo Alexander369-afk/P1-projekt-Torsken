@@ -1,8 +1,7 @@
+//Code from https://www.youtube.com/watch?v=zxqQ_Uwt-eU&ab_channel=KoryCode
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-//Code from https://www.youtube.com/watch?v=zxqQ_Uwt-eU&ab_channel=KoryCode
 
 public class Spawn : MonoBehaviour
 {
