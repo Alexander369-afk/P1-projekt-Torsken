@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-
+        
     private AudioManager audioManager;
     public int maxHealth = 3;
     private int currentHealth;
@@ -15,13 +15,13 @@ public class PlayerHealth : MonoBehaviour
     void Awake()
     {
         audioManager = FindAnyObjectByType<AudioManager>();
-
         if (audioManager == null)
         {
 
             Debug.LogWarning("AudioMangager not found in the scene.");
         }
     }
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -55,6 +55,6 @@ public class PlayerHealth : MonoBehaviour
             
             gameObject.SetActive(false);
         }
-    }
+    }   
 }
 

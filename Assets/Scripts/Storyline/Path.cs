@@ -1,6 +1,6 @@
 // https://www.youtube.com/watch?v=oaFJBP4Ld7k&ab_channel=MohammadFaizanKhan
 // https://www.youtube.com/watch?v=EwHiMQ3jdHw&ab_channel=MetalStormGames
-// https://www.youtube.com/watch?v=RpmQ2xC6gLE&t=697s&ab_channel=MetalStormGames
+// https://www.youtube.com/watch?v=RpmQ2xC6gLE&t=69s&ab_channel=MetalStormGames
 using System;
 using UnityEngine;
 
@@ -37,6 +37,7 @@ public class Path : MonoBehaviour
                 timer = 0f;
                 waypointsIndex++;
             }
+            
         }
     }
 

@@ -12352,8 +12352,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00080001354, y: -0.0033000112, z: 0}
-    m_Extent: {x: 1.0037, y: 1.0047, z: 0}
+    m_Center: {x: -0.0026500225, y: -0.0011999905, z: 0}
+    m_Extent: {x: 1.00485, y: 0.9993, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.1
@@ -16628,7 +16628,6 @@ GameObject:
   m_Component:
   - component: {fileID: 796231581}
   - component: {fileID: 796231583}
-  - component: {fileID: 796231582}
   m_Layer: 0
   m_Name: Algefest Musik Start
   m_TagString: Spil 3 Music
@@ -16651,19 +16650,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1659932439}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &796231582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796231580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6ca248dedba4d87a49e912ee3b83c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cutsceneKey: Spil 2
 --- !u!61 &796231583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19772,8 +19758,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.0002594, y: 26.120728}
-  m_SizeDelta: {x: 1260.7808, y: 96.4265}
+  m_AnchoredPosition: {x: 2.84, y: 95.9942}
+  m_SizeDelta: {x: 1551.9336, y: 92.4381}
   m_Pivot: {x: 0.49999976, y: 0.50000006}
 --- !u!114 &959779749
 MonoBehaviour:
@@ -19823,12 +19809,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 16
-  m_fontSizeMax: 30
+  m_fontSizeMax: 40
   m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -19859,7 +19845,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 2.354721, w: 0}
+  m_margin: {x: 0, y: 0, z: 2.354721, w: -4.742687}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -40288,8 +40274,12 @@ PrefabInstance:
       value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 8704341503825862618, guid: 1928d5a53867042778f53d59e447fd48, type: 3}
+      propertyPath: sounds.Array.data[8].volume
+      value: 0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704341503825862618, guid: 1928d5a53867042778f53d59e447fd48, type: 3}
       propertyPath: sounds.Array.data[9].volume
-      value: 0.31
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

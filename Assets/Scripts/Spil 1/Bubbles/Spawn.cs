@@ -9,7 +9,7 @@ public class Spawn : MonoBehaviour
     public int numberToSpawn; //Controlls how many objects to spawn
     public List<GameObject> spawnPool; //List with prefabs that can spawn
     public GameObject quad; //Gameobject where the prefabs should spawn
-
+   
     private int randomTile; //Controlls which prefabs to spawn
     public float frequency; // How often should they spawn
     public float initialSpeed; //At what speed should they spawn
