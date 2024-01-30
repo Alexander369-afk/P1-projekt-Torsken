@@ -17,7 +17,7 @@ public class Path : MonoBehaviour
     {
         AudioManager.instance.Play("Havlyden Loop");
         waypointsIndex = 0;
-        timer = 0f;
+        timer += Time.deltaTime;
     }
 
     void Update()
@@ -31,7 +31,7 @@ public class Path : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position,
                     Waypoints[waypointsIndex].position, moveSpeeds[waypointsIndex] * Time.deltaTime);
             }
-
+            
             if (timer >= waitTimes[waypointsIndex])
             {
                 timer = 0f;
