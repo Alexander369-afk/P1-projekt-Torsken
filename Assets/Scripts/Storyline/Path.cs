@@ -2,7 +2,7 @@
 // https://www.youtube.com/watch?v=EwHiMQ3jdHw&ab_channel=MetalStormGames
 // https://www.youtube.com/watch?v=RpmQ2xC6gLE&t=69s&ab_channel=MetalStormGames
 using System;
-using UnityEngine;
+using UnityEngine; //unity engine
 
 public class Path : MonoBehaviour
 {
